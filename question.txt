@@ -1,1 +1,7 @@
-
+1. What is Arrays class.
+2. Ways to create an Object.
+3. Difference b/w "?" and Object in generics.
+4. Multiply 50 digit numbers
+5. Will finally be called if there is a return statement.
+6. What is Static import.
+7. 
