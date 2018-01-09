@@ -7,4 +7,4 @@
 7. what is final,finally and finalize
 8. thread implementation (Thread class and Runnable interface)
 9. What is class loader
-10. 
+10. can we have try without catch (yes)
