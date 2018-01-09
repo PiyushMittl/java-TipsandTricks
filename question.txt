@@ -4,4 +4,6 @@
 4. Multiply 50 digit numbers
 5. Will finally be called if there is a return statement.
 6. What is Static import.
-7. 
+7. what is final,finally and finalize
+8. thread implementation (Thread class and Runnable interface)
+9. 
