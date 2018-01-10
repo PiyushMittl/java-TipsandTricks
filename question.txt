@@ -8,3 +8,5 @@
 8. thread implementation (Thread class and Runnable interface)
 9. What is class loader
 10. can we have try without catch (yes)
+11. base class of Exception
+12. Example/program for RuntimeException and Exception
