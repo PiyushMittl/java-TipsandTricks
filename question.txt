@@ -12,3 +12,4 @@
 12. Example/program for RuntimeException and Exception
 13. singleton design pattern (sample code)
 14. how to create immutable class
+15. can we override static metohds
