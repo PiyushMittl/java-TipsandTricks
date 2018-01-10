@@ -10,3 +10,5 @@
 10. can we have try without catch (yes)
 11. base class of Exception
 12. Example/program for RuntimeException and Exception
+13. singleton design pattern (sample code)
+14. how to create immutable class
