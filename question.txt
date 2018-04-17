@@ -18,3 +18,4 @@
 19. why array index starts with 0
 20. can a key be null in hashmap.
 21. why we can have only one null key in HashMap.
+22. Collection vs Collection
