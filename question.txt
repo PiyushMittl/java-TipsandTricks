@@ -15,4 +15,6 @@
 15. can we override static metohds
 16. IS-A and HAS-A relationship with aggregation and composition example.
 18. (int… values) is passed as parameter to a method when you are not aware of the number of input parameter but know that the type of parameter(
-19. 
+19. why array index starts with 0
+20. can a key be null in hashmap.
+21. why we can have only one null key in HashMap.
