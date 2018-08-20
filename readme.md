@@ -26,3 +26,4 @@
 27. find mid node of a linked list travesing only once when last node address is not given.
 27. is overloading possible by changing return type.
 28. is overriding possible by changing return type.
+29. methods in object classe.
