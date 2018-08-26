@@ -27,13 +27,16 @@
 27. Is overloading possible by changing return type.
 28. Is overriding possible by changing return type.
 29. Methods in object classe.
-30.   void doStuff(int... x) { } // expects from 0 to many ints as parameters
+30.   
+``` java
+void doStuff(int... x) { } // expects from 0 to many ints as parameters
       void doStuff2(char c, int... x) { } // expects first a char, then 0 to many ints  
       void doStuff3(Animal... animal) { } // 0 to many Animals
     Illegal:
       void doStuff4(int x...) { } // bad syntax
       void doStuff5(int... x, char... y) { } // too many var-args
       void doStuff6(String... s, byte b) { } // var-arg must be last
+```      
 31. Difference between transient and volatile in Java?
 32. will it call Thread constructor.
 ``` java
