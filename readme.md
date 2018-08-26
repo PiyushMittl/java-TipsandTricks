@@ -35,4 +35,8 @@
       void doStuff5(int... x, char... y) { } // too many var-args
       void doStuff6(String... s, byte b) { } // var-arg must be last
 31. Difference between transient and volatile in Java?
-32. 
+32. will it call Thread constructor.
+``` java
+Thread[] threads = new Thread[5];
+```
+ref: pg. 221 Kathy Sierra
