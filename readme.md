@@ -73,3 +73,20 @@ splats = letters; // NOT OK, letters refers to a char array
 **ref:- book *book: Kathy Sierra, pg. 232***  
 
 35.
+``` java
+Integer y = 567; // make a wrapper
+Integer x = y; // assign a second ref
+ // var to THE wrapper
+System.out.println(y==x); // verify that they refer
+ // to the same object
+y++; // unwrap, use, "rewrap"
+System.out.println(x + " " + y); // print values
+System.out.println(y==x); // verify that they refer
+ // to different objects
+```  
+Which produces the output:
+```
+ true
+ 567 568
+ false
+```
