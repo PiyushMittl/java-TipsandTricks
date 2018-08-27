@@ -50,3 +50,26 @@ Thread[] threads = new Thread[]; // Will not compile; needs a size
 int[][] myArray = new int[3][]; // works fine, how its working fine when there is no column size given ??
 ```
 **ref:- book *book: Kathy Sierra, pg. 223***  
+34.
+``` java
+int[] weightList = new int[5];
+byte b = 4;
+char c = 'c';
+short s = 7;
+weightList[0] = b; // OK, byte is smaller than int
+weightList[1] = c; // OK, char is smaller than int
+weightList[2] = s; // OK, short is smaller than int
+```
+**ref:- book *book: Kathy Sierra, pg. 231***  
+
+
+``` java
+int[] splats;
+int[] dats = new int[4];
+char[] letters = new char[5];
+splats = dats; // OK, dats refers to an int array
+splats = letters; // NOT OK, letters refers to a char array
+```
+**ref:- book *book: Kathy Sierra, pg. 232***  
+
+35.
