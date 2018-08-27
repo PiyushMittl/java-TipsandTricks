@@ -42,11 +42,11 @@
 ``` java
 Thread[] threads = new Thread[5];
 ```
-ref: book *Kathy Sierra, pg. 221*  
+**ref:- *book: Kathy Sierra, pg. 221* **  
 33. 
 ``` java
 Thread[] threads = new Thread[5]; // works fine
 Thread[] threads = new Thread[]; // Will not compile; needs a size
 int[][] myArray = new int[3][]; // works fine, how its working fine when there is no column size given ??
 ```
-ref: book *Kathy Sierra, pg. 223*  
+**ref:- book *book: Kathy Sierra, pg. 223* **  
