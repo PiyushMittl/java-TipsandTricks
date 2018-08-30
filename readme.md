@@ -5,7 +5,7 @@
 5. Will finally be called if there is a return statement.
 6. What is Static import.
 7. what is final,finally and finalize.
-8. thread implementation (Thread class and Runnable interface).
+8. Thread implementation (Thread class and Runnable interface).
 9. What is class loader. Types of class loader.
 10. Can we have try without catch (yes).
 11. Base class of Exception.
@@ -17,8 +17,8 @@
 18. (int… values) is passed as parameter to a method when you are not aware of the number of input parameter but know that the type of parameter(
 19. Why array index starts with 0.
 20. Can a key be null in hashmap.
-21. Why we can have only one null key in HashMap.
-22. Collection vs Collection.
+21. Why can we have only one null key in HashMap.
+22. Collection vs Collections.
 23. Where in collection we have limitation of giving heterogeniuos elements only (tree set, tree map).
 24. Size vs capacity in collection.
 25. Zig-zab problem in matrix (print element)
@@ -92,25 +92,28 @@ Which produces the output:
 ```
  **ref:- book *book: Kathy Sierra, pg. 245***  
  36.
- We just used == to do a little exploration of wrappers. Let's take a more thorough
-look at how wrappers work with ==, !=, and equals(). We'll talk a lot more about
-the equals() method in later chapters. For now all we have to know is that the
-intention of the equals() method is to determine whether two instances of a given
-class are "meaningfully equivalent." This definition is intentionally subjective; it's
-up to the creator of the class to determine what "equivalent" means for objects of the
+ We just used ```==``` to do a little exploration of wrappers. Let's take a more thorough
+look at how wrappers work with ```==, !=, and equals()```. We'll talk a lot more about
+the ```equals()``` method in later chapters. For now all we have to know is that the
+intention of the ```equals()``` method is to determine whether two instances of a given
+class are *meaningfully equivalent*. This definition is intentionally subjective; it's
+up to the creator of the class to determine what *equivalent* means for objects of the
 class in question. The API developers decided that for all the wrapper classes, two
 objects are equal if they are of the same type and have the same value. It shouldn't
 be surprising that
+``` java
 Integer i1 = 1000;
 Integer i2 = 1000;
 if(i1 != i2) System.out.println("different objects");
 if(i1.equals(i2)) System.out.println("meaningfully equal");
+```
 
 Produces the output:
+```
 different objects
- meaningfully equal
-Autoboxing (Exam Objective 3.1) 245
-246 Chapter 3: Assignments
+meaningfully equal
+``` 
+
 It's just two wrapper objects that happen to have the same value. Because they
 have the same int value, the equals() method considers them to be "meaningfully
 equivalent", and therefore returns true. How about this one:
