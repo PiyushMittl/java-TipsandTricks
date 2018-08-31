@@ -128,10 +128,10 @@ This example produces the output:
 same object
 meaningfully equal
 ```
-Yikes! The equals() method seems to be working, but what happened with ==
-and != ? Why is != telling us that i1 and i2 are different objects, when == is saying
-that i3 and i4 are the same object? In order to save memory, two instances of the
-following wrapper objects (created through boxing), will always be == when their
+Yikes! The ```equals()``` method seems to be working, but what happened with ```==
+and != ?``` Why is ```!=``` telling us that *i1* and *i2* are different objects, when ```==``` is saying
+that *i3* and *i4* are the same object? In order to save memory, two instances of the
+following wrapper objects (created through boxing), will always be ```==``` when their
 primitive values are the same:
 ```
 ■ Boolean
@@ -139,7 +139,7 @@ primitive values are the same:
 ■ Character from \u0000 to \u007f (7f is 127 in decimal)
 ■ Short and Integer from -128 to 127
 ```
-Note: When == is used to compare a primitive to a wrapper, the wrapper will be
+Note: When ```==``` is used to compare a primitive to a wrapper, the wrapper will be
 unwrapped and the comparison will be primitive to primitive.
  **ref:- book *book: Kathy Sierra, pg. 246***  
 
