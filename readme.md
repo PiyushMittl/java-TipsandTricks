@@ -5,7 +5,7 @@
 5. Will finally be called if there is a return statement.
 6. What is Static import.
 7. what is final,finally and finalize.
-8. Thread implementation (Thread class and Runnable interface).
+8. thread implementation (Thread class and Runnable interface).
 9. What is class loader. Types of class loader.
 10. Can we have try without catch (yes).
 11. Base class of Exception.
@@ -17,8 +17,8 @@
 18. (int… values) is passed as parameter to a method when you are not aware of the number of input parameter but know that the type of parameter(
 19. Why array index starts with 0.
 20. Can a key be null in hashmap.
-21. Why can we have only one null key in HashMap.
-22. Collection vs Collections.
+21. Why we can have only one null key in HashMap.
+22. Collection vs Collection.
 23. Where in collection we have limitation of giving heterogeniuos elements only (tree set, tree map).
 24. Size vs capacity in collection.
 25. Zig-zab problem in matrix (print element)
@@ -92,12 +92,12 @@ Which produces the output:
 ```
  **ref:- book *book: Kathy Sierra, pg. 245***  
  36.
- We just used ```==``` to do a little exploration of wrappers. Let's take a more thorough
-look at how wrappers work with ```==, !=, and equals()```. We'll talk a lot more about
-the ```equals()``` method in later chapters. For now all we have to know is that the
-intention of the ```equals()``` method is to determine whether two instances of a given
-class are *meaningfully equivalent*. This definition is intentionally subjective; it's
-up to the creator of the class to determine what *equivalent* means for objects of the
+ We just used == to do a little exploration of wrappers. Let's take a more thorough
+look at how wrappers work with ==, !=, and equals(). We'll talk a lot more about
+the equals() method in later chapters. For now all we have to know is that the
+intention of the equals() method is to determine whether two instances of a given
+class are "meaningfully equivalent." This definition is intentionally subjective; it's
+up to the creator of the class to determine what "equivalent" means for objects of the
 class in question. The API developers decided that for all the wrapper classes, two
 objects are equal if they are of the same type and have the same value. It shouldn't
 be surprising that
@@ -107,31 +107,25 @@ Integer i2 = 1000;
 if(i1 != i2) System.out.println("different objects");
 if(i1.equals(i2)) System.out.println("meaningfully equal");
 ```
-
 Produces the output:
-```
 different objects
-meaningfully equal
-``` 
-
+ meaningfully equal
+Autoboxing (Exam Objective 3.1) 245
+246 Chapter 3: Assignments
 It's just two wrapper objects that happen to have the same value. Because they
 have the same int value, the equals() method considers them to be "meaningfully
 equivalent", and therefore returns true. How about this one:
-``` java
 Integer i3 = 10;
 Integer i4 = 10;
 if(i3 == i4) System.out.println("same object");
 if(i3.equals(i4)) System.out.println("meaningfully equal");
-```
 This example produces the output:
-```
 same object
 meaningfully equal
-```
-Yikes! The ```equals()``` method seems to be working, but what happened with ```==
-and != ?``` Why is ```!=``` telling us that *i1* and *i2* are different objects, when ```==``` is saying
-that *i3* and *i4* are the same object? In order to save memory, two instances of the
-following wrapper objects (created through boxing), will always be ```==``` when their
+Yikes! The equals() method seems to be working, but what happened with ==
+and != ? Why is != telling us that i1 and i2 are different objects, when == is saying
+that i3 and i4 are the same object? In order to save memory, two instances of the
+following wrapper objects (created through boxing), will always be == when their
 primitive values are the same:
 ```
 ■ Boolean
@@ -139,8 +133,114 @@ primitive values are the same:
 ■ Character from \u0000 to \u007f (7f is 127 in decimal)
 ■ Short and Integer from -128 to 127
 ```
-Note: When ```==``` is used to compare a primitive to a wrapper, the wrapper will be
+Note: When == is used to compare a primitive to a wrapper, the wrapper will be
 unwrapped and the comparison will be primitive to primitive.
  **ref:- book *book: Kathy Sierra, pg. 246***  
+37.
+``` java
 
+public class Demo{
 
+Demo(Object o)
+{
+// do something..
+}
+
+Demo(String o)
+{
+// do something..
+}
+
+public static void main(String a[]){
+ Demo d=new Demo(null); // which one would be called ??
+
+}
+
+}
+```
+38. why Map is not the part of collection.
+39. does abstract class has contructor??
+Abstract classes have constructors, and those constructors are always called when a concrete subclass is instantiated.
+40. 
+Floating-point numbers have slightly different assignment behavior than integer types. First, you must know that every floating-point literal is implicitly a double (64 bits), not a float. So the literal 32.3, for example, is considered a double. If you try to assign a double to a float, the compiler knows you don't have enough room in a 32-bit float container to hold the precision of a 64-bit double, and it lets you know. The following code looks good, but won't compile:
+```
+float f = 32.3;
+```
+You can see that 32.3 should fit just fine into a float-sized variable, but the compiler won't allow it. In order to assign a floating-point literal to a float variable, you must either cast the value or append an f to the end of the literal. The following assignments will compile:
+```
+float f = (float) 32.3;
+float g = 32.3f;
+float h = 32.3F;
+```
+41.
+``` java
+class AddBoxing {
+static void go(Integer x) { System.out.println("Integer"); }
+static void go(long x) { System.out.println("long"); }
+public static void main(String [] args) {
+int i = 5;
+go(i); // which go() will be invoked?
+} }
+```
+As we've seen earlier, if the only version of the go() method was one that took an Integer, then Java 5's boxing capability would allow the invocation of go() to succeed. Likewise, if only the long version existed, the compiler would use it to handle the go() invocation. The question is, given that both methods exist, which one will be used? In other words, does the compiler think that widening a primitive parameter is more desirable than performing an autoboxing operation? The answer is that the compiler will choose widening over boxing, so the output will be
+long
+
+42.
+Java 5's designers decided that the most important rule should be that preexisting code should function the way it used to, so since widening capability already existed, a method that is invoked via widening shouldn't lose out to a newly created method that relies on boxing. Based on that rule, try to predict the output of the following:
+``` java
+class AddVarargs {
+static void go(int x, int y) { System.out.println("int,int");}
+static void go(byte... x) { System.out.println("byte... "); }
+public static void main(String[] args) {
+byte b = 5;
+go(b,b); // which go() will be invoked?
+}
+}
+```
+250 Chapter 3: Assignments
+As you probably guessed, the output is
+```
+int,int
+```
+Because, once again, even though each invocation will require some sort of conversion, the compiler will choose the older style before it chooses the newer style, keeping existing code more robust. So far we've seen that
+```
+■ Widening beats boxing
+■ Widening beats var-args
+```
+At this point, inquiring minds want to know, does boxing beat var-args?
+```
+class BoxOrVararg {
+static void go(Byte x, Byte y)
+{ System.out.println("Byte, Byte"); }
+static void go(byte... x) { System.out.println("byte... "); }
+public static void main(String [] args) {
+byte b = 5;
+go(b,b); // which go() will be invoked?
+} }
+```
+As it turns out, the output is
+```
+Byte, Byte
+```
+A good way to remember this rule is to notice that the var-args method is "looser" than the other method, in that it could handle invocations with any number of byte parameters. A var-args method is more like a catch-all method, in terms of what invocations it can handle, and as we'll see in Chapter 5, it makes most sense for catch-all capabilities to be used as a last resort.
+43.
+Earlier versions of the exam put big emphasis on operator precedence (like: What’s the result of: x = y++ + ++x/z;). Other than a very basic knowledge
+of precedence (such as: * and / are higher precedence than + and -), you won’t need to study operator precedence, except that when using a compound operator, the expression on the right side of the = will always be evaluated first. For example, you might expect
+```
+x *= 2 + 5;
+```
+to be evaluated like this:
+```
+x = (x * 2) + 5; // incorrect precedence
+```
+since multiplication has higher precedence than addition. But instead, the expression on the right is always placed inside parentheses. it is evaluated like this:
+```
+x = x * (2 + 5);
+```
+44.
+Why string is immutable ??
+
+One of the key goals of any good programming language is to make efficient use of memory. As applications grow, it's very common for String literals to occupy large amounts of a program's memory, and there is often a lot of redundancy within the
+434 Chapter 6: Strings, I/O, Formatting, and Parsing
+universe of String literals for a program. To make Java more memory efficient, the JVM sets aside a special area of memory called the "String constant pool." When the compiler encounters a String literal, it checks the pool to see if an identical String already exists. If a match is found, the reference to the new literal is directed to the existing String, and no new String literal object is created. (The existing String simply has an additional reference.) Now we can start to see why making String objects immutable is such a good idea. If several reference variables refer to the same String without even knowing it, it would be very bad if any of them could change the String's value.
+You might say, "Well that's all well and good, but what if someone overrides the String class functionality; couldn't that cause problems in the pool?" That's one of the main reasons that the String class is marked final. Nobody can override the behaviors of any of the String methods, so you can rest assured that the String objects you are counting on to be immutable will, in fact, be immutable.
