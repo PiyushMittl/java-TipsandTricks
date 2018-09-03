@@ -289,4 +289,22 @@ try {
 System.out.println("out of try block");
 catch(Exception ex) { }
 ```
+
+
+```
+It is illegal to use a try clause without either a catch clause or a fi nally
+clause. A try clause by itself will result in a compiler error. Any catch clauses must
+immediately follow the try block. Any fi nally clause must immediately follow the last
+catch clause (or it must immediately follow the try block if there is no catch). It is legal
+to omit either the catch clause or the fi nally clause, but not both
+```
+```
+You can’t sneak any code in between the try, catch, or fi nally blocks.
+The following won’t compile:
+try {
+ // do stuff
+}
+System.out.print("below the try"); //Illegal!
+catch(Exception ex) { }
+```
  **ref:- book *book: Kathy Sierra, pg. 261***  
