@@ -260,3 +260,33 @@ System.out.println("not equals");
 ```
 
 46.
+``` java
+The following legal code demonstrates a try with a finally but no catch:
+try {
+ // do stuff
+} finally {
+ //clean up
+}
+The following legal code demonstrates a try, catch, and finally:
+try {
+ // do stuff
+} catch (SomeException ex) {
+ // do exception handling
+} finally {
+ // clean up
+}
+The following ILLEGAL code demonstrates a try without a catch or finally:
+try {
+ // do stuff
+}
+// need a catch or finally here
+System.out.println("out of try block");
+The following ILLEGAL code demonstrates a misplaced catch block:
+try {
+ // do stuff
+}
+// can't have code between try/catch
+System.out.println("out of try block");
+catch(Exception ex) { }
+```
+ **ref:- book *book: Kathy Sierra, pg. 261***  
