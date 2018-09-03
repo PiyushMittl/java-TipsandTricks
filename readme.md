@@ -244,3 +244,19 @@ One of the key goals of any good programming language is to make efficient use o
 434 Chapter 6: Strings, I/O, Formatting, and Parsing
 universe of String literals for a program. To make Java more memory efficient, the JVM sets aside a special area of memory called the "String constant pool." When the compiler encounters a String literal, it checks the pool to see if an identical String already exists. If a match is found, the reference to the new literal is directed to the existing String, and no new String literal object is created. (The existing String simply has an additional reference.) Now we can start to see why making String objects immutable is such a good idea. If several reference variables refer to the same String without even knowing it, it would be very bad if any of them could change the String's value.
 You might say, "Well that's all well and good, but what if someone overrides the String class functionality; couldn't that cause problems in the pool?" That's one of the main reasons that the String class is marked final. Nobody can override the behaviors of any of the String methods, so you can rest assured that the String objects you are counting on to be immutable will, in fact, be immutable.
+
+45.
+``` java
+String s=new String("hello");
+StringBuffer sb=new StringBuffer("hello");
+if(s.equals(sb))
+{
+System.out.println("equals");
+}
+else
+{
+System.out.println("not equals");
+}
+```
+
+46.
