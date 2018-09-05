@@ -92,12 +92,12 @@ Which produces the output:
 ```
  **ref:- book *book: Kathy Sierra, pg. 245***  
  36.
- We just used == to do a little exploration of wrappers. Let's take a more thorough
-look at how wrappers work with ==, !=, and equals(). We'll talk a lot more about
-the equals() method in later chapters. For now all we have to know is that the
-intention of the equals() method is to determine whether two instances of a given
-class are "meaningfully equivalent." This definition is intentionally subjective; it's
-up to the creator of the class to determine what "equivalent" means for objects of the
+ We just used ```==``` to do a little exploration of wrappers. Let's take a more thorough
+look at how wrappers work with ```==```, ```!=```, and ```equals()```. We'll talk a lot more about
+the ```equals()``` method in later chapters. For now all we have to know is that the
+intention of the ```equals()``` method is to determine whether two instances of a given
+class are *meaningfully equivalent*. This definition is intentionally subjective; it's
+up to the creator of the class to determine what *equivalent* means for objects of the
 class in question. The API developers decided that for all the wrapper classes, two
 objects are equal if they are of the same type and have the same value. It shouldn't
 be surprising that
@@ -108,24 +108,30 @@ if(i1 != i2) System.out.println("different objects");
 if(i1.equals(i2)) System.out.println("meaningfully equal");
 ```
 Produces the output:
+```
 different objects
  meaningfully equal
+ ```
 Autoboxing (Exam Objective 3.1) 245
 246 Chapter 3: Assignments
 It's just two wrapper objects that happen to have the same value. Because they
-have the same int value, the equals() method considers them to be "meaningfully
-equivalent", and therefore returns true. How about this one:
+have the same int value, the ```equals()``` method considers them to be *meaningfully
+equivalent*, and therefore returns true. How about this one:
+```java
 Integer i3 = 10;
 Integer i4 = 10;
 if(i3 == i4) System.out.println("same object");
 if(i3.equals(i4)) System.out.println("meaningfully equal");
+```
 This example produces the output:
+```
 same object
 meaningfully equal
-Yikes! The equals() method seems to be working, but what happened with ==
-and != ? Why is != telling us that i1 and i2 are different objects, when == is saying
-that i3 and i4 are the same object? In order to save memory, two instances of the
-following wrapper objects (created through boxing), will always be == when their
+```
+Yikes! The ```equals()``` method seems to be working, but what happened with ```==```
+and ```!= ?``` Why is ```!=``` telling us that ```i1``` and ```i2``` are different objects, when ```==``` is saying
+that ```i3``` and ```i4``` are the same object? In order to save memory, two instances of the
+following wrapper objects (created through boxing), will always be ```==``` when their
 primitive values are the same:
 ```
 ■ Boolean
@@ -183,8 +189,9 @@ go(i); // which go() will be invoked?
 } }
 ```
 As we've seen earlier, if the only version of the go() method was one that took an Integer, then Java 5's boxing capability would allow the invocation of go() to succeed. Likewise, if only the long version existed, the compiler would use it to handle the go() invocation. The question is, given that both methods exist, which one will be used? In other words, does the compiler think that widening a primitive parameter is more desirable than performing an autoboxing operation? The answer is that the compiler will choose widening over boxing, so the output will be
+```
 long
-
+```
 42.
 Java 5's designers decided that the most important rule should be that preexisting code should function the way it used to, so since widening capability already existed, a method that is invoked via widening shouldn't lose out to a newly created method that relies on boxing. Based on that rule, try to predict the output of the following:
 ``` java
@@ -224,8 +231,8 @@ Byte, Byte
 ```
 A good way to remember this rule is to notice that the var-args method is "looser" than the other method, in that it could handle invocations with any number of byte parameters. A var-args method is more like a catch-all method, in terms of what invocations it can handle, and as we'll see in Chapter 5, it makes most sense for catch-all capabilities to be used as a last resort.
 43.
-Earlier versions of the exam put big emphasis on operator precedence (like: What’s the result of: x = y++ + ++x/z;). Other than a very basic knowledge
-of precedence (such as: * and / are higher precedence than + and -), you won’t need to study operator precedence, except that when using a compound operator, the expression on the right side of the = will always be evaluated first. For example, you might expect
+Earlier versions of the exam put big emphasis on operator precedence ```(like: What’s the result of: x = y++ + ++x/z;)```. Other than a very basic knowledge
+of precedence ```(such as: * and / are higher precedence than + and -)```, you won’t need to study operator precedence, except that when using a compound operator, the expression on the right side of the = will always be evaluated first. For example, you might expect
 ```
 x *= 2 + 5;
 ```
@@ -242,7 +249,7 @@ Why string is immutable ??
 
 One of the key goals of any good programming language is to make efficient use of memory. As applications grow, it's very common for String literals to occupy large amounts of a program's memory, and there is often a lot of redundancy within the
 434 Chapter 6: Strings, I/O, Formatting, and Parsing
-universe of String literals for a program. To make Java more memory efficient, the JVM sets aside a special area of memory called the "String constant pool." When the compiler encounters a String literal, it checks the pool to see if an identical String already exists. If a match is found, the reference to the new literal is directed to the existing String, and no new String literal object is created. (The existing String simply has an additional reference.) Now we can start to see why making String objects immutable is such a good idea. If several reference variables refer to the same String without even knowing it, it would be very bad if any of them could change the String's value.
+universe of String literals for a program. To make Java more memory efficient, the JVM sets aside a special area of memory called the "String constant pool." When the compiler encounters a String literal, it checks the pool to see if an identical String already exists. If a match is found, the reference to the new literal is directed to the existing String, and no new String literal object is created. (The existing String simply has an additional reference.) Now we can start to see why making String objects immutable is such a good idea. If several reference variables refer to the same String without even knowing it, it would be very bad if any of them could change the String's value.  
 You might say, "Well that's all well and good, but what if someone overrides the String class functionality; couldn't that cause problems in the pool?" That's one of the main reasons that the String class is marked final. Nobody can override the behaviors of any of the String methods, so you can rest assured that the String objects you are counting on to be immutable will, in fact, be immutable.
 
 45.
