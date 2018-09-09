@@ -338,6 +338,8 @@ in a most efficient way.
 ans: divide and conquer.
 
 49.
+can we define main method as private.
+if yes then will it compile ??
 
 
 
