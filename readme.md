@@ -315,3 +315,29 @@ System.out.print("below the try"); //Illegal!
 catch(Exception ex) { }
 ```
  **ref:- book *book: Kathy Sierra, pg. 261***  
+ 
+ 47.
+ So let's look at what else might cause a hashCode() method to fail. What
+happens if you include a transient variable in your hashCode() method? While
+that's legal (compiler won't complain), under some circumstances an object you
+put in a collection won't be found. As you know, serialization saves an object so
+that it can be reanimated later by deserializing it back to full objectness. But danger
+Will Robinson—remember that transient variables are not saved when an object is
+serialized.
+
+ **ref:- book *book: Kathy Sierra, pg. 555***  
+
+48.
+find last location of 1 in the descending sorted array which contains only 0 and 1.
+
+eaxmple:
+1111000
+
+in a most efficient way.
+
+ans: divide and conquer.
+
+49.
+
+
+
