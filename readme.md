@@ -341,5 +341,36 @@ ans: divide and conquer.
 can we define main method as private.
 if yes then will it compile ??
 
+50.
+what is 'headSet()' and 'tailSet()'
 
+``` java
+import java.util.TreeSet;
 
+public class Javaapp {
+
+    public static void main(String[] args) {
+        
+        TreeSet ts = new TreeSet();
+        ts.add(20);
+        ts.add(40);
+        ts.add(60);
+        ts.add(80);
+        System.out.println("ceiling(15)  : "+ts.ceiling(15));
+        System.out.println("ceiling(25)  : "+ts.ceiling(25));
+        System.out.println("floor(65)    : "+ts.floor(65));
+        System.out.println("floor(85)    : "+ts.floor(85));
+        System.out.println("headSet(65)  : "+ts.headSet(65));
+        System.out.println("tailSet(25)  : "+ts.tailSet(25));
+    }
+}
+```
+
+```
+ceiling(15)  : 20
+ceiling(25)  : 40
+floor(65)    : 60
+floor(85)    : 80
+headSet(65)  : [20, 40, 60]
+tailSet(25)  : [40, 60, 80]
+```
