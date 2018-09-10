@@ -374,3 +374,22 @@ floor(85)    : 80
 headSet(65)  : [20, 40, 60]
 tailSet(25)  : [40, 60, 80]
 ```
+
+``` java
+TreeSet<Integer> subset = new TreeSet<Integer>();
+ subset = (TreeSet)times.headSet(1600);
+ System.out.println("J5 - last before 4pm is: " + subset.last());
+ TreeSet<Integer> sub2 = new TreeSet<Integer>();
+ sub2 = (TreeSet)times.tailSet(2000);
+ System.out.println("J5 - first after 8pm is: " + sub2.first());
+ // Java 6 version using the new lower() and higher() methods
+ System.out.println("J6 - last before 4pm is: " + times.lower(1600));
+ System.out.println("J6 - first after 8pm is: " + times.higher(2000));
+```
+```
+This should produce the following:
+J5 - last before 4pm is: 1545
+J5 - first after 8pm is: 2010
+J6 - last before 4pm is: 1545
+J6 - first after 8pm is: 2010
+```
