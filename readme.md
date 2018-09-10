@@ -450,8 +450,8 @@ greater than the given element, and ceiling() returns the element greater than o
 equal to the given element. Table 7-4 summarizes the methods you should know for
 the exam. 
 
-**other Navigation method**
-Polling
+**other Navigation method**  
+Polling  
 Descending Order
 
-
+ **ref:- book *book: Kathy Sierra, pg. 589***  
