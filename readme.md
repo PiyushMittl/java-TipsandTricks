@@ -393,3 +393,55 @@ J5 - first after 8pm is: 2010
 J6 - last before 4pm is: 1545
 J6 - first after 8pm is: 2010
 ```
+
+
+We've talked about searching lists and arrays. Let's turn our attention to searching
+TreeSets and TreeMaps. Java 6 introduced (among others) two new interfaces:
+java.util.NavigableSet and java.util.NavigableMap. For the purposes
+of the exam, you’re interested in how TreeSet and TreeMap implement these
+interfaces.
+Imagine that the Santa Cruz–Monterey ferry has an irregular schedule. Let's
+say that we have the daily Santa Cruz departure times stored, in military time, in a
+TreeSet. Let's look at some code that determines two things:
+ 1. The last ferry that leaves before 4 (1600 hours)
+ 2. The first ferry that leaves after 8 (2000 hours)
+import java.util.*;
+public class Ferry {
+ public static void main(String[] args) {
+ TreeSet<Integer> times = new TreeSet<Integer>();
+ times.add(1205); // add some departure times
+ times.add(1505);
+ times.add(1545);
+ times.add(1830);
+ times.add(2010);
+ times.add(2100);
+ // Java 5 version
+ TreeSet<Integer> subset = new TreeSet<Integer>();
+ subset = (TreeSet)times.headSet(1600);
+ System.out.println("J5 - last before 4pm is: " + subset.last());
+ TreeSet<Integer> sub2 = new TreeSet<Integer>();
+ sub2 = (TreeSet)times.tailSet(2000);
+ System.out.println("J5 - first after 8pm is: " + sub2.first());
+ // Java 6 version using the new lower() and higher() methods
+ System.out.println("J6 - last before 4pm is: " + times.lower(1600));
+ System.out.println("J6 - first after 8pm is: " + times.higher(2000));
+ }
+}
+This should produce the following:
+J5 - last before 4pm is: 1545
+J5 - first after 8pm is: 2010
+J6 - last before 4pm is: 1545
+J6 - first after 8pm is: 2010
+As you can see in the preceding code, before the addition of the NavigableSet
+interface, zeroing in on an arbitrary spot in a Set—using the methods available in
+Java 5—was a compute-expensive and clunky proposition. On the other hand, using
+the new Java 6 methods lower() and higher(), the code becomes a lot cleaner.
+For the purpose of the exam, the NavigableSet methods related to this type of
+navigation are lower(), floor(), higher(), ceiling(), and the mostly parallel
+NavigableMap methods are lowerKey(), floorKey(), ceilingKey(), and
+higherKey(). The difference between lower() and floor() is that lower()
+returns the element less than the given element, and floor() returns the element
+less than or equal to the given element. Similarly, higher() returns the element
+greater than the given element, and ceiling() returns the element greater than or
+equal to the given element. Table 7-4 summarizes the methods you should know for
+the exam. 
