@@ -405,6 +405,7 @@ say that we have the daily Santa Cruz departure times stored, in military time, 
 TreeSet. Let's look at some code that determines two things:
  1. The last ferry that leaves before 4 (1600 hours)
  2. The first ferry that leaves after 8 (2000 hours)
+ ``` java
 import java.util.*;
 public class Ferry {
  public static void main(String[] args) {
@@ -427,11 +428,14 @@ public class Ferry {
  System.out.println("J6 - first after 8pm is: " + times.higher(2000));
  }
 }
+```
+```      
 This should produce the following:
 J5 - last before 4pm is: 1545
 J5 - first after 8pm is: 2010
 J6 - last before 4pm is: 1545
 J6 - first after 8pm is: 2010
+```      
 As you can see in the preceding code, before the addition of the NavigableSet
 interface, zeroing in on an arbitrary spot in a Set—using the methods available in
 Java 5—was a compute-expensive and clunky proposition. On the other hand, using
@@ -445,3 +449,9 @@ less than or equal to the given element. Similarly, higher() returns the element
 greater than the given element, and ceiling() returns the element greater than or
 equal to the given element. Table 7-4 summarizes the methods you should know for
 the exam. 
+
+**other Navigation method**
+Polling
+Descending Order
+
+
