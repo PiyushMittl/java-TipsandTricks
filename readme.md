@@ -455,3 +455,25 @@ Polling
 Descending Order
 
  **ref:- book *book: Kathy Sierra, pg. 589***  
+ 
+ 
+ 51.
+ It’s important to know some of the details of natural ordering. The
+following code will help you understand the relative positions of uppercase characters,
+lowercase characters, and spaces in a natural ordering:
+``` java
+String[] sa = {">ff<", "> f<", ">f <", ">FF<" }; // ordered?
+PriorityQueue<String> pq3 = new PriorityQueue<String>();
+for(String s : sa)
+ pq3.offer(s);
+for(String s : sa)
+ System.out.print(pq3.poll() + " ");
+ ```
+ 
+This produces  
+```
+> f< >FF< >f < >ff<
+```
+If you remember that spaces sort before characters and that uppercase
+letters sort before lowercase characters, you should be good to go for the exam.  
+ **ref:- book *book: Kathy Sierra, pg. 595***  
