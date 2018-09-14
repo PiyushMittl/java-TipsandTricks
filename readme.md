@@ -480,3 +480,13 @@ letters sort before lowercase characters, you should be good to go for the exam.
 
 52.
 can we use Collections.sort() on HashSet,HashMap ??
+ans:
+no only lists implementations are allowed to paased in Collections.sort().
+
+if you would try to store Hash implementation then you will get following error.
+
+```
+The method sort(List<T>) in the type Collections is not applicable for the arguments (Set<String>)
+```
+
+to sort HashSet and HashMet we have TreeMap and TreeSet implementations.
