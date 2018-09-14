@@ -490,3 +490,24 @@ The method sort(List<T>) in the type Collections is not applicable for the argum
 ```
 
 to sort HashSet and HashMet we have TreeMap and TreeSet implementations.
+
+53.
+Generic collections give you the same benefits of type safety that you've always had
+with arrays, but there are some crucial differences that can bite you if you aren't
+prepared. Most of these have to do with polymorphism.
+You've already seen that polymorphism applies to the "base" type of the
+collection:
+``` java
+List<Integer> myList = new ArrayList<Integer>();
+```
+In other words, we were able to assign an ArrayList to a List reference, because
+List is a supertype of ArrayList. Nothing special there—this polymorphic assignment
+works the way it always works in Java, regardless of the generic typing.
+But what about this?
+``` java
+class Parent { }
+class Child extends Parent { }
+List<Parent> myList = new ArrayList<Child>();
+```
+Think about it for a minute.
+Keep thinking...
