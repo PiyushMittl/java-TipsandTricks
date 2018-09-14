@@ -477,3 +477,6 @@ This produces
 If you remember that spaces sort before characters and that uppercase
 letters sort before lowercase characters, you should be good to go for the exam.  
  **ref:- book *book: Kathy Sierra, pg. 595***  
+
+52.
+can we use Collections.sort() on HashSet,HashMap ??
