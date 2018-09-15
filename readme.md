@@ -573,3 +573,28 @@ other main convention is T (stands for "type"), used for, well, things that are 
 collections
       
  **ref:- book *book: Kathy Sierra, pg. 622***     
+ 
+ 58.
+ using of Templates.
+ ``` java
+ public class UseTwo<T, X> {
+ T one;
+ X two;
+ UseTwo(T one, X two) {
+ this.one = one;
+ this.two = two;
+ }
+ T getT() { return one; }
+ X getX() { return two; }
+
+// test it by creating it with <String, Integer>
+ public static void main (String[] args) {
+ UseTwo<String, Integer> twos =
+ new UseTwo<String, Integer>("foo", 42);
+ String theT = twos.getT(); // returns a String
+ int theX = twos.getX(); // returns Integer, unboxes to int
+ }
+ 
+}
+```
+ **ref:- book *book: Kathy Sierra, pg. 627***     
