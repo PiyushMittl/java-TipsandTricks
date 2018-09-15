@@ -561,4 +561,15 @@ the method can take ONLY a List<Object>. Not a List<Dog>, or a List<Cat>.
 It does, however, mean that you can add to the list, since the compiler has already
 made certain that you're passing only a valid List<Object> into the method.
 
- **ref:- book *book: Kathy Sierra, pg. 619***        
+ **ref:- book *book: Kathy Sierra, pg. 619***     
+ 
+ 57.
+ The <E> is a placeholder for the type you pass in. The List interface is behaving
+as a generic "template" (sort of like C++ templates), and when you write your code,
+you change it from a generic List to a List<Dog> or List<Integer>, and so on.
+The E, by the way, is only a convention. Any valid Java identifier would work
+here, but E stands for "Element," and it's used when the template is a collection. The
+other main convention is T (stands for "type"), used for, well, things that are NOT
+collections
+      
+ **ref:- book *book: Kathy Sierra, pg. 622***     
