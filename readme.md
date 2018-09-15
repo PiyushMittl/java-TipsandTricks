@@ -533,3 +533,12 @@ but not this:
 List<Object> list = new ArrayList<JButton>(); // NO!
       
  **ref:- book *book: Kathy Sierra, pg. 605***        
+ 
+ 55.
+ void foo(List<? extends Serializable> list) // odd, but correct
+ // to use "extends"
+ This looks strange since you would never say this in a class declaration because
+Serializable is an interface, not a class. But that's the syntax, so burn it in!
+
+ **ref:- book *book: Kathy Sierra, pg. 618***        
+
