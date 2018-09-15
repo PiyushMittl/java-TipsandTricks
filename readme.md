@@ -541,4 +541,19 @@ List<Object> list = new ArrayList<JButton>(); // NO!
 Serializable is an interface, not a class. But that's the syntax, so burn it in!
 
  **ref:- book *book: Kathy Sierra, pg. 618***        
+ 
+56.
+``` java
+public void foo(List<?> list) { }
+public void foo(List<Object> list) { }
+```
 
+If there IS a difference (and we're not yet saying there is), what is it?
+There IS a huge difference. `List<?>`, which is the `wildcard <?>` without the
+keywords extends or super, simply means "any type." So that means any type of
+List can be assigned to the argument. That could be a List of <Dog>, <Integer>,
+<JButton>, <Socket>, whatever. And using the wildcard alone, without the
+keyword super (followed by a type), means that you cannot ADD anything to the
+list referred to as `List<?>`.
+
+ **ref:- book *book: Kathy Sierra, pg. 619***        
