@@ -526,3 +526,10 @@ List<JButton> myList = new ArrayList<JButton>(); // yes
 List<Object> myList = new ArrayList<Object>(); // yes
 List<Integer> myList = new ArrayList<Integer>(); // yes
 ```
+      
+54.
+Object[] myArray = new JButton[3]; // yes
+but not this:
+List<Object> list = new ArrayList<JButton>(); // NO!
+      
+ **ref:- book *book: Kathy Sierra, pg. 605***        
