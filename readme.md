@@ -556,4 +556,9 @@ List can be assigned to the argument. That could be a List of <Dog>, <Integer>,
 keyword super (followed by a type), means that you cannot ADD anything to the
 list referred to as `List<?>`.
 
+List<Object> is completely different from List<?>. List<Object> means that
+the method can take ONLY a List<Object>. Not a List<Dog>, or a List<Cat>.
+It does, however, mean that you can add to the list, since the compiler has already
+made certain that you're passing only a valid List<Object> into the method.
+
  **ref:- book *book: Kathy Sierra, pg. 619***        
