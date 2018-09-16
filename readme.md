@@ -598,3 +598,28 @@ collections
 }
 ```
  **ref:- book *book: Kathy Sierra, pg. 627***     
+ 
+ 
+ 59.
+ public class Radio {
+ public <T> Radio(T t) { } // legal constructor
+}
+      
+**ref:- book *book: Kathy Sierra, pg. 628***     
+ 
+60.
+
+If you REALLY want to get ridiculous (or fi red), you can declare a class
+with a name that is the same as the type parameter placeholder:
+``` java
+class X { public <X> X(X x) { } }
+```
+Yes, this works. The X that is the constructor name has no relationship
+to the <X> type declaration, which has no relationship to the constructor
+argument identifi er, which is also, of course, X. The compiler is able to parse this
+and treat each of the different uses of X independently. So there is no naming confl ict
+between class names, type parameter placeholders, and variable identifi ers.
+      
+**ref:- book *book: Kathy Sierra, pg. 629***     
+      
+      
