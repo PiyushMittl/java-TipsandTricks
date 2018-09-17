@@ -651,3 +651,8 @@ when a threat send back to Runnable state called waiting sate.
 
 End/Dead:
 when thread completes its execution. it becomes dead
+
+62.
+What is race condition.
+ans:
+when two threads concurrently access the same resource.
