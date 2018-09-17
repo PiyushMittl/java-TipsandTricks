@@ -661,3 +661,10 @@ when two threads concurrently access the same resource.
 a thread can acquire more than one lock.
 **ref:- book *book: Kathy Sierra, pg. 736**
 
+64.
+static methods can be synchronized. There is only one copy of the static data
+you're trying to protect, so you only need one lock per class to synchronize static
+methods
+**ref:- book *book: Kathy Sierra, pg. 738**
+
+
