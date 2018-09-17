@@ -656,3 +656,8 @@ when thread completes its execution. it becomes dead
 What is race condition.
 ans:
 when two threads concurrently access the same resource.
+
+63.
+a thread can acquire more than one lock.
+**ref:- book *book: Kathy Sierra, pg. 736**
+
