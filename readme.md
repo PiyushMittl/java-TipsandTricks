@@ -665,6 +665,24 @@ a thread can acquire more than one lock.
 static methods can be synchronized. There is only one copy of the static data
 you're trying to protect, so you only need one lock per class to synchronize static
 methods
+
+``` java
+two ways to acquire a lock:
+public static int getCount() {
+ synchronized(MyClass.class) {
+ return count;
+ }
+}
+```
+``` java
+public static void classMethod() {
+ Class cl = Class.forName("MyClass");
+ synchronized (cl) {
+ // do stuff
+ }
+}
+```
+
 **ref:- book *book: Kathy Sierra, pg. 738**
 
 
