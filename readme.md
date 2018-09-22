@@ -91,6 +91,8 @@ Which produces the output:
  false
 ```
  **ref:- book *book: Kathy Sierra, pg. 245***  
+ 
+ 
  36.
  We just used ```==``` to do a little exploration of wrappers. Let's take a more thorough
 look at how wrappers work with ```==```, ```!=```, and ```equals()```. We'll talk a lot more about
@@ -142,6 +144,8 @@ primitive values are the same:
 Note: When == is used to compare a primitive to a wrapper, the wrapper will be
 unwrapped and the comparison will be primitive to primitive.
  **ref:- book *book: Kathy Sierra, pg. 246***  
+ 
+ 
 37.
 ``` java
 
@@ -164,9 +168,12 @@ public static void main(String a[]){
 
 }
 ```
+
 38. why Map is not the part of collection.
+
 39. does abstract class has contructor??
 Abstract classes have constructors, and those constructors are always called when a concrete subclass is instantiated.
+
 40. 
 Floating-point numbers have slightly different assignment behavior than integer types. First, you must know that every floating-point literal is implicitly a double (64 bits), not a float. So the literal 32.3, for example, is considered a double. If you try to assign a double to a float, the compiler knows you don't have enough room in a 32-bit float container to hold the precision of a 64-bit double, and it lets you know. The following code looks good, but won't compile:
 ```
@@ -178,6 +185,7 @@ float f = (float) 32.3;
 float g = 32.3f;
 float h = 32.3F;
 ```
+
 41.
 ``` java
 class AddBoxing {
@@ -192,6 +200,7 @@ As we've seen earlier, if the only version of the go() method was one that took 
 ```
 long
 ```
+
 42.
 Java 5's designers decided that the most important rule should be that preexisting code should function the way it used to, so since widening capability already existed, a method that is invoked via widening shouldn't lose out to a newly created method that relies on boxing. Based on that rule, try to predict the output of the following:
 ``` java
@@ -230,6 +239,7 @@ As it turns out, the output is
 Byte, Byte
 ```
 A good way to remember this rule is to notice that the var-args method is "looser" than the other method, in that it could handle invocations with any number of byte parameters. A var-args method is more like a catch-all method, in terms of what invocations it can handle, and as we'll see in Chapter 5, it makes most sense for catch-all capabilities to be used as a last resort.
+
 43.
 Earlier versions of the exam put big emphasis on operator precedence ```(like: What’s the result of: x = y++ + ++x/z;)```. Other than a very basic knowledge
 of precedence ```(such as: * and / are higher precedence than + and -)```, you won’t need to study operator precedence, except that when using a compound operator, the expression on the right side of the = will always be evaluated first. For example, you might expect
@@ -244,6 +254,7 @@ since multiplication has higher precedence than addition. But instead, the expre
 ```
 x = x * (2 + 5);
 ```
+
 44.
 Why string is immutable ??
 
@@ -296,8 +307,6 @@ try {
 System.out.println("out of try block");
 catch(Exception ex) { }
 ```
-
-
 
 It is illegal to use a try clause without either a catch clause or a fi nally
 clause. A try clause by itself will result in a compiler error. Any catch clauses must
@@ -457,8 +466,8 @@ Descending Order
  **ref:- book *book: Kathy Sierra, pg. 589***  
  
  
- 51.
- It’s important to know some of the details of natural ordering. The
+51.
+It’s important to know some of the details of natural ordering. The
 following code will help you understand the relative positions of uppercase characters,
 lowercase characters, and spaces in a natural ordering:
 ``` java
@@ -534,7 +543,7 @@ List<Object> list = new ArrayList<JButton>(); // NO!
       
  **ref:- book *book: Kathy Sierra, pg. 605***        
  
- 55.
+55.
  void foo(List<? extends Serializable> list) // odd, but correct
  // to use "extends"
  This looks strange since you would never say this in a class declaration because
@@ -600,7 +609,7 @@ collections
  **ref:- book *book: Kathy Sierra, pg. 627***     
  
  
- 59.
+ 59.  
  public class Radio {
  public <T> Radio(T t) { } // legal constructor
 }
@@ -685,7 +694,7 @@ public static void classMethod() {
 
 **ref:- book *book: Kathy Sierra, pg. 738**
 
-65.
+65.  
 deadlock..
 
 ``` java
