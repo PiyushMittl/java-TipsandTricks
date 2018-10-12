@@ -699,26 +699,26 @@ deadlock..
 
 ``` java
  public class DeadlockRisk {
- 2. private static class Resource {
- 3. public int value;
- 4. }
- 5. private Resource resourceA = new Resource();
- 6. private Resource resourceB = new Resource();
- 7. public int read() {
- 8. synchronized(resourceA) { // May deadlock here
- 9. synchronized(resourceB) {
-10. return resourceB.value + resourceA.value;
-11. }
-12. }
-13. }
-14.
-15. public void write(int a, int b) {
-16. synchronized(resourceB) { // May deadlock here
-17. synchronized(resourceA) {
-18. resourceA.value = a;
-19. resourceB.value = b;
-20. }
-21. }
-22. }
-23. } 
+  private static class Resource {
+  public int value;
+  }
+  private Resource resourceA = new Resource();
+  private Resource resourceB = new Resource();
+  public int read() {
+  synchronized(resourceA) { // May deadlock here
+  synchronized(resourceB) {
+ return resourceB.value + resourceA.value;
+ }
+ }
+ }
+
+ public void write(int a, int b) {
+ synchronized(resourceB) { // May deadlock here
+ synchronized(resourceA) {
+ resourceA.value = a;
+ resourceB.value = b;
+ }
+ }
+ }
+ } 
 ```
