@@ -1,12 +1,14 @@
 **Colleactions**
-Q1. What is Arrays class.  
+Question 1.  
+What is Arrays class.  
   
 Answer.  
 Arrays is a utility class which implements Collections class.
 
 **Spring**
 
-2. Ways to create an Object.  
+Queation 2.  
+Ways to create an Object.  
   
 Answer.  
 **A.** Using new keyword  
@@ -60,7 +62,8 @@ MyObject object = (MyObject) inStream.readObject();
 27. Is overloading possible by changing return type.
 28. Is overriding possible by changing return type.
 29. Methods in object classe.
-30.   
+Question 30.  
+Answer:  
 ``` java
       void doStuff(int... x) { } // expects from 0 to many ints as parameters
       void doStuff2(char c, int... x) { } // expects first a char, then 0 to many ints  
