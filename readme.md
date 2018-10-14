@@ -207,12 +207,14 @@ public static void main(String a[]){
 39. does abstract class has contructor??
 Abstract classes have constructors, and those constructors are always called when a concrete subclass is instantiated.
 
-40. 
-Floating-point numbers have slightly different assignment behavior than integer types. First, you must know that every floating-point literal is implicitly a double (64 bits), not a float. So the literal 32.3, for example, is considered a double. If you try to assign a double to a float, the compiler knows you don't have enough room in a 32-bit float container to hold the precision of a 64-bit double, and it lets you know. The following code looks good, but won't compile:
+Question 40. 
+What is Floating point number and Double numbers in java and whats the relation between them.  
+Answer:  
+`Floating-point` numbers have slightly different assignment behavior than `integer` types. First, you must know that every floating-point literal is implicitly a `double (64 bits)`, not a `float`. So the literal `32.3`, for example, is considered a double. If you try to assign a double to a float, the compiler knows you don't have enough room in a `32-bit` float container to hold the precision of a `64-bit` double, and it lets you know. The following code looks good, but won't compile:  
 ```
 float f = 32.3;
 ```
-You can see that 32.3 should fit just fine into a float-sized variable, but the compiler won't allow it. In order to assign a floating-point literal to a float variable, you must either cast the value or append an f to the end of the literal. The following assignments will compile:
+You can see that `32.3` should fit just fine into a float-sized variable, but the compiler won't allow it. In order to assign a floating-point literal to a float variable, you must either cast the value or append an f to the end of the literal. The following assignments will compile:  
 ```
 float f = (float) 32.3;
 float g = 32.3f;
