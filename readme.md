@@ -11,7 +11,8 @@ Arrays is a utility class which implements Collections class.
 Answer.  
 **A.** Using new keyword  
 This is the most common way to create an object in java. Almost 99% of objects are created in this way.  
-```MyObject object = new MyObject();
+```
+MyObject object = new MyObject();
 ```
 **B.** Using `Class.forName()`  
 If we know the name of the class & if it has a public default constructor we can create an object in this way.  
