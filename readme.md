@@ -1,4 +1,9 @@
+**Colleactions**
 1. What is Arrays class.
+Arrays is a utility class which 
+
+**Spring**
+
 2. Ways to create an Object.
 3. Difference b/w "?" and Object in generics.
 4. Multiply 50 digit numbers.
