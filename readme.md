@@ -1,10 +1,13 @@
 **Colleactions**
-Q1. What is Arrays class.
-Answer. Arrays is a utility class which implements Collections class.
+Q1. What is Arrays class.  
+  
+Answer.  
+Arrays is a utility class which implements Collections class.
 
 **Spring**
 
 2. Ways to create an Object.  
+  
 Answer.  
 **A.** Using new keyword  
 This is the most common way to create an object in java. Almost 99% of objects are created in this way.  
