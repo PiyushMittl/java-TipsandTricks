@@ -5,7 +5,7 @@ What is Arrays class.
 Answer.  
 Arrays is a utility class which implements Collections class.
 
-**Spring**
+**Object**
 
 Queation 2.  
 Ways to create an Object.  
