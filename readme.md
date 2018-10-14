@@ -89,18 +89,29 @@ will it call Thread constructor.
 Thread[] threads = new Thread[5];
 ```
 Answer:  
+Remember that—despite how the code appears—the Thread constructor is not
+being invoked. We're not creating a Thread instance, but rather a single Thread
+array object. After the preceding statement, there are still no actual Thread objects!  
+
+Remember, arrays must always be given a size at the time they are constructed.  
+The JVM needs the size to allocate the appropriate space on the heap for the new
+array object. It is never legal, for example, to do the following:  
+```
+int[] carList = new int[]; // Will not compile; needs a size
+```
   
 **ref:- *book: Kathy Sierra, pg. 221***  
   
   
-33. 
+Question 33.   
 ``` java
 Thread[] threads = new Thread[5]; // works fine
 Thread[] threads = new Thread[]; // Will not compile; needs a size
 int[][] myArray = new int[3][]; // works fine, how its working fine when there is no column size given ??
 ```
 **ref:- book *book: Kathy Sierra, pg. 223***  
-34.
+
+Question 34.  
 ``` java
 int[] weightList = new int[5];
 byte b = 4;
@@ -122,7 +133,7 @@ splats = letters; // NOT OK, letters refers to a char array
 ```
 **ref:- book *book: Kathy Sierra, pg. 232***  
 
-35.
+Question 35.  
 ``` java
 Integer y = 567; // make a wrapper
 Integer x = y; // assign a second ref
@@ -143,7 +154,7 @@ Which produces the output:
  **ref:- book *book: Kathy Sierra, pg. 245***  
  
  
- 36.
+ Question 36.  
  We just used ```==``` to do a little exploration of wrappers. Let's take a more thorough
 look at how wrappers work with ```==```, ```!=```, and ```equals()```. We'll talk a lot more about
 the ```equals()``` method in later chapters. For now all we have to know is that the
