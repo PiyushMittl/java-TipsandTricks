@@ -781,7 +781,6 @@ deadlock..
  resourceA.value = a;
  resourceB.value = b;
  }
- }
- }
- } 
+
+Question :
 ```
