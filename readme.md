@@ -806,4 +806,13 @@ Answer:
 hello
 ```
 
+Question 67.
+
+public final int x = 100;
+public final DemoClass dc=new DemoClass();
+dc.setXxxx(); //will it work ??
+
+
+
+
 
