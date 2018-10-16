@@ -784,3 +784,26 @@ deadlock..
 
 Question :
 ```
+
+Question 66.
+``` java
+public class DemoClass{
+
+public static DemoStatic(){
+System.out.println("hello");
+}
+
+public static void main(String s[]){
+ DemoClass dc=null;
+ dc.DemoStatic();
+}
+}
+```
+what would be the output.
+
+Answer:
+```
+hello
+```
+
+
