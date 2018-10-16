@@ -812,7 +812,12 @@ public final int x = 100;
 public final DemoClass dc=new DemoClass();
 dc.setXxxx(); //will it work ??
 
+Answer:
+yes we can call setters of any final class.
+but we can not reassign the reference of another creatd object.
 
-
+public final DemoClass dc=new DemoClass();
+dc.setXxxx(); //yes
+dc= new DenoClass();//won work because we can not reassign new reference to final object
 
 
