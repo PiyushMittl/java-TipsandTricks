@@ -821,3 +821,9 @@ dc.setXxxx(); //yes
 dc= new DenoClass();//won work because we can not reassign new reference to final object
 
 
+Question 68.
+if you are facing some issue in the connectivity with your database. how would you diagnose ??
+
+Answer:
+telnet and ping
+
