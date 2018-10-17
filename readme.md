@@ -827,3 +827,8 @@ if you are facing some issue in the connectivity with your database. how would y
 Answer:
 telnet and ping
 
+Question 69.
+Single server vs Sharding vs partitioning vs clustring vs replication
+
+Answer:
+
