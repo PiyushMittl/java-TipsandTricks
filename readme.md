@@ -828,7 +828,7 @@ Answer:
 telnet and ping
 
 Question 69.
-Single server vs Sharding vs partitioning vs clustring vs replication
+Single server vs Sharding vs partitioning vs clustring vs replication vs (redis)sentinel
 
 Answer:
 
