@@ -47,7 +47,33 @@ MyObject object = (MyObject) inStream.readObject();
 12. Example/program for RuntimeException and Exception.
 13. Singleton design pattern (sample code).
 14. How to create immutable class.
-15. Can we override static metohds.
+Question 15.  
+Can we overload and override static metohds.
+Answer:  
+
+Static methods can not be overridden because there is nothing to override, as they would be two different methods. For example
+``` java
+static class Class1 {
+    public static int Method1(){
+          return 0;
+    }
+}
+static class Class2 extends Class1 {
+    public static int Method1(){
+          return 1;
+    }
+
+}
+public static class Main {
+    public static void main(String[] args){
+          //Must explicitly chose Method1 from Class1 or Class2
+          Class1.Method1();
+          Class2.Method1();
+    }
+}
+```
+And yes static methods can be overloaded just like any other method.
+
 16. IS-A and HAS-A relationship with aggregation and composition example.
 18. (int… values) is passed as parameter to a method when you are not aware of the number of input parameter but know that the type of parameter(
 19. Why array index starts with 0.
