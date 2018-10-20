@@ -919,3 +919,25 @@ public final void notifyAll()
 ```
 **ref:- book *book: Kathy Sierra, pg. 718, chapter 9:Threads**
 
+Question 74:
+what is The Thread Scheduler
+Answer:
+The thread scheduler is the part of the JVM (although most JVMs map Java threads
+directly to native threads on the underlying OS) that decides which thread should
+run at any given moment, and also takes threads out of the run state. Assuming a
+single processor machine, only one thread can actually run at a time. Only one stack
+can ever be executing at one time. And it's the thread scheduler that decides which
+thread—of all that are eligible—will actually run. When we say eligible, we really
+mean in the runnable state.
+Any thread in the runnable state can be chosen by the scheduler to be the one and
+only running thread. If a thread is not in a runnable state, then it cannot be chosen to be
+the currently running thread. And just so we're clear about how little is guaranteed here:
+The order in which runnable threads are chosen to run is not guaranteed.
+Although queue behavior is typical, it isn't guaranteed. Queue behavior means
+that when a thread has finished with its "turn," it moves to the end of the line of the
+runnable pool and waits until it eventually gets to the front of the line, where it can
+be chosen again. In fact, we call it a runnable pool, rather than a runnable queue, to
+help reinforce the fact that threads aren't all lined up in some guaranteed order.
+
+**ref:- book *book: Kathy Sierra, pg. 717, chapter 9:Threads**
+
