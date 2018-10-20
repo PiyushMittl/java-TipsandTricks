@@ -917,3 +917,5 @@ public final void wait() throws InterruptedException
 public final void notify()
 public final void notifyAll()
 ```
+**ref:- book *book: Kathy Sierra, pg. 718, chapter 9:Threads**
+
