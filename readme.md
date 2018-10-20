@@ -888,3 +888,32 @@ t3 joins t2 means t3 will start execution once t2 fininshes its work.
 
 excution sequence t1->t2->t3
 
+
+Question 73:
+Thread related methods in Object and Thread class.
+Answer.
+Methods from the java.lang.Thread Class  
+
+Some of the methods that can
+help us influence thread scheduling are as follows:
+```
+public static void sleep(long millis) throws InterruptedException
+public static void yield()
+public final void join() throws InterruptedException
+public final void setPriority(int newPriority)
+```
+Note that both sleep() and join() have overloaded versions not shown here.
+
+Expect to see exam questions that look for your understanding of
+what is and is not guaranteed! You must be able to look at thread code and determine
+whether the output is guaranteed to run in a particular way or is indeterminate.
+
+
+Methods from the java.lang.Object Class  
+Every class in Java inherits the
+following three thread-related methods:
+```
+public final void wait() throws InterruptedException
+public final void notify()
+public final void notifyAll()
+```
