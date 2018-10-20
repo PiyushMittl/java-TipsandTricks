@@ -48,7 +48,7 @@ MyObject object = (MyObject) inStream.readObject();
 13. Singleton design pattern (sample code).
 14. How to create immutable class.
 Question 15.  
-Can we overload and override static metohds.
+Can we overload and override static metohds.  
 Answer:  
 
 Static methods can not be overridden because there is nothing to override, as they would be two different methods. For example
@@ -72,7 +72,7 @@ public static class Main {
     }
 }
 ```
-And yes static methods can be overloaded just like any other method.
+And yes static methods can be overloaded just like any other method.  
 
 16. IS-A and HAS-A relationship with aggregation and composition example.
 18. (int… values) is passed as parameter to a method when you are not aware of the number of input parameter but know that the type of parameter(
@@ -860,3 +860,10 @@ Single server vs Sharding vs partitioning vs clustring vs replication vs (redis)
 
 Answer:
 
+Question 70.
+Types of thread.
+Answer:
+1. User Thread:  
+User threads are threads which are created by the application or user. They are high priority threads. JVM (Java Virtual Machine) will not exit until all user threads finish their execution. JVM wait for these threads to finish their task. These threads are foreground threads.  
+2.Daemon Thread :  
+Daemon threads are threads which are mostly created by the JVM. These threads always run in background. These threads are used to perform some background tasks like garbage collection and house-keeping tasks. These threads are less priority threads. JVM will not wait for these threads to finish their execution. JVM will exit as soon as all user threads finish their execution. JVM doesn’t wait for daemon threads to finish their task.  
