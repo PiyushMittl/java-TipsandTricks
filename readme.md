@@ -879,4 +879,12 @@ when we join t2 with t1, t2 will not starts its execution until t1 finishes its 
 marriage ceremony example
 like we print cards first then we pack the cards in envelope then we distribute the cards.
 
+thread t1 is running.
+t2->t1 (t2 joins t1)
+t3->t2 (t3 joins t2)
+
+t2 joins t1 means t2 will start execution once t1 fininshes its work.
+t3 joins t2 means t3 will start execution once t2 fininshes its work.
+
+excution sequence t1->t2->t3
 
