@@ -966,3 +966,5 @@ leave the running state:
 ■ The thread scheduler can decide to move the current thread from running
  to runnable in order to give another thread a chance to run. No reason is
  needed—the thread scheduler can trade threads in and out whenever it likes.
+ 
+**ref:- book *book: Kathy Sierra, pg. 728, chapter 9:Threads**
