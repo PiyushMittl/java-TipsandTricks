@@ -941,3 +941,28 @@ help reinforce the fact that threads aren't all lined up in some guaranteed orde
 
 **ref:- book *book: Kathy Sierra, pg. 717, chapter 9:Threads**
 
+Question 75:
+What is Sleep,Yield,Wait,  method.
+Answer:
+
+So far we've looked at three ways a running thread could leave the running state:
+■ A call to sleep() Guaranteed to cause the current thread to stop executing
+for at least the specified sleep duration (although it might be interrupted
+before its specified time).
+■ A call to yield() Not guaranteed to do much of anything, although
+typically it will cause the currently running thread to move back to runnable
+so that a thread of the same priority can have a chance.
+■ A call to join() Guaranteed to cause the current thread to stop executing
+until the thread it joins with (in other words, the thread it calls join()
+on) completes, or if the thread it's trying to join with is not alive, however,
+the current thread won't need to back out.
+Besides those three, we also have the following scenarios in which a thread might
+leave the running state:
+■ The thread's run() method completes. Duh.
+■ A call to wait() on an object (we don't call wait() on a thread, as we'll
+ see in a moment).
+■ A thread can't acquire the lock on the object whose method code it's
+ attempting to run.
+■ The thread scheduler can decide to move the current thread from running
+ to runnable in order to give another thread a chance to run. No reason is
+ needed—the thread scheduler can trade threads in and out whenever it likes.
