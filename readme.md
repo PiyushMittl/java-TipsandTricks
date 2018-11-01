@@ -985,3 +985,112 @@ what is fork and join in threading.
 Question 78:
 what is class level and object level lock in java.
 
+``` java
+
+// Java program to illustrate 
+// Object lock concept 
+class Geek implements Runnable { 
+    public void run() 
+    { 
+        Lock(); 
+    } 
+    public void Lock() 
+    { 
+        System.out.println(Thread.currentThread().getName()); 
+        synchronized(this) 
+        { 
+            System.out.println("in block "
+                + Thread.currentThread().getName()); 
+            System.out.println("in block " +  
+                Thread.currentThread().getName() + " end"); 
+        } 
+    } 
+  
+    public static void main(String[] args) 
+    { 
+        Geek g = new Geek(); 
+        Thread t1 = new Thread(g); 
+        Thread t2 = new Thread(g); 
+        Geek g1 = new Geek(); 
+        Thread t3 = new Thread(g1); 
+        t1.setName("t1"); 
+        t2.setName("t2"); 
+        t3.setName("t3"); 
+        t1.start(); 
+        t2.start(); 
+        t3.start(); 
+    } 
+} 
+```
+
+
+Output:
+```
+t1
+in block t1
+in block t1 end
+t2
+in block t2
+in block t2 end
+t3
+in block t3
+in block t3 end
+```
+
+
+``` java
+
+in block t3
+in block t3
+in block t3// Java program to illustrate class level lock 
+class Geek implements Runnable { 
+    public void run() 
+    { 
+        Lock(); 
+    } 
+  
+    public void Lock() 
+    { 
+        System.out.println(Thread.currentThread().getName()); 
+        synchronized(Geek.class) 
+        { 
+            System.out.println("in block " 
+                + Thread.currentThread().getName()); 
+            System.out.println("in block " 
+                + Thread.currentThread().getName() + " end"); 
+        } 
+    } 
+  
+    public static void main(String[] args) 
+    { 
+        Geek g1 = new Geek(); 
+        Thread t1 = new Thread(g1); 
+        Thread t2 = new Thread(g1); 
+        Geek g2 = new Geek(); 
+        Thread t3 = new Thread(g2); 
+        t1.setName("t1"); 
+        t2.setName("t2"); 
+        t3.setName("t3"); 
+        t1.start(); 
+        t2.start(); 
+        t3.start(); 
+    } 
+} 
+```
+
+Output:
+```
+t1
+in block t1
+in block t1 end
+t2
+in block t2
+in block t2 end
+t3
+in block t3
+in block t3 end
+```
+
+reference:
+https://www.geeksforgeeks.org/object-level-class-level-lock-java/
+
