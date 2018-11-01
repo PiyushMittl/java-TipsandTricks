@@ -1094,3 +1094,10 @@ in block t3 end
 reference:
 https://www.geeksforgeeks.org/object-level-class-level-lock-java/
 
+
+Question 79:
+what is Callable and Runnable.
+
+Question 80:
+what is executor framework.
+
