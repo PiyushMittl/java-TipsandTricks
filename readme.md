@@ -1101,3 +1101,5 @@ what is Callable and Runnable.
 Question 80:
 what is executor framework.
 
+Answer:
+Using an Executor it is possible to remove the manual creation of threads to execute a command.
