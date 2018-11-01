@@ -1103,3 +1103,160 @@ what is executor framework.
 
 Answer:
 Using an Executor it is possible to remove the manual creation of threads to execute a command.
+
+
+** Executor framework with Runnable and Thread pool size **
+
+``` java
+package com.journaldev.threadpool;
+
+public class WorkerThread implements Runnable {
+  
+    private String command;
+    
+    public WorkerThread(String s){
+        this.command=s;
+    }
+
+    @Override
+    public void run() {
+        System.out.println(Thread.currentThread().getName()+" Start. Command = "+command);
+        processCommand();
+        System.out.println(Thread.currentThread().getName()+" End.");
+    }
+
+    private void processCommand() {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public String toString(){
+        return this.command;
+    }
+}
+```
+
+``` java
+package com.journaldev.threadpool;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class SimpleThreadPool {
+
+    public static void main(String[] args) {
+        ExecutorService executor = Executors.newFixedThreadPool(5);
+        for (int i = 0; i < 10; i++) {
+            Runnable worker = new WorkerThread("" + i);
+            executor.execute(worker);
+          }
+        executor.shutdown();
+        while (!executor.isTerminated()) {
+        }
+        System.out.println("Finished all threads");
+    }
+}
+```
+
+output:
+```
+pool-1-thread-2 Start. Command = 1
+pool-1-thread-4 Start. Command = 3
+pool-1-thread-1 Start. Command = 0
+pool-1-thread-3 Start. Command = 2
+pool-1-thread-5 Start. Command = 4
+pool-1-thread-4 End.
+pool-1-thread-5 End.
+pool-1-thread-1 End.
+pool-1-thread-3 End.
+pool-1-thread-3 Start. Command = 8
+pool-1-thread-2 End.
+pool-1-thread-2 Start. Command = 9
+pool-1-thread-1 Start. Command = 7
+pool-1-thread-5 Start. Command = 6
+pool-1-thread-4 Start. Command = 5
+pool-1-thread-2 End.
+pool-1-thread-4 End.
+pool-1-thread-3 End.
+pool-1-thread-5 End.
+pool-1-thread-1 End.
+Finished all threads
+```
+
+reference:
+https://www.journaldev.com/1069/threadpoolexecutor-java-thread-pool-example-executorservice
+
+
+** Executor framework with Callable **
+``` java
+
+package com.journaldev.threads;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+public class MyCallable implements Callable<String> {
+
+    @Override
+    public String call() throws Exception {
+        Thread.sleep(1000);
+        //return the thread name executing this callable task
+        return Thread.currentThread().getName();
+    }
+    
+    public static void main(String args[]){
+        //Get ExecutorService from Executors utility class, thread pool size is 10
+        ExecutorService executor = Executors.newFixedThreadPool(10);
+        //create a list to hold the Future object associated with Callable
+        List<Future<String>> list = new ArrayList<Future<String>>();
+        //Create MyCallable instance
+        Callable<String> callable = new MyCallable();
+        for(int i=0; i< 100; i++){
+            //submit Callable tasks to be executed by thread pool
+            Future<String> future = executor.submit(callable);
+            //add Future to the list, we can get return value using Future
+            list.add(future);
+        }
+        for(Future<String> fut : list){
+            try {
+                //print the return value of Future, notice the output delay in console
+                // because Future.get() waits for task to get completed
+                System.out.println(new Date()+ "::"+fut.get());
+            } catch (InterruptedException | ExecutionException e) {
+                e.printStackTrace();
+            }
+        }
+        //shut down the executor service now
+        executor.shutdown();
+    }
+
+}
+```
+
+```
+
+Mon Dec 31 20:40:15 PST 2012::pool-1-thread-1
+Mon Dec 31 20:40:16 PST 2012::pool-1-thread-2
+Mon Dec 31 20:40:16 PST 2012::pool-1-thread-3
+Mon Dec 31 20:40:16 PST 2012::pool-1-thread-4
+Mon Dec 31 20:40:16 PST 2012::pool-1-thread-5
+Mon Dec 31 20:40:16 PST 2012::pool-1-thread-6
+Mon Dec 31 20:40:16 PST 2012::pool-1-thread-7
+Mon Dec 31 20:40:16 PST 2012::pool-1-thread-8
+Mon Dec 31 20:40:16 PST 2012::pool-1-thread-9
+Mon Dec 31 20:40:16 PST 2012::pool-1-thread-10
+Mon Dec 31 20:40:16 PST 2012::pool-1-thread-2
+...
+```
+
+
