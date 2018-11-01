@@ -1258,5 +1258,21 @@ Mon Dec 31 20:40:16 PST 2012::pool-1-thread-10
 Mon Dec 31 20:40:16 PST 2012::pool-1-thread-2
 ...
 ```
+reference:
+https://www.journaldev.com/1090/java-callable-future-example
 
+
+other reference:
+https://www.baeldung.com/java-runnable-callable
+
+
+Question 81:
+difference between Callabale and Runnable.
+
+Answer:
+1. Callable is introduced in JDK 5.0 but Runnable is introduced in JDK 1.0
+2. Callable has call() method but Runnable has run() method.
+3. Callable has call method which returns value but Runnable has run method which doesn't return any value.
+4. call method can throw checked exception but run method can't throw checked exception.
+5. Callable use submit() method to put in task queue but Runnable use execute() method to put in the task queue.
 
