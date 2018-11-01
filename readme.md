@@ -979,3 +979,9 @@ Question 76:
 
 **Durability:** Once a transaction completes successfully, the changes it has made into the database should be permanent even if there is a system failure. The recovery-management component of database systems ensures the durability of transaction.
 
+Question 77:
+what is fork and join in threading.
+
+Question 78:
+what is class level and object level lock in java.
+
