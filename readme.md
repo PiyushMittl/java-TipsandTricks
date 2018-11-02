@@ -1394,3 +1394,47 @@ Thread 2: Holding lock 1...
 Thread 2: Waiting for lock 2...
 Thread 2: Holding lock 1 & 2...
 ```
+
+Question 83:
+What is producer & consumer and blocking queue.
+
+Answer:
+
+``` java
+public class BlockingQueue<T> {
+ 
+    private List<T> queue = new LinkedList<T>();
+ 
+    private int limit = 10;
+ 
+    public synchronized void put(T item) {
+        while (queue.size() == limit) {
+            try {
+                wait();
+            } catch (InterruptedException e) {}
+        }
+        if (queue.isEmpty()) {
+            notifyAll();
+        }
+        queue.add(item);
+    }
+ 
+    public synchronized T take() throws InterruptedException {
+        while (queue.isEmpty()) {
+            try {
+                wait();
+            } catch (InterruptedException e) {}
+        }
+        if (queue.size() == limit) {
+            notifyAll();
+        }
+        return queue.remove(0);
+    }
+     
+}
+```
+
+reference:
+https://www.baeldung.com/java-concurrency-interview-questions
+
+
