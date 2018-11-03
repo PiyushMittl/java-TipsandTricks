@@ -1,6 +1,6 @@
 
 
-***Question 1.***  
+***Question 1:***  
 Types of thread.  
 ***Answer:***  
 **1. User Thread:**  
@@ -8,13 +8,13 @@ User threads are threads which are created by the application or user. They are 
 **2. Daemon Thread :**  
 Daemon threads are threads which are mostly created by the JVM. These threads always run in background. These threads are used to perform some background tasks like garbage collection and house-keeping tasks. These threads are less priority threads. JVM will not wait for these threads to finish their execution. JVM will exit as soon as all user threads finish their execution. JVM doesn’t wait for daemon threads to finish their task.  
 
-***Question 2.***  
+***Question 2:***  
 What is daemon thread.  
 ***Answer:***  
 
-***Question 3.***    
+***Question 3:***    
 what is join in thread.  
-***Answer.***  
+***Answer:***  
 when we join t2 with t1, t2 will not starts its execution until t1 finishes its work.  
 marriage ceremony example
 like we print cards first then we pack the cards in envelope then we distribute the cards.
@@ -29,9 +29,9 @@ t3 joins t2 means t3 will start execution once t2 fininshes its work.
 excution sequence t1->t2->t3
 
 
-Question 4:  
+***Question 4:**  
 Thread related methods in Object and Thread class.  
-Answer.  
+**Answer:***  
 Methods from the java.lang.Thread Class  
 
 Some of the methods that can
@@ -59,9 +59,9 @@ public final void notifyAll()
 ```
 **ref:- book *book: Kathy Sierra, pg. 718, chapter 9:Threads**
 
-Question 5:
+***Question 5:***
 what is The Thread Scheduler
-Answer:
+***Answer:***
 The thread scheduler is the part of the JVM (although most JVMs map Java threads
 directly to native threads on the underlying OS) that decides which thread should
 run at any given moment, and also takes threads out of the run state. Assuming a
@@ -81,9 +81,9 @@ help reinforce the fact that threads aren't all lined up in some guaranteed orde
 
 **ref:- book *book: Kathy Sierra, pg. 717, chapter 9:Threads**
 
-Question 6:
+***Question 6:***
 What is Sleep,Yield,Wait,  method.
-Answer:
+***Answer:***
 
 So far we've looked at three ways a running thread could leave the running state:
 ■ A call to sleep() Guaranteed to cause the current thread to stop executing
@@ -110,7 +110,9 @@ leave the running state:
 **ref:- book *book: Kathy Sierra, pg. 728, chapter 9:Threads**
 
 
-Question 7:
+***Question 7:***
+what is ACID property.
+***Answer:***
 **Atomicity:** This property ensures that either all the operations of a transaction reflect in database or none. Let’s take an example of banking system to understand this: Suppose Account A has a balance of 400$ & B has 700$. Account A is transferring 100$ to Account B. This is a transaction that has two operations a) Debiting 100$ from A’s balance b) Creating 100$ to B’s balance. Let’s say first operation passed successfully while second failed, in this case A’s balance would be 300$ while B would be having 700$ instead of 800$. This is unacceptable in a banking system. Either the transaction should fail without executing any of the operation or it should process both the operations. The Atomicity property ensures that.  
 
 **Consistency:** To preserve the consistency of database, the execution of transaction should take place in isolation (that means no other transaction should run concurrently when there is a transaction already running). For example account A is having a balance of 400$ and it is transferring 100$ to account B & C both. So we have two transactions here. Let’s say these transactions run concurrently and both the transactions read 400$ balance, in that case the final balance of A would be 300$ instead of 200$. This is wrong. If the transaction were to run in isolation then the second transaction would have read the correct balance 300$ (before debiting 100$) once the first transaction went successful.  
@@ -119,12 +121,13 @@ Question 7:
 
 **Durability:** Once a transaction completes successfully, the changes it has made into the database should be permanent even if there is a system failure. The recovery-management component of database systems ensures the durability of transaction.
 
-Question 8:
+***Question 8:***
 what is fork and join in threading.
+***Answer:***
 
-Question 9:
+***Question 9:***
 what is class level and object level lock in java.
-
+***Answer:***
 ``` java
 
 // Java program to illustrate 
@@ -235,13 +238,13 @@ reference:
 https://www.geeksforgeeks.org/object-level-class-level-lock-java/
 
 
-Question 10:
+***Question 10:***
 what is Callable and Runnable.
 
-Question 11:
+***Question 11:***
 what is executor framework.
 
-Answer:
+***Answer:***
 Using an Executor it is possible to remove the manual creation of threads to execute a command.
 
 
@@ -406,20 +409,20 @@ other reference:
 https://www.baeldung.com/java-runnable-callable
 
 
-Question 12:
+***Question 12:***
 difference between Callabale and Runnable.
 
-Answer:
+***Answer:***
 1. Callable is introduced in JDK 5.0 but Runnable is introduced in JDK 1.0
 2. Callable has call() method but Runnable has run() method.
 3. Callable has call method which returns value but Runnable has run method which doesn't return any value.
 4. call method can throw checked exception but run method can't throw checked exception.
 5. Callable use submit() method to put in task queue but Runnable use execute() method to put in the task queue.
 
-Question 13:
+***Question 13:***
 how to crate and prevent deadlock.
 
-Answer:
+***Answer:***
 
 **Creating dead lock**
 ``` java
@@ -535,10 +538,10 @@ Thread 2: Waiting for lock 2...
 Thread 2: Holding lock 1 & 2...
 ```
 
-Question 14:
+***Question 14:***
 What is producer & consumer and blocking queue.
 
-Answer:
+***Answer:***
 
 ``` java
 public class BlockingQueue<T> {
