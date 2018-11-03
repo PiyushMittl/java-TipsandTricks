@@ -1,18 +1,18 @@
 
 
-Question 1.
-Types of thread.
-Answer:
+Question 1.  
+Types of thread.  
+Answer:  
 1. User Thread:  
 User threads are threads which are created by the application or user. They are high priority threads. JVM (Java Virtual Machine) will not exit until all user threads finish their execution. JVM wait for these threads to finish their task. These threads are foreground threads.  
 2.Daemon Thread :  
 Daemon threads are threads which are mostly created by the JVM. These threads always run in background. These threads are used to perform some background tasks like garbage collection and house-keeping tasks. These threads are less priority threads. JVM will not wait for these threads to finish their execution. JVM will exit as soon as all user threads finish their execution. JVM doesn’t wait for daemon threads to finish their task.  
 
-Question 2.
-What is daemon thread.
-Answer:
+Question 2.  
+What is daemon thread.  
+Answer:  
 
-Question 3.  
+Question 3.    
 what is join in thread.  
 Answer.  
 when we join t2 with t1, t2 will not starts its execution until t1 finishes its work.  
@@ -29,9 +29,9 @@ t3 joins t2 means t3 will start execution once t2 fininshes its work.
 excution sequence t1->t2->t3
 
 
-Question 4:
-Thread related methods in Object and Thread class.
-Answer.
+Question 4:  
+Thread related methods in Object and Thread class.  
+Answer.  
 Methods from the java.lang.Thread Class  
 
 Some of the methods that can
