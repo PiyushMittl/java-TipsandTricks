@@ -1,9 +1,9 @@
-Question 1:  
+***Question 1:***  
 differenece between @Entity and @Table  
-Answer:  
+***Answer:***  
 
-Question 2:
+***Question 2:***   
 Types of cache in Hibernate.  
-Answer:  
+***Answer:***  
 
 
