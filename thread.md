@@ -539,7 +539,7 @@ Thread 2: Holding lock 1 & 2...
 ```
 
 ***Question 14:***
-What is producer & consumer and blocking queue.
+What is producer & consumer or blocking queue.
 
 ***Answer:***
 
