@@ -580,4 +580,9 @@ public class BlockingQueue<T> {
 reference:
 https://www.baeldung.com/java-concurrency-interview-questions
 
+***Question 15:***  
+what is JMM (Java Memomry Model).  
+***Answer:***  
+todo: please read more articals
+https://www.journaldev.com/2856/java-jvm-memory-model-memory-management-in-java
 
