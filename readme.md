@@ -876,6 +876,27 @@ Redis sharding can be implemented in several ways:
 *Query routing:* The query is sent to a random instance, which then takes on the responsibility of redirecting the client to the proper Redis instance.  
 
 ***clustring***  
+Database clustering is a bit of an ambiguous term, some vendors consider a cluster having two or more servers share the same storage, some others call a cluster a set of replicated servers.  
+
+Replication defines the method by which a set of servers remain synchronized without having to share the storage being able to be geographically disperse, there are two main ways of going about it:  
+
+master-master (or multi-master) replication: Any server can update the database. It is usually taken care of by a different module within the database (or a whole different software running on top of them in some cases).  
+
+Downside is that it is very hard to do well, and some systems lose ACID properties when in this mode of replication.  
+
+Upside is that it is flexible and you can support the failure of any server while still having the database updated.  
+
+master-slave replication: There is only a single copy of authoritative data, which is the pushed to the slave servers.  
+ 
+Downside is that it is less fault tolerant, if the master dies, there are no further changes in the slaves.  
+
+Upside is that it is easier to do than multi-master and it usually preserve ACID properties.  
+
+Load balancing is a different concept, it consists distributing the queries sent to those servers so the load is as evenly distributed as possible. It is usually done at the application layer (or with a connection pool). The only direct relation between replication and load balancing is that you need some replication to be able to load balance, else you'd have a single server.  
+reference:  
+http://www.ndimensionz.com/kb/what-is-database-clustering-introduction-and-brief-explanation/
+
+
 
 ***Question 70:***  
 what is master and slave replica-set.  
