@@ -586,3 +586,7 @@ what is JMM (Java Memomry Model).
 todo: please read more articals
 https://www.journaldev.com/2856/java-jvm-memory-model-memory-management-in-java
 
+***Question 16:***  
+What is treadlocal.
+***Answer:***  
+
