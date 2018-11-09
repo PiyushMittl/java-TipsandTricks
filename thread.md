@@ -589,4 +589,7 @@ https://www.journaldev.com/2856/java-jvm-memory-model-memory-management-in-java
 ***Question 16:***  
 What is treadlocal.
 ***Answer:***  
+The ThreadLocal class in Java enables you to create variables that can only be read and written by the same thread. Thus, even if two threads are executing the same code, and the code has a reference to a ThreadLocal variable, then the two threads cannot see each other's ThreadLocal variables.
 
+reference:
+https://www.geeksforgeeks.org/java-lang-threadlocal-class-java/
