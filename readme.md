@@ -855,7 +855,11 @@ if you are facing some issue in the connectivity with your database. how would y
 Answer:
 telnet and ping
 
-Question 69.
-Single server vs Sharding vs partitioning vs clustring vs replication vs (redis)sentinel
+***Question 69:***  
+Single server vs Sharding vs partitioning vs clustring vs replication vs (redis)sentinel.  
+***Answer:***  
+***Replication:*** The strategy of duplicating data across more than one node. There are many varieties, simplest being Master-Slave(s) or Leader-Follower and can either be synchronous or asynchronous.  
+1. To have high availability of data. Even if a node goes down, the data is still available from other nodes in the cluster.  
+2. Separate nodes for write and read. Data is replicated from the write cluster to all read clusters. This ensures that under high transaction volumes, the read operations are not getting delayed by write operations and vice-versa.  
+3. Multiple nodes for read operations and for write operations. This ensures that the read and the write operations are load balanced across multiple nodes resulting in higher scalability and data throughput.  
 
-Answer:
