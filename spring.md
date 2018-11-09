@@ -16,6 +16,9 @@ https://stackoverflow.com/questions/3485347/circular-dependency-in-spring
 https://www.baeldung.com/circular-dependencies-in-spring
 
 
+***Question 4:***  
+what is proxy in Spring.  
+***Answer:***  
 
 
 
