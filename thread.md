@@ -122,11 +122,11 @@ what is ACID property.
 **Durability:** Once a transaction completes successfully, the changes it has made into the database should be permanent even if there is a system failure. The recovery-management component of database systems ensures the durability of transaction.  
 
 ***Question 8:***
-what is fork and join in threading.
-***Answer:***
+what is fork and join in threading.  
+***Answer:***  
 
-***Question 9:***
-what is class level and object level lock in java.
+***Question 9:***  
+what is class level and object level lock in java.  
 ***Answer:***
 ``` java
 
