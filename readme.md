@@ -878,5 +878,5 @@ Redis sharding can be implemented in several ways:
 ***clustring***  
 
 ***Question 70:***  
-Single server vs Sharding vs partitioning vs clustring vs replication vs (redis)sentinel.  
+what is master and slave replica-set.  
 ***Answer:***  
