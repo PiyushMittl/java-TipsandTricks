@@ -856,10 +856,27 @@ Answer:
 telnet and ping
 
 ***Question 69:***  
-Single server vs Sharding vs partitioning vs clustring vs replication vs (redis)sentinel.  
+Single server vs Sharding/partitioning vs clustring vs replication vs (redis)sentinel.  
 ***Answer:***  
-***Replication:*** The strategy of duplicating data across more than one node. There are many varieties, simplest being Master-Slave(s) or Leader-Follower and can either be synchronous or asynchronous.  
+  
+***Replication:***  
+The strategy of duplicating data across more than one node. There are many varieties, simplest being Master-Slave(s) or Leader-Follower and can either be synchronous or asynchronous.  
 1. To have high availability of data. Even if a node goes down, the data is still available from other nodes in the cluster.  
 2. Separate nodes for write and read. Data is replicated from the write cluster to all read clusters. This ensures that under high transaction volumes, the read operations are not getting delayed by write operations and vice-versa.  
 3. Multiple nodes for read operations and for write operations. This ensures that the read and the write operations are load balanced across multiple nodes resulting in higher scalability and data throughput.  
 
+***Sharding/Partitioning:***    
+Sharding, also often called partitioning, involves splitting data up based on keys. This increases performance because it reduces the hit on each of the individual resources, allowing them to share the burden rather than having it all in one place.  
+For example, you can use a hash function on your Redis keys to turn them into numbers. Then, if you want two shards, you can send all the even-numbered keys to one instance while placing all of the odd-numbered keys to the second instance. This could be done using other algorithms for different numbers of shards.  
+
+Redis sharding can be implemented in several ways:  
+
+*Client side partitioning:* Clients select the proper Redis instance to read or write a particular key.  
+*Proxy-assisted partitioning:* A proxy is used to handle requests and send the requests to the proper Redis instance.  
+*Query routing:* The query is sent to a random instance, which then takes on the responsibility of redirecting the client to the proper Redis instance.  
+
+***clustring***  
+
+***Question 70:***  
+Single server vs Sharding vs partitioning vs clustring vs replication vs (redis)sentinel.  
+***Answer:***  
