@@ -42,6 +42,7 @@ MyObject object = (MyObject) inStream.readObject();
 7. what is final,finally and finalize.
 8. thread implementation (Thread class and Runnable interface).
 9. What is class loader. Types of class loader.
+BSE
 10. Can we have try without catch (yes).
 11. Base class of Exception.
 12. Example/program for RuntimeException and Exception.
