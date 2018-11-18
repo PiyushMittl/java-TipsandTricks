@@ -901,3 +901,27 @@ http://www.ndimensionz.com/kb/what-is-database-clustering-introduction-and-brief
 ***Question 70:***  
 what is master and slave replica-set.  
 ***Answer:***  
+
+
+***Question 71:***  
+
+public static void main(String [ ] args) {
+     try{
+         System.out.println("1");
+         method();
+     }
+     catch(IOException e) {
+         System.out.println("4");
+     }
+}
+
+public static void method() throws IOException {
+     try {
+         System.out.println("2");
+         throw new IOException();
+     }
+     catch(IOException e) {
+         System.out.println("3");
+     }
+ }
+
