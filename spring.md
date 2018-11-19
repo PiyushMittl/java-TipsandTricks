@@ -19,7 +19,12 @@ https://www.baeldung.com/circular-dependencies-in-spring
 ***Question 4:***  
 what is proxy in Spring.  
 ***Answer:***  
+spring
 
+
+***Question 5:***  
+Types of bean scopes in Spring.  
+***Answer:***  
 
 
 
