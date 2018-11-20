@@ -597,3 +597,39 @@ https://www.geeksforgeeks.org/java-lang-threadlocal-class-java/
 ***Question 17:***  
 What is AtomicInteger and AtomicLong class.  
 ***Answer:***  
+
+
+***Question 18:***  
+Thread lifecycle
+***Answer:***  
+
+**Start:**  
+when we create an object of thead.  
+ex.  
+``` java
+class SampleThread implements Runnable{
+public static void  main(String a[]){
+Thread t = new Thread(new SampleThead()); // here initializing thread object means now its in start state
+t.start();
+}
+}
+```
+
+**Runanble:**  
+``` java
+class SampleThread implements Runnable{
+public static void  main(String a[]){
+Thread t = new Thread(new SampleThead()); 
+t.start(); // here the thread is in runnable state however thread may be not in running state
+}
+}
+```
+
+**Running:**  
+when thread gets cpu allocation and start its task. its in running state.  
+
+**Waiting:**  
+when a threat send back to Runnable state called waiting sate.  
+
+**End/Dead:**  
+when thread completes its execution. it becomes dead  
