@@ -772,100 +772,30 @@ between class names, type parameter placeholders, and variable identifi ers.
       
 **ref:- book *book: Kathy Sierra, pg. 629***     
       
-61.
-Thread lifecycle
-
-**Start:**  
-when we create an object of thead.  
-ex.  
+***Question 61:***  
+What is base condition in recursion?
+***Answer:***  
+In recursive program, the solution to base case is provided and solution of bigger problem is expressed in terms of smaller problems.
 ``` java
-class SampleThread implements Runnable{
-public static void  main(String a[]){
-Thread t = new Thread(new SampleThead()); // here initializing thread object means now its in start state
-t.start();
-}
+int fact(int n)
+{
+    if (n < = 1) // base case
+        return 1;
+    else    
+        return n*fact(n-1);    
 }
 ```
+In the above example, base case for `n < = 1` is defined and larger value of number can be solved by converting to smaller one till base case is reached.
 
-**Runanble:**  
-``` java
-class SampleThread implements Runnable{
-public static void  main(String a[]){
-Thread t = new Thread(new SampleThead()); 
-t.start(); // here the thread is in runnable state however thread may be not in running state
-}
-}
-```
-
-**Running:**  
-when thread gets cpu allocation and start its task. its in running state.  
-
-**Waiting:**  
-when a threat send back to Runnable state called waiting sate.  
-
-**End/Dead:**  
-when thread completes its execution. it becomes dead  
 
 62.
-What is race condition.  
-ans:  
-when two threads concurrently access the same resource.  
 
 63.
-a thread can acquire more than one lock.  
-**ref:- book *book: Kathy Sierra, pg. 736**
 
 64.
-static methods can be synchronized. There is only one copy of the static data
-you're trying to protect, so you only need one lock per class to synchronize static
-methods  
-
-``` java
-two ways to acquire a lock:
-public static int getCount() {
- synchronized(MyClass.class) {
- return count;
- }
-}
-```
-``` java
-public static void classMethod() {
- Class cl = Class.forName("MyClass");
- synchronized (cl) {
- // do stuff
- }
-}
-```
-
-**ref:- book *book: Kathy Sierra, pg. 738**
 
 65.  
-deadlock..
 
-``` java
- public class DeadlockRisk {
-  private static class Resource {
-  public int value;
-  }
-  private Resource resourceA = new Resource();
-  private Resource resourceB = new Resource();
-  public int read() {
-  synchronized(resourceA) { // May deadlock here
-  synchronized(resourceB) {
- return resourceB.value + resourceA.value;
- }
- }
- }
-
- public void write(int a, int b) {
- synchronized(resourceB) { // May deadlock here
- synchronized(resourceA) {
- resourceA.value = a;
- resourceB.value = b;
- }
-
-Question :
-```
 
 Question 66.
 ``` java
