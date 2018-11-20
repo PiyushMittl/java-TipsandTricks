@@ -595,5 +595,5 @@ reference:
 https://www.geeksforgeeks.org/java-lang-threadlocal-class-java/
 
 ***Question 17:***  
-What is AtomicInteger and AtomicLong class.
+What is AtomicInteger and AtomicLong class.  
 ***Answer:***  
