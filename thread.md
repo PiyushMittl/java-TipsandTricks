@@ -541,7 +541,7 @@ Thread 2: Holding lock 1 & 2...
 ***Question 14:***
 What is producer & consumer or blocking queue.
 
-***Answer:***
+***Answer:***  
 
 ``` java
 public class BlockingQueue<T> {
@@ -633,3 +633,15 @@ when a threat send back to Runnable state called waiting sate.
 
 **End/Dead:**  
 when thread completes its execution. it becomes dead  
+
+***Question 19:***  
+What is race condition.  
+***Answer:***  
+when two threads concurrently access the same resource.  
+
+***Question 20:***  
+
+***Answer:***  
+a thread can acquire more than one lock.  
+**ref:- book *book: Kathy Sierra, pg. 736**
+
