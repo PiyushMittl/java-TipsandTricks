@@ -652,8 +652,8 @@ public void foo(List<Object> list) { }
 If there IS a difference (and we're not yet saying there is), what is it?
 There IS a huge difference. `List<?>`, which is the `wildcard <?>` without the
 keywords extends or super, simply means "any type." So that means any type of
-List can be assigned to the argument. That could be a List of <Dog>, <Integer>,
-<JButton>, <Socket>, whatever. And using the wildcard alone, without the
+List can be assigned to the argument. That could be a List of `<Dog>, <Integer>,
+<JButton>, <Socket>,` whatever. And using the wildcard alone, without the
 keyword super (followed by a type), means that you cannot ADD anything to the
 list referred to as `List<?>`.
 
@@ -662,6 +662,51 @@ the method can take ONLY a List<Object>. Not a List<Dog>, or a List<Cat>.
 It does, however, mean that you can add to the list, since the compiler has already
 made certain that you're passing only a valid List<Object> into the method.
 
+
+
+An instance of `HashMap<String, String>` matches `Map<String, ?>` but not `Map<String, Object>`. Say you want to write a method that accepts maps from Strings to anything: If you would write
+``` java
+public void foobar(Map<String, Object> ms) {
+    ...
+}
+```
+you can't supply a HashMap<String, String>. If you write
+``` java
+public void foobar(Map<String, ?> ms) {
+    ...
+}
+```
+it works!
+
+A thing sometimes misunderstood in Java's generics is that `List<String>` is not a subtype of `List<Object>`. (But `String[]` is in fact a subtype of `Object[]`, that's one of the reasons why generics and arrays don't mix well. (arrays in Java are covariant, generics are not, they are invariant)).
+
+Sample: If you'd like to write a method that accepts Lists of InputStreams and subtypes of InputStream, you'd write
+``` java
+public void foobar(List<? extends InputStream> ms) {
+    ...
+}
+```
+By the way: Joshua Bloch's Effective Java is an excellent resource when you'd like to understand the not so simple things in Java. (Your question above is also covered very well in the book.)
+
+
+
+"?" is inclusive of "Object" in the class hierarchy. You could say that String is a type of Object and Object is a type of ?. Not everything matches Object, but everything matches ?.
+``` java
+int test1(List<?> l) {
+  return l.size();
+}
+
+int test2(List<Object> l) {
+  return l.size();
+}
+
+List<?> l1 = Lists.newArrayList();
+List<Object> l2 = Lists.newArrayList();
+test1(l1);  // compiles because any list will work
+test1(l2);  // compiles because any list will work
+test2(l1);  // fails because a ? might not be an Object
+test2(l2);  // compiled because Object matches Object
+```
  **ref:- book *book: Kathy Sierra, pg. 619***     
  
  57.
