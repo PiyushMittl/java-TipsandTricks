@@ -878,6 +878,24 @@ Downside is that it is less fault tolerant, if the master dies, there are no fur
 Upside is that it is easier to do than multi-master and it usually preserve ACID properties.  
 
 Load balancing is a different concept, it consists distributing the queries sent to those servers so the load is as evenly distributed as possible. It is usually done at the application layer (or with a connection pool). The only direct relation between replication and load balancing is that you need some replication to be able to load balance, else you'd have a single server.  
+
+
+*How does cluster architecture work?*  
+In cluster architecture, all requests are split with many computers so that an individual user request is executed and produced by a number of computer systems. The clustering is serviceable definitely by the ability of load balancing and high-availability. If one node collapses, the request is handled by another node. Consequently, there are few or no possibilities of absolute system failures.  
+
+*Types of Database Clusters*  
+
+Database Cluster is highly comprehensive. It covers multiple tiers and arrangements depending on the requirement of the system. Here, we will brief three types of cluster computing architectures. Failover clusters, high-performance clusters, and load balancing clusters.  
+
+*1. Failover/High Availability clusters:* A machine can go wrong or stop working anytime. System administrators manage such failovers and fix issues efficiently. Here, the clusters come to the rescue. Cluster prepares the service availability by replicating servers and by redundant software and hardware reconfiguration. So, every system is controlling the other and works on requests if any one node fails. These types of clusters are profitable for those users who depend on their computer systems completely. For example, e-commerce, websites, etc.  
+
+The system should be capable enough to know which all systems are running, from which IP is running, which request and what would be the progression of action in case of a crash. The important thing is that the servers should not stop working anyway.  
+
+*2. High-Performance Clusters:* The purpose of developing high-performance database clusters is to produce high performing computer systems. They operate co-extending programs that are needed for time-exhaustive computations. Such variety of clusters are commonly preferred by the scientific industries. The basic aim is intelligently sharing the workload.  
+
+*3. Load Balancing Clusters:* These database clusters serve for distributing loads between different servers. They strive to provide an increased network capacity, finally increasing the performance. Systems in this network integrate their nodes, with the help of which user requests are equally divided across the participating nodes. The system is not working together, rather it redirects requests individually as they occur.  
+
+
 reference:  
 http://www.ndimensionz.com/kb/what-is-database-clustering-introduction-and-brief-explanation/
 
