@@ -640,8 +640,63 @@ What is race condition.
 when two threads concurrently access the same resource.  
 
 ***Question 20:***  
-
 ***Answer:***  
 a thread can acquire more than one lock.  
 **ref:- book *book: Kathy Sierra, pg. 736**
+
+
+***Question 21:***  
+***Answer:***  
+static methods can be synchronized. There is only one copy of the static data
+you're trying to protect, so you only need one lock per class to synchronize static
+methods  
+
+``` java
+two ways to acquire a lock:
+public static int getCount() {
+ synchronized(MyClass.class) {
+ return count;
+ }
+}
+```
+``` java
+public static void classMethod() {
+ Class cl = Class.forName("MyClass");
+ synchronized (cl) {
+ // do stuff
+ }
+}
+```
+
+**ref:- book *book: Kathy Sierra, pg. 738**
+
+***Question 21:***  
+***Answer:***  
+deadlock..
+
+``` java
+ public class DeadlockRisk {
+  private static class Resource {
+  public int value;
+  }
+  private Resource resourceA = new Resource();
+  private Resource resourceB = new Resource();
+  public int read() {
+  synchronized(resourceA) { // May deadlock here
+  synchronized(resourceB) {
+ return resourceB.value + resourceA.value;
+ }
+ }
+ }
+
+ public void write(int a, int b) {
+ synchronized(resourceB) { // May deadlock here
+ synchronized(resourceA) {
+ resourceA.value = a;
+ resourceB.value = b;
+ }
+
+Question :
+```
+
 
