@@ -775,46 +775,50 @@ between class names, type parameter placeholders, and variable identifi ers.
 61.
 Thread lifecycle
 
-Start:
-when we create an object of thead.
-ex. 
+**Start:**  
+when we create an object of thead.  
+ex.  
+``` java
 class SampleThread implements Runnable{
 public static void  main(String a[]){
 Thread t = new Thread(new SampleThead()); // here initializing thread object means now its in start state
 t.start();
 }
 }
+```
 
-Runanble:
+**Runanble:**  
+``` java
 class SampleThread implements Runnable{
 public static void  main(String a[]){
 Thread t = new Thread(new SampleThead()); 
 t.start(); // here the thread is in runnable state however thread may be not in running state
 }
 }
+```
 
-Running:
-when thread gets cpu allocation and start its task. its in running state.
+**Running:**  
+when thread gets cpu allocation and start its task. its in running state.  
 
-Waiting:
-when a threat send back to Runnable state called waiting sate.
+**Waiting:**  
+when a threat send back to Runnable state called waiting sate.  
 
-End/Dead:
-when thread completes its execution. it becomes dead
+**End/Dead:**  
+when thread completes its execution. it becomes dead  
 
 62.
-What is race condition.
-ans:
-when two threads concurrently access the same resource.
+What is race condition.  
+ans:  
+when two threads concurrently access the same resource.  
 
 63.
-a thread can acquire more than one lock.
+a thread can acquire more than one lock.  
 **ref:- book *book: Kathy Sierra, pg. 736**
 
 64.
 static methods can be synchronized. There is only one copy of the static data
 you're trying to protect, so you only need one lock per class to synchronize static
-methods
+methods  
 
 ``` java
 two ways to acquire a lock:
@@ -954,7 +958,7 @@ what is master and slave replica-set.
 
 
 ***Question 71:***  
-
+``` java
 public static void main(String [ ] args) {
      try{
          System.out.println("1");
@@ -974,7 +978,7 @@ public static void method() throws IOException {
          System.out.println("3");
      }
  }
-
+```
 
 overloading and overriding
 https://www.google.co.in/amp/s/www.geeksforgeeks.org/overriding-in-java/amp/
