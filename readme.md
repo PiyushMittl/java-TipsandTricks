@@ -978,3 +978,36 @@ public static void method() throws IOException {
 
 overloading and overriding
 https://www.google.co.in/amp/s/www.geeksforgeeks.org/overriding-in-java/amp/
+
+
+***Question 72:***  
+what is the output of following code snippet.
+
+``` java
+public static void main(String a[]){
+int count=0;
+public void add (Object o)
+{
+super.add(o);
+count++;
+}
+
+public void addAll (Object o)
+{
+count=o.lenght();
+super.addAll(o);
+}
+}
+```
+List<String> list=new ArrayList();
+	list.add("one");
+	list.add("two");
+	list.add("three");
+addAll(list);	
+
+***Answer:***  
+output would be 6
+since addAll lenght will count it as 3 and then again addAll from super class will call child method to add element which will again increment count with three.
+
+
+
