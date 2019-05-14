@@ -1010,4 +1010,19 @@ output would be 6
 since addAll lenght will count it as 3 and then again addAll from super class will call child method to add element which will again increment count with three.
 
 
+***Question 73:***  
+Implement cache (TTl,LRU)
+***Answer***  
+
+
+***Question 74:***  
+phonebook structure
+***Answer***  
+
+
+***Question 74:***  
+read propery and put properties in cache of jvm. but you have to update properties and you don't have to restart app and have to update cache in jvm.  
+***Answer***  
+
+
 
