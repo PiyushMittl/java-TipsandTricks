@@ -1039,7 +1039,20 @@ a final methid can be accessed as per its access modifier but can not be overrid
 ***Question 76:***  
 If a method is overridden but you use a polymorphic (supertype) reference to refer to the subtype object with the overriding method, the compiler assumes you’re calling the supertype version of the method. If the supertype version declares a checked exception, but the overriding subtype method does not, the compiler still thinks you are calling a method that declares an exception.  
 ``` java
-class Animal {  public void eat() throws Exception {    // throws an Exception  } } class Dog2 extends Animal {  public void eat() { /* no Exceptions */}  public static void main(String [] args) {    Animal a = new Dog2();    Dog2 d = new Dog2();    d.eat();           // ok    a.eat();           // compiler error -                        // unreported exception  } }
+class Animal {  
+public void eat() throws Exception {
+// throws an Exception  
+	} 
+} 
+class Dog2 extends Animal {
+public void eat() { /* no Exceptions */}  
+public static void main(String [] args) {
+Animal a = new Dog2();
+Dog2 d = new Dog2();
+d.eat();           // ok
+a.eat();           // compiler error -
+// unreported exception  } 
+}
 ```
 This code will not compile because of the Exception declared on the Animal eat() method. This happens even though, at runtime, the eat() method used would be the Dog version, which does not declare the exception.  
 
