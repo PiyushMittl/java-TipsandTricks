@@ -1024,5 +1024,6 @@ phonebook structure
 read propery and put properties in cache of jvm. but you have to update properties and you don't have to restart app and have to update cache in jvm.  
 ***Answer***  
 
+***Question 75:***
 
 
