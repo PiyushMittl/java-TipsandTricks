@@ -1006,17 +1006,17 @@ List<String> list=new ArrayList();
 addAll(list);	
 
 ***Answer:***  
-output would be 6
-since addAll lenght will count it as 3 and then again addAll from super class will call child method to add element which will again increment count with three.
+output would be 6  
+since addAll lenght will count it as 3 and then again addAll from super class will call child method to add element which will again increment count with three.  
 
 
 ***Question 73:***  
-Implement cache (TTl,LRU)
+Implement cache (TTl,LRU)  
 ***Answer***  
 
 
 ***Question 74:***  
-phonebook structure
+phonebook structure  
 ***Answer***  
 
 
@@ -1024,8 +1024,16 @@ phonebook structure
 read propery and put properties in cache of jvm. but you have to update properties and you don't have to restart app and have to update cache in jvm.  
 ***Answer***  
 
-***Question 75:***
-***Answer***
-The overriding method cannot have a more restrictive access modifier than the method being overridden (for example, you can't override a method marked public and make it protected). 
+***Question 75:***  
+***Answer***  
+The overriding method cannot have a more restrictive access modifier than the method being overridden (for example, you can't override a method marked public and make it protected).  
 
 **ref:- book *book: Kathy Sierra, pg. 105***   
+
+***Question 75:***
+private vs final methods.
+***Answer***
+private method can not be accessed outside other class and due to which can not override do.
+a final methid can be accessed as per its access modifier but can not be override.
+
+
