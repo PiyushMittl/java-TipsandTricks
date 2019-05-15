@@ -1025,5 +1025,7 @@ read propery and put properties in cache of jvm. but you have to update properti
 ***Answer***  
 
 ***Question 75:***
+***Answer***
+The overriding method cannot have a more restrictive access modifier than the method being overridden (for example, you can't override a method marked public and make it protected). 
 
-
+**ref:- book *book: Kathy Sierra, pg. 105***   
