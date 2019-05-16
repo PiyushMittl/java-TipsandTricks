@@ -1056,3 +1056,38 @@ a.eat();           // compiler error -
 ```
 This code will not compile because of the Exception declared on the Animal eat() method. This happens even though, at runtime, the eat() method used would be the Dog version, which does not declare the exception.  
 
+
+***Question 77:***
+``` java
+class UseAnimals {
+	public void doStuff(Animal a) {
+		System.out.println("In the Animal version");
+	}
+
+	public void doStuff(Horse h) {
+		System.out.println("In the Horse version");
+	}
+
+	public static void main(String[] args) {
+		UseAnimals ua = new UseAnimals();
+		Animal animalObj = new Animal();
+		Horse horseObj = new Horse();
+		ua.doStuff(animalObj);
+		ua.doStuff(horseObj);
+		
+		Animal animalRefHorseObj = new Horse();
+		ua.doStuff(animalRefHorseObj);
+	}
+}
+```
+
+***Answer:***
+
+The output is what you expect:
+in the Animal version
+in the Horse version
+in the Animal version
+
+**ref:- book *book: Kathy Sierra, pg. 112***   
+
+
