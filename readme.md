@@ -1091,6 +1091,7 @@ in the Animal version
 **ref:- book *book: Kathy Sierra, pg. 112***   
 
 
+***Question 78:***
 What if i create a protected constructor
 Does it mean we can create object in child class only ??
 Can we start thread twice
@@ -1098,7 +1099,7 @@ How to create deadlock
 Synchronized block in static method
 Pg 738 ch 9
 
-
+***Question 79:***
 Why character array is better than String for Storing password in Java
 Ans:
 Since Strings are immutable in Java if you store password as plain text it will be available in memory until Garbage collector clears it and since String are used in String pool for reusability there is pretty high chance that it will be remain in memory for long duration, which pose a security threat. Since any one who has access to memory dump can find the password in clear text and that's another reason you should always used an encrypted password than plain text. Since Strings are immutable there is no way contents of Strings can be changed because any change will produce new String, while if you char[] you can still set all his element as blank or zero and it will not left any string in memory like string due to immutability. So Storing password in character array clearly mitigates security risk of stealing password.
@@ -1109,11 +1110,13 @@ Anyone who can get a memory dump can access the password in plain txt
 
 But if you use char array you can actually update the value of array and it will not left any string in memory.
 
+***Question 80:***
 Why wait() and notify() is defined in Object class.
 Ans:
 These methods works on the locks and locks are associated with Object and not Threads. Hence, it is in Object class. The methods wait(), notify() and notifyAll() are not only just methods, these are synchronization utility and used in communication mechanism among threads in Java.
 
 
+***Question 81:***
 Qsn:
 byte b=128; //you will get error here 
 b=(byte)128; //will work fine
@@ -1125,6 +1128,7 @@ b += 7;  //will work; it actually puts implicit cast
 byte b=3;
 b = (byte) (b+7) //wont compile without cast
 
+***Question 82:***
 Qsn:
 Local variable inside method should always be initialized but instance variables are optional to initialized.
 Below is the default values.
@@ -1133,3 +1137,93 @@ byte, short, int, long: 0
 Float, double: 0.0
 boolean: false
 char: ‘\u0000’
+
+
+
+***Question 83:***
+
+``` java
+class Animal {
+}
+
+class Dog extends Animal {
+}
+
+class DogTest {
+	public static void main(String[] args) {
+		Dog d = new Dog();
+		Animal a1 = d;
+		// upcast ok with no explicit cast
+		Animal a2 = (Animal) d;
+		// upcast ok with an explicit cast
+	}
+}
+```
+
+**ref:- book *book: Kathy Sierra, pg. 118***   
+
+
+***Question 84:***
+
+``` java
+
+class Overloading2 {
+	public void doStuff(Integer i) {
+		System.out.println("Integer method called");
+	}
+
+	public void doStuff(double d) {
+		System.out.println("double method called");
+	}
+
+	public void doStuff(float d) {
+		System.out.println("float method called");
+	}
+
+	
+	public static void main(String[] args) {
+		Overloading2 o2=new Overloading2();
+		o2.doStuff(10.5);
+		//double method called (floating point numbers are treated as double by default)
+		o2.doStuff(10);
+		//float method would be called by default (boxing to wrapper has least priviledge)
+	}
+}
+
+
+```
+
+
+***Question 85:***
+``` java
+class Foo {
+	Bar myBar = new Bar();
+
+	void changeIt(Bar myBar) {
+		myBar.barNum = 99;
+		System.out.println("myBar.barNum in changeIt is " + myBar.barNum);
+		myBar = new Bar();
+		myBar.barNum = 420;
+		System.out.println("myBar.barNum in changeIt is now " + myBar.barNum);
+	}
+
+	public static void main(String[] args) {
+		Foo f = new Foo();
+		System.out.println("f.myBar.barNum is " + f.myBar.barNum);
+		f.changeIt(f.myBar);
+		System.out.println("f.myBar.barNum after changeIt is " + f.myBar.barNum);
+	}
+}
+```
+
+ The preceding code prints out this:  
+``
+  f.myBar.barNum is 28  
+  myBar.barNum in changeIt is 99  
+  myBar.barNum in changeIt is now 420  
+  f.myBar.barNum after changeIt is 99
+ `` 
+  
+    You can see that the shadowing variable (the local parameter myBar in changeIt()) can still affect the myBar instance variable, because the myBar parameter receives a reference to the same Bar object. But when the local myBar is reassigned a new Bar object, which we then modify by changing its barNum value, Foo�s original myBar instance variable is untouched.
+
+**ref:- book *book: Kathy Sierra, pg. 218***

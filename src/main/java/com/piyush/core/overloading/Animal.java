@@ -25,7 +25,9 @@ class UseAnimals {
 		ua.doStuff(animalRefHorseObj);
 	}
 }
-//
+
+
+
 //The output is what you expect:
 //in the Animal version
 //in the Horse version
