@@ -76,7 +76,7 @@ public static class Main {
 And yes static methods can be overloaded just like any other method.  
 
 16. IS-A and HAS-A relationship with aggregation and composition example.
-18. (int… values) is passed as parameter to a method when you are not aware of the number of input parameter but know that the type of parameter(
+18. (intâ€¦ values) is passed as parameter to a method when you are not aware of the number of input parameter but know that the type of parameter(
 19. Why array index starts with 0.
 20. Can a key be null in hashmap.
 21. Why we can have only one null key in HashMap.
@@ -116,7 +116,7 @@ will it call Thread constructor.
 Thread[] threads = new Thread[5];
 ```
 Answer:  
-Remember that—despite how the code appears—the Thread constructor is not
+Remember thatâ€”despite how the code appearsâ€”the Thread constructor is not
 being invoked. We're not creating a Thread instance, but rather a single Thread
 array object. After the preceding statement, there are still no actual Thread objects!  
 
@@ -224,10 +224,10 @@ that ```i3``` and ```i4``` are the same object? In order to save memory, two ins
 following wrapper objects (created through boxing), will always be ```==``` when their
 primitive values are the same:
 ```
-■ Boolean
-■ Byte
-■ Character from \u0000 to \u007f (7f is 127 in decimal)
-■ Short and Integer from -128 to 127
+â–  Boolean
+â–  Byte
+â–  Character from \u0000 to \u007f (7f is 127 in decimal)
+â–  Short and Integer from -128 to 127
 ```
 Note: When == is used to compare a primitive to a wrapper, the wrapper will be
 unwrapped and the comparison will be primitive to primitive.
@@ -310,8 +310,8 @@ int,int
 ```
 Because, once again, even though each invocation will require some sort of conversion, the compiler will choose the older style before it chooses the newer style, keeping existing code more robust. So far we've seen that
 ```
-■ Widening beats boxing
-■ Widening beats var-args
+â–  Widening beats boxing
+â–  Widening beats var-args
 ```
 At this point, inquiring minds want to know, does boxing beat var-args?
 ```
@@ -331,8 +331,8 @@ Byte, Byte
 A good way to remember this rule is to notice that the var-args method is "looser" than the other method, in that it could handle invocations with any number of byte parameters. A var-args method is more like a catch-all method, in terms of what invocations it can handle, and as we'll see in Chapter 5, it makes most sense for catch-all capabilities to be used as a last resort.
 
 43.
-Earlier versions of the exam put big emphasis on operator precedence ```(like: What’s the result of: x = y++ + ++x/z;)```. Other than a very basic knowledge
-of precedence ```(such as: * and / are higher precedence than + and -)```, you won’t need to study operator precedence, except that when using a compound operator, the expression on the right side of the = will always be evaluated first. For example, you might expect
+Earlier versions of the exam put big emphasis on operator precedence ```(like: Whatâ€™s the result of: x = y++ + ++x/z;)```. Other than a very basic knowledge
+of precedence ```(such as: * and / are higher precedence than + and -)```, you wonâ€™t need to study operator precedence, except that when using a compound operator, the expression on the right side of the = will always be evaluated first. For example, you might expect
 ```
 x *= 2 + 5;
 ```
@@ -407,8 +407,8 @@ catch clause (or it must immediately follow the try block if there is no catch).
 to omit either the catch clause or the fi nally clause, but not both
 
 ```
-You can’t sneak any code in between the try, catch, or fi nally blocks.
-The following won’t compile:
+You canâ€™t sneak any code in between the try, catch, or fi nally blocks.
+The following wonâ€™t compile:
 try {
  // do stuff
 }
@@ -423,7 +423,7 @@ happens if you include a transient variable in your hashCode() method? While
 that's legal (compiler won't complain), under some circumstances an object you
 put in a collection won't be found. As you know, serialization saves an object so
 that it can be reanimated later by deserializing it back to full objectness. But danger
-Will Robinson—remember that transient variables are not saved when an object is
+Will Robinsonâ€”remember that transient variables are not saved when an object is
 serialized.
 
  **ref:- book *book: Kathy Sierra, pg. 555***  
@@ -499,9 +499,9 @@ J6 - first after 8pm is: 2010
 We've talked about searching lists and arrays. Let's turn our attention to searching
 TreeSets and TreeMaps. Java 6 introduced (among others) two new interfaces:
 java.util.NavigableSet and java.util.NavigableMap. For the purposes
-of the exam, you’re interested in how TreeSet and TreeMap implement these
+of the exam, youâ€™re interested in how TreeSet and TreeMap implement these
 interfaces.
-Imagine that the Santa Cruz–Monterey ferry has an irregular schedule. Let's
+Imagine that the Santa Cruzâ€“Monterey ferry has an irregular schedule. Let's
 say that we have the daily Santa Cruz departure times stored, in military time, in a
 TreeSet. Let's look at some code that determines two things:
  1. The last ferry that leaves before 4 (1600 hours)
@@ -538,8 +538,8 @@ J6 - last before 4pm is: 1545
 J6 - first after 8pm is: 2010
 ```      
 As you can see in the preceding code, before the addition of the NavigableSet
-interface, zeroing in on an arbitrary spot in a Set—using the methods available in
-Java 5—was a compute-expensive and clunky proposition. On the other hand, using
+interface, zeroing in on an arbitrary spot in a Setâ€”using the methods available in
+Java 5â€”was a compute-expensive and clunky proposition. On the other hand, using
 the new Java 6 methods lower() and higher(), the code becomes a lot cleaner.
 For the purpose of the exam, the NavigableSet methods related to this type of
 navigation are lower(), floor(), higher(), ceiling(), and the mostly parallel
@@ -559,7 +559,7 @@ Descending Order
  
  
 51.
-It’s important to know some of the details of natural ordering. The
+Itâ€™s important to know some of the details of natural ordering. The
 following code will help you understand the relative positions of uppercase characters,
 lowercase characters, and spaces in a natural ordering:
 ``` java
@@ -602,7 +602,7 @@ collection:
 List<Integer> myList = new ArrayList<Integer>();
 ```
 In other words, we were able to assign an ArrayList to a List reference, because
-List is a supertype of ArrayList. Nothing special there—this polymorphic assignment
+List is a supertype of ArrayList. Nothing special thereâ€”this polymorphic assignment
 works the way it always works in Java, regardless of the generic typing.
 But what about this?
 ``` java
@@ -613,7 +613,7 @@ List<Parent> myList = new ArrayList<Child>();
 Think about it for a minute.
 Keep thinking...
 
-No, it doesn't work. There's a very simple rule here—the type of the variable
+No, it doesn't work. There's a very simple rule hereâ€”the type of the variable
 declaration must match the type you pass to the actual object type. If you declare
 List<Foo> foo then whatever you assign to the foo reference MUST be of the
 generic type <Foo>. Not a subtype of <Foo>. Not a supertype of <Foo>. Just <Foo>.
@@ -1037,7 +1037,7 @@ private method can not be accessed outside other class and due to which can not 
 a final methid can be accessed as per its access modifier but can not be override.  
 
 ***Question 76:***  
-If a method is overridden but you use a polymorphic (supertype) reference to refer to the subtype object with the overriding method, the compiler assumes you’re calling the supertype version of the method. If the supertype version declares a checked exception, but the overriding subtype method does not, the compiler still thinks you are calling a method that declares an exception.  
+If a method is overridden but you use a polymorphic (supertype) reference to refer to the subtype object with the overriding method, the compiler assumes youâ€™re calling the supertype version of the method. If the supertype version declares a checked exception, but the overriding subtype method does not, the compiler still thinks you are calling a method that declares an exception.  
 ``` java
 class Animal {  
 public void eat() throws Exception {
@@ -1105,7 +1105,7 @@ Ans:
 Since Strings are immutable in Java if you store password as plain text it will be available in memory until Garbage collector clears it and since String are used in String pool for reusability there is pretty high chance that it will be remain in memory for long duration, which pose a security threat. Since any one who has access to memory dump can find the password in clear text and that's another reason you should always used an encrypted password than plain text. Since Strings are immutable there is no way contents of Strings can be changed because any change will produce new String, while if you char[] you can still set all his element as blank or zero and it will not left any string in memory like string due to immutability. So Storing password in character array clearly mitigates security risk of stealing password.
 
 
-We should not store our password in string because when we change the value of our string variable it doesn’t update the value of existing variable instead it creates a new string and left earlier in constant pool or heap for GC which can be a security breach
+We should not store our password in string because when we change the value of our string variable it doesnâ€™t update the value of existing variable instead it creates a new string and left earlier in constant pool or heap for GC which can be a security breach
 Anyone who can get a memory dump can access the password in plain txt
 
 But if you use char array you can actually update the value of array and it will not left any string in memory.
@@ -1136,7 +1136,7 @@ Obj reference: null
 byte, short, int, long: 0
 Float, double: 0.0
 boolean: false
-char: ‘\u0000’
+char: â€˜\u0000â€™
 
 
 
@@ -1224,6 +1224,20 @@ class Foo {
   f.myBar.barNum after changeIt is 99
  `` 
   
-    You can see that the shadowing variable (the local parameter myBar in changeIt()) can still affect the myBar instance variable, because the myBar parameter receives a reference to the same Bar object. But when the local myBar is reassigned a new Bar object, which we then modify by changing its barNum value, Foo�s original myBar instance variable is untouched.
+    You can see that the shadowing variable (the local parameter myBar in changeIt()) can still affect the myBar instance variable, because the myBar parameter receives a reference to the same Bar object. But when the local myBar is reassigned a new Bar object, which we then modify by changing its barNum value, Foo’s original myBar instance variable is untouched.
 
 **ref:- book *book: Kathy Sierra, pg. 218***
+
+
+Question: ConcurrentHashMap vs SynchronisedHashMap
+
+Synchronized HashMap：
+
+Each method is synchronized using an object level lock. So the get and put methods on synchMap acquire a lock.
+Locking the entire collection is a performance overhead. While one thread holds on to the lock, no other thread can use the collection.
+ConcurrentHashMap was introduced in JDK 5.
+
+There is no locking at the object level,The locking is at a much finer granularity. For a ConcurrentHashMap, the locks may be at a hashmap bucket level.
+The effect of lower level locking is that you can have concurrent readers and writers which is not possible for synchronized collections. This leads to much more scalability.
+ConcurrentHashMap does not throw a ConcurrentModificationException if one thread tries to modify it while another is iterating over it.
+This article Java 7: HashMap vs ConcurrentHashMap is a very good read. Highly recommended.
