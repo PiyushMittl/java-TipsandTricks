@@ -1245,3 +1245,5 @@ This article Java 7: HashMap vs ConcurrentHashMap is a very good read. Highly re
 
 Question:
 How to reverse a linked list without using extra space.
+
+https://javarevisited.blogspot.com/2013/03/top-15-data-structures-algorithm-interview-questions-answers-java-programming.html?m=1
