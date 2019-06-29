@@ -1241,3 +1241,7 @@ There is no locking at the object level,The locking is at a much finer granulari
 The effect of lower level locking is that you can have concurrent readers and writers which is not possible for synchronized collections. This leads to much more scalability.
 ConcurrentHashMap does not throw a ConcurrentModificationException if one thread tries to modify it while another is iterating over it.
 This article Java 7: HashMap vs ConcurrentHashMap is a very good read. Highly recommended.
+
+
+Question:
+How to reverse a linked list without using extra space.
