@@ -1301,3 +1301,11 @@ Hope above information will add some value in your knowledge-base.
 
 https://www.google.co.in/amp/s/howtodoinjava.com/java/multi-threading/sleep-vs-wait/amp/
 
+
+Question:
+Which pattern is used when we call Collections.sort(al,nameComparator());
+Answer:
+Strategy design pattern is used when we use comparator design pattern.
+Because here we pass the object of nameComparator() to Collections class and on the basis of object 
+It further descide what sorting it should perform.
+
