@@ -1311,3 +1311,13 @@ It further descide what sorting it should perform.
 
 
 Class not found va class def not found.
+  
+Question:  
+What is throable.  
+
+Question:  
+Can we cath errors.  
+Ans:  
+Yes. 
+
+
