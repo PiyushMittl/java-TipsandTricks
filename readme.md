@@ -1320,4 +1320,9 @@ Can we cath errors.
 Ans:  
 Yes. 
 
+Question:  
+Thread related methods in Thread and Object class.  
+Ans:  
+Thread class: sleep, yield, join, setPriority.  
+Object class: wait, notify, notifyAll.  
 
