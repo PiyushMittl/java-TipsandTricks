@@ -1326,3 +1326,60 @@ Ans:
 Thread class: sleep, yield, join, setPriority.  
 Object class: wait, notify, notifyAll.  
 
+
+Question:  
+Mirror a binary tree.  
+Answer:  
+
+Iterative sol1 :  
+public static TreeNode mirrorBinaryTreeIterative(TreeNode root){
+    if(root == null || (root.left == null && root.right == null))
+        return root;
+
+    TreeNode parent = root;
+    Stack<TreeNode> treeStack = new Stack<TreeNode>();
+    treeStack.push(root);
+
+    while(!treeStack.empty()){
+        parent = treeStack.pop();
+
+        TreeNode temp = parent.right;
+        parent.right = parent.left;
+        parent.left = temp;
+
+        if(parent.right != null)
+            treeStack.push(parent.right);
+        if(parent.left != null)
+            treeStack.push(parent.left);
+    }
+    return root;
+}
+
+Iterative sol2:  
+
+public void mirrorIterative() {
+    Queue<TreeNode> nodeQ = new LinkedList<TreeNode>();
+    nodeQ.add(root);
+    while(!nodeQ.isEmpty()) {
+        TreeNode node = nodeQ.remove();
+        if(node.leftChild == null && node.rightChild == null)
+            continue;
+        if(node.leftChild != null && node.rightChild != null) {
+            TreeNode temp = node.leftChild;
+            node.leftChild = node.rightChild;
+            node.rightChild = temp;
+            nodeQ.add(node.leftChild);
+            nodeQ.add(node.rightChild);
+        }
+        else if(node.leftChild == null) {
+            node.leftChild = node.rightChild;
+            node.rightChild = null;
+            nodeQ.add(node.leftChild);
+        } else {
+            node.rightChild = node.leftChild;
+            node.leftChild = null;
+            nodeQ.add(node.rightChild);
+        }
+    }
+}
+
