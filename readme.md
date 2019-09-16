@@ -1,4 +1,4 @@
-1. [Core Java](https://github.com/PiyushMittl/java-TipsandTricks/edit/master/readme.md)
+1. [Core Java](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/java.md)
 2. [Spring](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
 3. [Spring Boot](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
 4. [Hibernate](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
