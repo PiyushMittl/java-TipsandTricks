@@ -1,3 +1,12 @@
+1. [Core Java](https://github.com/PiyushMittl/java-TipsandTricks/edit/master/readme.md)
+2. [Spring](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
+3. [Spring Boot](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
+4. [Hibernate](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
+5. [Data Structures](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
+6. [Dynamic Programming](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
+
+
+
 **Colleactions**
 Question 1.  
 What is Arrays class.  
