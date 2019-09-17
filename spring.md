@@ -1,4 +1,4 @@
-***Question 1:***  
+Haan***Question 1:***  
 what is `@Qualifier` annotation.  
 ***Answer:***  
 
@@ -24,6 +24,12 @@ spring
 
 ***Question 5:***  
 Types of bean scopes in Spring.  
+***Answer:***  
+
+
+
+***Question 6:***  
+bean lifecycle.  
 ***Answer:***  
 
 
