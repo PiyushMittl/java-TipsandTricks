@@ -37,7 +37,35 @@ How many modules are there in Spring Framework and what are they?
 ***Answer:***  
 There are around 20 modules which are generalized into Core Container, Data Access/Integration, Web, AOP (Aspect Oriented Programming), Instrumentation and Test.
 
+Spring Core Container – This layer is basically the core of Spring Framework. It contains the following modules :
+Spring Core
+Spring Bean
+SpEL (Spring Expression Language)
+Spring Context 
 
+Data Access/Integration – This layer provides support to interact with the database. It contains the following modules :
+JDBC (Java DataBase Connectivity)
+ORM (Object Relational Mapping)
+OXM (Object XML Mappers)
+JMS (Java Messaging Service)
+
+Transaction
+Web – This layer provides support to create web application. It contains the following modules :
+Web
+Web – MVC
+Web – Socket
+Web – Portlet
+
+Aspect Oriented Programming (AOP) – In this layer you can use Advices, Pointcuts etc., to decouple the code.
+
+Instrumentation – This layer provides support to class instrumentation and classloader implementations.
+
+Test – This layer provides support to testing with JUnit and TestNG.
+
+Few Miscellaneous modules are given below:
+
+Messaging – This module provides support for STOMP. It also supports an annotation programming model that is used for routing and processing STOMP messages from WebSocket clients.
+Aspects – This module provides support to integration with AspectJ.
 
 # Spring Boot #
 ***Question 1:***  
