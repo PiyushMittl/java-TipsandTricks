@@ -80,6 +80,36 @@ If an init-method is specified for the bean, then it will be called.
 Finally, postProcessAfterInitialization() methods will be called if there are any BeanPostProcessors associated with the bean.
 
 
+Explain inner beans in Spring.
+
+A bean can be declared as an inner bean only when it is used as a property of another bean. For defining a bean, the Spring’s XML based configuration metadata provides the use of <bean> element inside the <property> or <constructor-arg>. Inner beans are always anonymous and they are always scoped as prototypes. For example, let’s say we have one Student class having reference of Person class. Here we will be creating only one instance of Person class and use it inside Student.
+
+Here’s a Student class followed by bean configuration file:
+
+Student.java
+
+public class Student
+{
+private Person person;
+//Setters and Getters
+}
+public class Person
+{
+private String name;
+private String address;
+//Setters and Getters
+}
+studentbean.xml
+
+<bean id=“StudentBean" class="com.edureka.Student">
+<property name="person">
+<!--This is inner bean -->
+<bean class="com.edureka.Person">
+<property name="name" value=“Scott"></property>
+<property name="address" value=“Bangalore"></property>
+</bean>
+</property>
+</bean>
 
 # Spring Boot #
 ***Question 1:***  
