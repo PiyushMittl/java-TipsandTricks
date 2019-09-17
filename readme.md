@@ -1,5 +1,5 @@
 1. [Core Java](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/java.md)
-2. [Spring](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
+2. [Spring](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/spring.md)
 3. [Spring Boot](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
 4. [Hibernate](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
 5. [Data Structures](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
