@@ -32,6 +32,11 @@ Types of bean scopes in Spring.
 bean lifecycle.  
 ***Answer:***  
 
+***Question 7:***
+How many modules are there in Spring Framework and what are they?  
+***Answer:***  
+There are around 20 modules which are generalized into Core Container, Data Access/Integration, Web, AOP (Aspect Oriented Programming), Instrumentation and Test.
+
 
 
 # Spring Boot #
