@@ -19,7 +19,7 @@
   
   
 1.Data Structures
-  1. Recursion
+  1. [Recursion] (https://github.com/PiyushMittl/java-TipsandTricks/blob/master/datastructures-recursion.md)
   2. Stacks
   3. Queues
   4. Linked List
