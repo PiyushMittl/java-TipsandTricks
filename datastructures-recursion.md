@@ -12,7 +12,8 @@ a[0], a[1], a[2], a[3], a[4]...... a[n-2],a[n-1],a[n]
 a[n]=a[n-2]+a[n-1]  
   
 hence:  
+<pre>
           0                     if n=0,n=1  
 fib(n)=  
           fib(n-2)+fib(n-1)     if n>1
-
+</pre>
