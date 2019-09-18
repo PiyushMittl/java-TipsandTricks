@@ -35,4 +35,5 @@
   14. Segment Trees
   15. Splay Trees
 
-  
+2.Algorithm
+  1.
