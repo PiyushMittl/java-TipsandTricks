@@ -36,7 +36,8 @@
   15. Splay Trees
 
 2.Algorithm  
-  1.  
+  1. Analysis
+  2. Searching and Sorting
 
 3. Problem Solving using Data Structures and Algorithms  
   1. Array
