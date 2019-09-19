@@ -34,8 +34,12 @@
   13. Ternary Search
   14. Segment Trees
   15. Splay Trees
+  
+  
 2.Algorithm  
   1. Analysis
   2. Searching and Sorting
+  
+  
 3.Problem Solving using Data Structures and Algorithms  
   1. Arrays
