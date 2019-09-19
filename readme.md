@@ -35,8 +35,8 @@
   14. Segment Trees
   15. Splay Trees
 
-2.Algorithm
+2.Algorithm  
   1.  
 
-3. Problem Solving using Data Structures and Algorithms
+3. Problem Solving using Data Structures and Algorithms  
   1. Array
