@@ -42,4 +42,4 @@
   
   
 3.Problem Solving using Data Structures and Algorithms  
-  1. [Arrays]
+  1. [Arrays](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/arrays.md)
