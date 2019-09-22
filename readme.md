@@ -57,7 +57,7 @@
   8. Divide and Conquer
   9. Backtracking
   10. Greedy
-  11. [Pattern Searching and Mactching](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/paroblemsolving-patternmatching.md)
+  11. [Pattern Searching and Mactching](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-patternmatching.md)
   12. Dynamic Programming
   13. Bit Manipulation
   14. Mathematical Algorithms
