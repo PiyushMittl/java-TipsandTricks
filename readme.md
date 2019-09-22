@@ -39,7 +39,25 @@
 2.Algorithm  
   1. Analysis
   2. Searching and Sorting
+  3. Divide and Conquer
+  4. Greedy
+  5. Back Tracking
+  6. Dynamic Programming
+  7. Complexity Classes
   
   
 3.Problem Solving using Data Structures and Algorithms  
   1. [Arrays](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/arrays.md)
+  2. Linked Lists
+  3. Stacks
+  4. Queues
+  5. Trees
+  6. Heaps
+  7. String
+  8. Divide and Conquer
+  9. Backtracking
+  10. Greedy
+  11. Pattern Searching and Mactching
+  12. Dynamic Programming
+  13. Bit Manipulation
+  14. Mathematical Algorithms
