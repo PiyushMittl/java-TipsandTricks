@@ -1,10 +1,11 @@
 1. [Core Java](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/java.md)
-2. [Spring](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/spring.md)
-3. [Spring Boot](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
-4. [Hibernate](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
-5. [Data Structures](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
-6. [Algorithms](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/dynamic-programming.md)
-7. [Problem Solving using DataStructures and Algorithm](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/dynamic-programming.md)
+2. [Core Java 1.8]
+3. [Spring](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/spring.md)
+4. [Spring Boot](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
+5. [Hibernate](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
+6. [Data Structures](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
+7. [Algorithms](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/dynamic-programming.md)
+8. [Problem Solving using DataStructures and Algorithm](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/dynamic-programming.md)
   
   
   
