@@ -76,6 +76,29 @@ public static class Main {
 And yes static methods can be overloaded just like any other method.  
 
 16. IS-A and HAS-A relationship with aggregation and composition example.
+Association is relation between two separate classes which establishes through their Objects. Association can be one-to-one, one-to-many, many-to-one, many-to-many.
+In Object-Oriented programming, an Object communicates to other Object to use functionality and services provided by that object. Composition and Aggregation are the two forms of association.
+
+Bank —> accountholder1  
+     —> accountholder2  
+     —> accountholder3
+Above example is Aggregation
+It represents Has-A relationship.
+It is a unidirectional association i.e. a one way relationship. For example, department can have students but vice versa is not possible and thus unidirectional in nature.
+In Aggregation, both the entries can survive individually which means ending one entity will not effect the other entity
+
+
+Composition
+
+Composition is a restricted form of Aggregation in which two entities are highly dependent on each other.
+
+It represents part-of relationship.
+In composition, both the entities are dependent on each other.
+When there is a composition between two entities, the composed object cannot exist without the other entity.
+
+Ref:
+www.geeksforgeeks.org/association-composition-aggregation-java/amp/
+
 18. (intâ€¦ values) is passed as parameter to a method when you are not aware of the number of input parameter but know that the type of parameter(
 19. Why array index starts with 0.
 20. Can a key be null in hashmap.
@@ -1382,4 +1405,3 @@ public void mirrorIterative() {
         }
     }
 }
-
