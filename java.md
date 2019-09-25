@@ -1405,3 +1405,36 @@ public void mirrorIterative() {
         }
     }
 }
+
+
+
+Question:  
+   class GameShape {
+                   public void displayShape() {
+                     System.out.println("displaying shape");
+                   }
+// more code }
+Inheritance, Is-A, Has-A (Exam Objective 5.5) 93
+  class PlayerPiece extends GameShape {
+     public void movePiece() {
+       System.out.println("moving game piece");
+     }
+// more code }
+  class TilePiece extends GameShape {
+      public void getAdjacent() {
+        System.out.println("getting adjacent tiles");
+      }
+// more code }
+Now imagine a test class has a method with a declared argument type of GameShape, that means it can take any kind of GameShape. In other words, any subclass of GameShape can be passed to a method with an argument of type GameShape. This code
+  public class TestShapes {
+     public static void main (String[] args) {
+PlayerPiece player = new PlayerPiece(); TilePiece tile = new TilePiece(); doShapes(player);
+doShapes(tile);
+}
+public static void doShapes(GameShape shape) { shape.displayShape();
+} }
+Outputs:
+  displaying shape
+  displaying shape
+The key point is that the doShapes() method is declared with a GameShape argument but can be passed any subtype (in this example, a subclass) of GameShap
+
