@@ -1266,17 +1266,17 @@ ConcurrentHashMap does not throw a ConcurrentModificationException if one thread
 This article Java 7: HashMap vs ConcurrentHashMap is a very good read. Highly recommended.
 
 
-Question:
+***Question:***
 How to reverse a linked list without using extra space.
 
 https://javarevisited.blogspot.com/2013/03/top-15-data-structures-algorithm-interview-questions-answers-java-programming.html?m=1
 
 
-Question:
+***Question:***
 Java sleep() and wait() – Discussion
 
 Answer:
-
+```
 sleep() is a method which is used to pause the process for few seconds or the time we want to. But in case of wait() method, thread goes in waiting state and it won’t come back automatically until we call the notify() or notifyAll().
 
 The major difference is that wait() releases the lock or monitor while sleep() doesn’t releases the lock or monitor while waiting. wait() is used for inter-thread communication while sleep() is used to introduce pause on execution, generally.
@@ -1284,10 +1284,10 @@ The major difference is that wait() releases the lock or monitor while sleep() d
 Thread.sleep() sends the current thread into the “Not Runnable” state for some amount of time. The thread keeps the monitors it has acquired — i.e. if the thread is currently in a synchronized block or method no other thread can enter this block or method. If another thread calls t.interrupt(). it will wake up the sleeping thread.
 
 While sleep() is a static method which means that it always affects the current thread (the one that is executing the sleep method). A common mistake is to call t.sleep() where t is a different thread; even then, it is the current thread that will sleep, not the t thread.
-
+```
 Read more : Working with wait() and notify()
 2. Java sleep() and wait() – Example
-
+``` java
 synchronized(LOCK) {   
     Thread.sleep(1000); // LOCK is held
 }
@@ -1295,13 +1295,14 @@ synchronized(LOCK)
 {   
     LOCK.wait(); // LOCK is not held
 }
+```
 Read more : Difference between yield() and join()
 3. Java sleep() vs wait() – Summary
 
 Let categorize all above points in short to remember.
 
 3.1. Method called on
-
+```
 wait() – Call on an object; current thread must synchronize on the lock object.
 sleep() – Call on a Thread; always currently executing thread.
 3.2. Synchronized
@@ -1321,36 +1322,41 @@ sleep() – until at least time expire or call interrupt().
 sleep() – for time-synchronization
 wait() – for multi-thread-synchronization.
 Hope above information will add some value in your knowledge-base.
-
+```
 https://www.google.co.in/amp/s/howtodoinjava.com/java/multi-threading/sleep-vs-wait/amp/
 
 
-Question:
-Which pattern is used when we call Collections.sort(al,nameComparator());
+***Question:***
+Which pattern is used when we call ``` Collections.sort(al,nameComparator()); ```
 Answer:
 Strategy design pattern is used when we use comparator design pattern.
 Because here we pass the object of nameComparator() to Collections class and on the basis of object 
-It further descide what sorting it should perform.
+It further descide what sorting it should perform.  
 
 
-Class not found va class def not found.
+***Question:***
+Class not found vs class def not found.
   
-Question:  
+
+***Question:***  
 What is throable.  
 
-Question:  
+
+***Question:***  
 Can we cath errors.  
 Ans:  
 Yes. 
 
-Question:  
+
+***Question:***  
 Thread related methods in Thread and Object class.  
 Ans:  
 Thread class: sleep, yield, join, setPriority.  
 Object class: wait, notify, notifyAll.  
 
 
-Question:  
+
+***Question:***  
 Mirror a binary tree.  
 Answer:  
 
@@ -1409,7 +1415,8 @@ public void mirrorIterative() {
 ```
 
 
-Question:  
+
+***Question:***  
 ``` java
    class GameShape {
                    public void displayShape() {
@@ -1436,14 +1443,15 @@ doShapes(tile);
 public static void doShapes(GameShape shape) { shape.displayShape();
 } }
 ```
-``
+```
 Outputs:
   displaying shape
   displaying shape
 The key point is that the doShapes() method is declared with a GameShape argument but can be passed any subtype (in this example, a subclass) of GameShap
-``
+```
   
-Question:
+
+***Question:***
 ``` java
 class Dad
 {
@@ -1465,13 +1473,14 @@ public void doIt()
     new Son().printMe();
 }
 ```
-``
+```
 Output:
 dad
-``
+```
   
 
-Question:  
+
+***Question:***  
 Overriding
 
 ``` java
