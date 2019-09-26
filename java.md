@@ -1438,3 +1438,27 @@ Outputs:
   displaying shape
 The key point is that the doShapes() method is declared with a GameShape argument but can be passed any subtype (in this example, a subclass) of GameShap
 
+  
+Question:
+class Dad
+{
+    protected static String me = "dad";
+
+    public void printMe()
+    {
+        System.out.println(me);
+    }
+}
+
+class Son extends Dad
+{
+    protected static String me = "son";
+}
+
+public void doIt()
+{
+    new Son().printMe();
+}
+
+Output:
+dad
