@@ -1355,6 +1355,7 @@ Mirror a binary tree.
 Answer:  
 
 Iterative sol1 :  
+``` java
 public static TreeNode mirrorBinaryTreeIterative(TreeNode root){
     if(root == null || (root.left == null && root.right == null))
         return root;
@@ -1377,9 +1378,9 @@ public static TreeNode mirrorBinaryTreeIterative(TreeNode root){
     }
     return root;
 }
-
+```
 Iterative sol2:  
-
+``` java
 public void mirrorIterative() {
     Queue<TreeNode> nodeQ = new LinkedList<TreeNode>();
     nodeQ.add(root);
@@ -1405,10 +1406,11 @@ public void mirrorIterative() {
         }
     }
 }
-
+```
 
 
 Question:  
+``` java
    class GameShape {
                    public void displayShape() {
                      System.out.println("displaying shape");
@@ -1433,13 +1435,16 @@ doShapes(tile);
 }
 public static void doShapes(GameShape shape) { shape.displayShape();
 } }
+```
+``
 Outputs:
   displaying shape
   displaying shape
 The key point is that the doShapes() method is declared with a GameShape argument but can be passed any subtype (in this example, a subclass) of GameShap
-
+``
   
 Question:
+``` java
 class Dad
 {
     protected static String me = "dad";
@@ -1459,6 +1464,81 @@ public void doIt()
 {
     new Son().printMe();
 }
-
+```
+``
 Output:
 dad
+``
+  
+
+Question:  
+Overriding
+
+``` java
+package com.piyush.ds.arrays.operation;
+
+class Parent {
+	protected static String s="Parent";
+	public void print() {
+		System.out.println(s);
+	}
+}
+class Child1 extends Parent {
+	static String s="Child";
+	public void print() {
+		System.out.println(s);
+	}
+}
+
+class Child2 extends Parent {
+	static String s="Child";
+//	public void print() {
+//		System.out.println(s);
+//	}
+}
+
+public class OverrideDemo1{
+	public static void main(String[] args) {
+
+/*Tip 1*/		
+		Parent p=new Child1();
+		//method is always called from the object class not from the reference class (Parent is reference class and new Child() is object class)
+		
+		//method existence is checked from reference variable because is checked at compile time. 
+		//when you compile your code the method existence will be checked from reference variable class only.
+		//when you run your program the method from the object class gets executed which is called overriding.
+		p.print();
+		
+		//in case of data members we do not have overriding facility instead we have hiding concept here.
+		//data members  always be accessed from parent class because we bind data member's value at compile time and that time what we know we reference class 
+		//thats why we get the value from reference class
+		// say Parent p=args[0]  //here we do not know which class reference we are having here thats why it binds data member value from reference class only
+		System.out.println(p.s);
+
+/*Tip 2*/		
+		Parent p1=new Child2();
+		p1.print();
+		//here no hiding would happen because there is no method overriding 
+		//reason: because if you do data hiding method might get corrupted because you might declare Object s=new ***() not string. which will cuase a disaster.
+
+/*Tip 3*/		
+		System.out.println();
+		
+		
+		Parent p3=new Parent();
+		Child1 c3=(Child1)p3;//run time exception
+		
+		Parent p4=new Child2();
+		Child1 c4=(Child1)p4;//works well
+		
+/*Tip 4*/		
+		Parent p5=new Child1();
+		System.out.println(((Child1)p5).s);//works well
+		
+		Child1 c5=new Child1();
+		System.out.println(((Parent)c5).s);//works well
+		
+	}
+	
+}
+```
