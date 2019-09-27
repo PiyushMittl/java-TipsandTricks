@@ -24,7 +24,7 @@
   2. Stacks
   3. Queues
   4. Linked List
-  5. Trees
+  5. [Trees](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/datastructures-trees.md)
   6. Hashing
   7. Graphs
   8. Binomial Heap
