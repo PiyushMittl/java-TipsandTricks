@@ -87,7 +87,7 @@ A bean can be declared as an inner bean only when it is used as a property of an
 Here’s a Student class followed by bean configuration file:
 
 Student.java
-
+``` java
 public class Student
 {
 private Person person;
@@ -99,8 +99,10 @@ private String name;
 private String address;
 //Setters and Getters
 }
-studentbean.xml
+```
 
+studentbean.xml
+``
 <bean id=“StudentBean" class="com.edureka.Student">
 <property name="person">
 <!--This is inner bean -->
@@ -109,16 +111,18 @@ studentbean.xml
 <property name="address" value=“Bangalore"></property>
 </bean>
 </property>
-</bean>
+</bean>  
+``
 
-***Question 8:***
-List out the different scopes of Bean
-***Answer:***
+***Question 8:***  
+List out the different scopes of Bean  
+***Answer:***  
+``
 (i) Singleton: throughout the spring context only one instance is created.
 (ii) Prototype: a new bean is created whenever requested.
 (iii) Request: Every HTTP Request creates a bean.
-(iv) Session: A bean for every HTTP Session.
-
+(iv) Session: A bean for every HTTP Session.  
+``
 
 
 
