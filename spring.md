@@ -101,7 +101,8 @@ private String address;
 }
 ```
 
-studentbean.xml
+studentbean.xml  
+
 ``
 <bean id=“StudentBean" class="com.edureka.Student">
 <property name="person">
