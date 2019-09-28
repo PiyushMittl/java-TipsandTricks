@@ -118,12 +118,18 @@ studentbean.xml
 ***Question 8:***  
 List out the different scopes of Bean  
 ***Answer:***  
-``
+```
 (i) Singleton: throughout the spring context only one instance is created.
 (ii) Prototype: a new bean is created whenever requested.
 (iii) Request: Every HTTP Request creates a bean.
 (iv) Session: A bean for every HTTP Session.  
-``
+```
+
+***Question 9:***  
+List out the types of Dependency Injection  
+***Answer:***  
+
+
 
 
 
