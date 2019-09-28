@@ -1,4 +1,4 @@
-Haan***Question 1:***  
+***Question 1:***  
 what is `@Qualifier` annotation.  
 ***Answer:***  
 
@@ -110,6 +110,17 @@ studentbean.xml
 </bean>
 </property>
 </bean>
+
+***Question 8:***
+List out the different scopes of Bean
+***Answer:***
+(i) Singleton: throughout the spring context only one instance is created.
+(ii) Prototype: a new bean is created whenever requested.
+(iii) Request: Every HTTP Request creates a bean.
+(iv) Session: A bean for every HTTP Session.
+
+
+
 
 # Spring Boot #
 ***Question 1:***  
