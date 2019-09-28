@@ -103,7 +103,7 @@ private String address;
 
 studentbean.xml  
 
-``
+```
 <bean id=“StudentBean" class="com.edureka.Student">
 <property name="person">
 <!--This is inner bean -->
@@ -113,7 +113,7 @@ studentbean.xml
 </bean>
 </property>
 </bean>  
-``
+```
 
 ***Question 8:***  
 List out the different scopes of Bean  
