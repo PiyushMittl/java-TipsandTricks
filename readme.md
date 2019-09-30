@@ -62,3 +62,7 @@
   12. Dynamic Programming
   13. Bit Manipulation
   14. Mathematical Algorithms
+
+4.Companies
+  1. Amazon
+  2. 
