@@ -49,6 +49,9 @@ If an init-method is specified for the bean, then it will be called.
 
 Finally, postProcessAfterInitialization() methods will be called if there are any BeanPostProcessors associated with the bean.  
 
+Ref: 
+https://www.concretepage.com/spring/spring-bean-life-cycle-tutorial
+
 
 ***Question 7:***
 How many modules are there in Spring Framework and what are they?  
