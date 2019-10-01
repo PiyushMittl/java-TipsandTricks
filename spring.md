@@ -37,7 +37,7 @@ Bean life cycle in Spring Bean Factory Container is as follows:
 
 The Spring container instantiates the bean from the bean’s definition in the XML file.  
 
-Spring populates all of the properties using the dependency injection, as specified in the bean definition.  
+Spring populates all of the properties using the dependency injection, as specified in the bean definition (getters and seters).  
 
 The factory calls setBeanName() by passing the bean’s ID if the bean implements the BeanNameAware interface.  
 
