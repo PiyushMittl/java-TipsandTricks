@@ -1,11 +1,11 @@
-## Contents
+## Spring
 
 ***Question 1:***  
 what is `@Qualifier` annotation.  
 ***Answer:***  
 When you create more than one bean of the same type and want to wire only one of them with a property  you can use the `@Qualifier` annotation along with `@Autowired` to remove the ambiguity by specifying which exact bean should be wired.  
 
-<br>[⬆ Back to top](#Contents)
+<br>[⬆ Back to top](#Spring)
 
 ***Question 2:***  
 what is propogation in Spring.  
@@ -185,7 +185,7 @@ What’s the difference between `@Component`, `@Controller`, `@Repository` & `@S
 
 
 
-# Spring Boot #
+## Spring Boot
 ***Question 1:***  
 what is `@Springbootapplication` annotation.  
 ***Answer:***   
@@ -195,4 +195,4 @@ A single `@SpringBootApplication` annotation can be used to enable those three f
 `@EnableAutoConfiguration:` enable Spring Boot’s auto-configuration mechanism  
 `@ComponentScan:` enable `@Component` scan on the package where the application is located (see the best practices)  
 `@Configuration:` allow to register extra beans in the context or import additional configuration classes   
-  
+<br>[⬆ Back to top](#Spring Boot)  
