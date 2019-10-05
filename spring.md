@@ -172,6 +172,7 @@ BeanFactory
 ***Question 1:***  
 what is @Springbootapplication annotation.  
 ***Answer:***   
+(Enable ACC)
 A single @SpringBootApplication annotation can be used to enable those three features, that is:  
   
 @EnableAutoConfiguration: enable Spring Boot’s auto-configuration mechanism  
