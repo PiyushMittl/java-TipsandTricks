@@ -172,10 +172,10 @@ What’s the difference between `@Component`, `@Controller`, `@Repository` & `@S
 `@Repository:` This annotation is a specialization of the `@Component` annotation with similar use and functionality. It provides additional benefits specifically for DAOs. It imports the DAOs into the DI container and makes the unchecked exceptions eligible for translation into Spring DataAccessException.  
   
   
-***Have a look:***  
-[Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)
-[blog](https://github.com/PiyushMittl/spring-framework-bloglinks)   
-[project mvc with mongodb](https://github.com/PiyushMittl/SpringMVCwithMongoDB)
+***Have a look:***   
+[Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)  
+[blog](https://github.com/PiyushMittl/spring-framework-bloglinks)    
+[project mvc with mongodb](https://github.com/PiyushMittl/SpringMVCwithMongoDB)  
 
 
 
