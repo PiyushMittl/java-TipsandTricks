@@ -33,21 +33,21 @@ Types of bean scopes in Spring.
 ***Question 6:***  
 bean lifecycle.  
 ***Answer:***  
-Bean life cycle in Spring Bean Factory Container is as follows:
+ * Bean life cycle in Spring Bean Factory Container is as follows:
 
-The Spring container instantiates the bean from the bean’s definition in the XML file.  
+ * The Spring container instantiates the bean from the bean’s definition in the XML file.  
 
-Spring populates all of the properties using the dependency injection, as specified in the bean definition (getters and seters).  
+ * Spring populates all of the properties using the dependency injection, as specified in the bean definition (getters and seters).  
 
-The factory calls setBeanName() by passing the bean’s ID if the bean implements the BeanNameAware interface.  
+ * The factory calls setBeanName() by passing the bean’s ID if the bean implements the BeanNameAware interface.  
 
-The factory calls setBeanFactory() by passing an instance of itself if the bean implements the BeanFactoryAware interface.  
+ * The factory calls setBeanFactory() by passing an instance of itself if the bean implements the BeanFactoryAware interface.  
 
-preProcessBeforeInitialization() methods are called if there are any BeanPostProcessors associated with the bean.  
+ * preProcessBeforeInitialization() methods are called if there are any BeanPostProcessors associated with the bean.  
 
-If an init-method is specified for the bean, then it will be called.  
+ * If an init-method is specified for the bean, then it will be called.  
 
-Finally, postProcessAfterInitialization() methods will be called if there are any BeanPostProcessors associated with the bean.  
+ * Finally, postProcessAfterInitialization() methods will be called if there are any BeanPostProcessors associated with the bean.  
 
 Ref: 
 https://www.concretepage.com/spring/spring-bean-life-cycle-tutorial
@@ -56,55 +56,57 @@ https://www.concretepage.com/spring/spring-bean-life-cycle-tutorial
 ***Question 7:***
 How many modules are there in Spring Framework and what are they?  
 ***Answer:***  
-There are around 20 modules which are generalized into Core Container, Data Access/Integration, Web, AOP (Aspect Oriented Programming), Instrumentation and Test.
+There are around 20 modules which are generalized into Core Container, Data Access/Integration, Web, AOP (Aspect Oriented Programming), Instrumentation and Test.  
 
-Spring Core Container – This layer is basically the core of Spring Framework. It contains the following modules :
-Spring Core
-Spring Bean
-SpEL (Spring Expression Language)
-Spring Context 
+Spring Core Container – This layer is basically the core of Spring Framework. It contains the following modules :  
+Spring Core  
+Spring Bean  
+SpEL (Spring Expression Language)  
+Spring Context  
+  
+Data Access/Integration – This layer provides support to interact with the database. It contains the following modules :  
+JDBC (Java DataBase Connectivity)  
+ORM (Object Relational Mapping)  
+OXM (Object XML Mappers)  
+JMS (Java Messaging Service)  
+  
+Transaction  
+Web – This layer provides support to create web application. It contains the following modules :  
+Web  
+Web – MVC  
+Web – Socket  
+Web – Portlet  
+  
+Aspect Oriented Programming (AOP) – In this layer you can use Advices, Pointcuts etc., to decouple the code.  
+  
+Instrumentation – This layer provides support to class instrumentation and classloader implementations.  
+  
+Test – This layer provides support to testing with JUnit and TestNG.  
+  
+Few Miscellaneous modules are given below:  
 
-Data Access/Integration – This layer provides support to interact with the database. It contains the following modules :
-JDBC (Java DataBase Connectivity)
-ORM (Object Relational Mapping)
-OXM (Object XML Mappers)
-JMS (Java Messaging Service)
+Messaging – This module provides support for STOMP. It also supports an annotation programming model that is used for routing and processing STOMP messages from WebSocket clients.  
+Aspects – This module provides support to integration with AspectJ.  
 
-Transaction
-Web – This layer provides support to create web application. It contains the following modules :
-Web
-Web – MVC
-Web – Socket
-Web – Portlet
-
-Aspect Oriented Programming (AOP) – In this layer you can use Advices, Pointcuts etc., to decouple the code.
-
-Instrumentation – This layer provides support to class instrumentation and classloader implementations.
-
-Test – This layer provides support to testing with JUnit and TestNG.
-
-Few Miscellaneous modules are given below:
-
-Messaging – This module provides support for STOMP. It also supports an annotation programming model that is used for routing and processing STOMP messages from WebSocket clients.
-Aspects – This module provides support to integration with AspectJ.
-
-19. What is the Bean life cycle in Spring Bean Factory Container?
-
+***Question 19:***
+What is the Bean life cycle in Spring Bean Factory Container?
+***Answer***  
 Bean life cycle in Spring Bean Factory Container is as follows:
+  
+The Spring container instantiates the bean from the bean’s definition in the XML file.  
+Spring populates all of the properties using the dependency injection, as specified in the bean definition.  
+The factory calls setBeanName() by passing the bean’s ID, if the bean implements the BeanNameAware interface.  
+The factory calls setBeanFactory() by passing an instance of itself, if the bean implements the BeanFactoryAware interface.  
+preProcessBeforeInitialization() methods are called if there are any BeanPostProcessors associated with the bean.    
+If an init-method is specified for the bean, then it will be called.  
+Finally, postProcessAfterInitialization() methods will be called if there are any BeanPostProcessors associated with the bean.   
 
-The Spring container instantiates the bean from the bean’s definition in the XML file.
-Spring populates all of the properties using the dependency injection, as specified in the bean definition.
-The factory calls setBeanName() by passing the bean’s ID, if the bean implements the BeanNameAware interface.
-The factory calls setBeanFactory() by passing an instance of itself, if the bean implements the BeanFactoryAware interface.
-preProcessBeforeInitialization() methods are called if there are any BeanPostProcessors associated with the bean.
-If an init-method is specified for the bean, then it will be called.
-Finally, postProcessAfterInitialization() methods will be called if there are any BeanPostProcessors associated with the bean.
-
-
+  
+***Question***  
 Explain inner beans in Spring.
-
-A bean can be declared as an inner bean only when it is used as a property of another bean. For defining a bean, the Spring’s XML based configuration metadata provides the use of <bean> element inside the <property> or <constructor-arg>. Inner beans are always anonymous and they are always scoped as prototypes. For example, let’s say we have one Student class having reference of Person class. Here we will be creating only one instance of Person class and use it inside Student.
-
+***Answer***  
+A bean can be declared as an inner bean only when it is used as a property of another bean. For defining a bean, the Spring’s XML based configuration metadata provides the use of <bean> element inside the <property> or <constructor-arg>. Inner beans are always anonymous and they are always scoped as prototypes. For example, let’s say we have one Student class having reference of Person class. Here we will be creating only one instance of Person class and use it inside Student.  
+  
 Here’s a Student class followed by bean configuration file:
 
 Student.java
@@ -144,6 +146,7 @@ List out the different scopes of Bean
 (ii) Prototype: a new bean is created whenever requested.
 (iii) Request: Every HTTP Request creates a bean.
 (iv) Session: A bean for every HTTP Session.  
+() Global Session: 
 ```
 
 ***Question 9:***  
@@ -167,3 +170,4 @@ A single @SpringBootApplication annotation can be used to enable those three fea
 @EnableAutoConfiguration: enable Spring Boot’s auto-configuration mechanism
 @ComponentScan: enable @Component scan on the package where the application is located (see the best practices)
 @Configuration: allow to register extra beans in the context or import additional configuration classes
+ 
