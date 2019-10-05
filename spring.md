@@ -171,7 +171,13 @@ byType: It injects the object dependency according to type. It matches and wires
 constructor: It injects the dependency by calling the constructor of the class. It has a large number of parameters.  
 autodetect: First the container tries to wire using autowire by constructor, if it can’t then it tries to autowire by byType.  
 
-
+***Question:***
+What’s the difference between @Component, @Controller, @Repository & @Service annotations in Spring?  
+***Answer:***
+@Component: This marks a java class as a bean. It is a generic stereotype for any Spring-managed component. The component-scanning mechanism of spring now can pick it up and pull it into the application context.  
+@Controller: This marks a class as a Spring Web MVC controller. Beans marked with it are automatically imported into the Dependency Injection container.  
+@Service: This annotation is a specialization of the component annotation. It doesn’t provide any additional behavior over the @Component annotation. You can use @Service over @Component in service-layer classes as it specifies intent in a better way.  
+@Repository: This annotation is a specialization of the @Component annotation with similar use and functionality. It provides additional benefits specifically for DAOs. It imports the DAOs into the DI container and makes the unchecked exceptions eligible for translation into Spring DataAccessException.  
 
 [Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)
 
