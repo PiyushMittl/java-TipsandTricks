@@ -1,5 +1,5 @@
 1. [Core Java](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/java.md)
-2. [Core Java 1.8]
+2. [Core Java 1.8](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/java8.md)
 3. [Spring](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/spring.md)
 4. [Spring Boot](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
 5. [Hibernate](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
@@ -66,4 +66,8 @@
 
 4.Companies
   1. Amazon
-  2. 
+  2. Directi
+  3. ThoughtWorks
+  4. OYO
+  5. Visa
+  
