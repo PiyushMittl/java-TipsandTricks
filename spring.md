@@ -160,6 +160,18 @@ Types of Spring context and difference between them.
 **BeanFactory:** BeanFactory is like a factory class that contains a collection of beans. It instantiates the bean whenever asked for by clients.  
 **ApplicationContext:** The ApplicationContext interface is built on top of the BeanFactory interface. It provides some extra functionality on top BeanFactory.   
 
+***Question11:*** 
+What do you understand by auto wiring and name the different modes of it?  
+***Answer:***
+The Spring container is able to autowire relationships between the collaborating beans. That is, it is possible to let Spring resolve collaborators for your bean automatically by inspecting the contents of the BeanFactory.  
+Different modes of bean auto-wiring are:  
+no: This is default setting which means no autowiring. Explicit bean reference should be used for wiring.  
+byName: It injects the object dependency according to name of the bean. It matches and wires its properties with the beans defined by the same names in the XML file.  
+byType: It injects the object dependency according to type. It matches and wires a property if its type matches with exactly one of the beans name in XML file.  
+constructor: It injects the dependency by calling the constructor of the class. It has a large number of parameters.  
+autodetect: First the container tries to wire using autowire by constructor, if it can’t then it tries to autowire by byType.  
+
+
 
 [Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)
 
