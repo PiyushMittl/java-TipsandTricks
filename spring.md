@@ -3,6 +3,7 @@
 ***Question 1:***  
 what is `@Qualifier` annotation.  
 ***Answer:***  
+When you create more than one bean of the same type and want to wire only one of them with a property  you can use the `@Qualifier` annotation along with `@Autowired` to remove the ambiguity by specifying which exact bean should be wired.  
 
 ***Question 2:***  
 what is propogation in Spring.  
@@ -35,19 +36,19 @@ bean lifecycle.
 ***Answer:***  
  * Bean life cycle in Spring Bean Factory Container is as follows:
 
- * The Spring container instantiates the bean from the bean’s definition in the XML file.  
+ * The Spring container instantiates the bean from the `bean’s definition in the XML file`.  
 
- * Spring populates all of the properties using the dependency injection, as specified in the bean definition (getters and seters).  
+ * Spring populates all of the properties using the dependency injection, as specified in the bean definition `(getters and seters)`.  
 
- * The factory calls setBeanName() by passing the bean’s ID if the bean implements the BeanNameAware interface.  
+ * The factory calls `setBeanName()` by passing the bean’s ID if the bean implements the `BeanNameAware` interface.  
 
- * The factory calls setBeanFactory() by passing an instance of itself if the bean implements the BeanFactoryAware interface.  
+ * The factory calls `setBeanFactory()` by passing an instance of itself if the bean implements the `BeanFactoryAware` interface.  
 
- * preProcessBeforeInitialization() methods are called if there are any BeanPostProcessors associated with the bean.  
+ * `preProcessBeforeInitialization()` methods are called if there are any BeanPostProcessors associated with the bean.  
 
- * If an init-method is specified for the bean, then it will be called.  
+ * If an `init-method` is specified for the bean, then it will be called.  
 
- * Finally, postProcessAfterInitialization() methods will be called if there are any BeanPostProcessors associated with the bean.  
+ * Finally, `postProcessAfterInitialization()` methods will be called if there are any BeanPostProcessors associated with the bean.  
 
 Ref: 
 https://www.concretepage.com/spring/spring-bean-life-cycle-tutorial
