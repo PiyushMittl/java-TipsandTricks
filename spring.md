@@ -149,22 +149,22 @@ Types of Spring context and difference between them.
 
 ***Question11:*** 
 What do you understand by auto wiring and name the different modes of it?  
-***Answer:***
+***Answer:***  
 The Spring container is able to autowire relationships between the collaborating beans. That is, it is possible to let Spring resolve collaborators for your bean automatically by inspecting the contents of the BeanFactory.  
 Different modes of bean auto-wiring are:  
-no: This is default setting which means no autowiring. Explicit bean reference should be used for wiring.  
-byName: It injects the object dependency according to name of the bean. It matches and wires its properties with the beans defined by the same names in the XML file.  
-byType: It injects the object dependency according to type. It matches and wires a property if its type matches with exactly one of the beans name in XML file.  
-constructor: It injects the dependency by calling the constructor of the class. It has a large number of parameters.  
-autodetect: First the container tries to wire using autowire by constructor, if it can’t then it tries to autowire by byType.  
+`no:` This is default setting which means no autowiring. Explicit bean reference should be used for wiring.  
+`byName:` It injects the object dependency according to name of the bean. It matches and wires its properties with the beans defined by the same names in the XML file.  
+`byType:` It injects the object dependency according to type. It matches and wires a property if its type matches with exactly one of the beans name in XML file.  
+`constructor:` It injects the dependency by calling the constructor of the class. It has a large number of parameters.  
+`autodetect:` First the container tries to wire using autowire by constructor, if it can’t then it tries to autowire by byType.  
 
 ***Question:***
-What’s the difference between @Component, @Controller, @Repository & @Service annotations in Spring?  
+What’s the difference between `@Component`, `@Controller`, `@Repository` & `@Service` annotations in Spring?  
 ***Answer:***
-@Component: This marks a java class as a bean. It is a generic stereotype for any Spring-managed component. The component-scanning mechanism of spring now can pick it up and pull it into the application context.  
-@Controller: This marks a class as a Spring Web MVC controller. Beans marked with it are automatically imported into the Dependency Injection container.  
-@Service: This annotation is a specialization of the component annotation. It doesn’t provide any additional behavior over the @Component annotation. You can use @Service over @Component in service-layer classes as it specifies intent in a better way.  
-@Repository: This annotation is a specialization of the @Component annotation with similar use and functionality. It provides additional benefits specifically for DAOs. It imports the DAOs into the DI container and makes the unchecked exceptions eligible for translation into Spring DataAccessException.  
+`@Component:` This marks a java class as a bean. It is a generic stereotype for any Spring-managed component. The component-scanning mechanism of spring now can pick it up and pull it into the application context.  
+@Controller:` This marks a class as a Spring Web MVC controller. Beans marked with it are automatically imported into the Dependency Injection container.  
+@Service:` This annotation is a specialization of the component annotation. It doesn’t provide any additional behavior over the `@Component` annotation You can use `@Service` over `@Component` in service-layer classes as it specifies intent in a better way.  
+`@Repository:` This annotation is a specialization of the `@Component` annotation with similar use and functionality. It provides additional benefits specifically for DAOs. It imports the DAOs into the DI container and makes the unchecked exceptions eligible for translation into Spring DataAccessException.  
 
 [Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)
 
@@ -175,12 +175,12 @@ What’s the difference between @Component, @Controller, @Repository & @Service 
 
 # Spring Boot #
 ***Question 1:***  
-what is @Springbootapplication annotation.  
+what is `@Springbootapplication` annotation.  
 ***Answer:***   
 (Enable ACC)  
-A single @SpringBootApplication annotation can be used to enable those three features, that is:  
+A single `@SpringBootApplication` annotation can be used to enable those three features, that is:  
   
-@EnableAutoConfiguration: enable Spring Boot’s auto-configuration mechanism  
-@ComponentScan: enable @Component scan on the package where the application is located (see the best practices)  
-@Configuration: allow to register extra beans in the context or import additional configuration classes   
+`@EnableAutoConfiguration:` enable Spring Boot’s auto-configuration mechanism  
+`@ComponentScan:` enable `@Component` scan on the package where the application is located (see the best practices)  
+`@Configuration:` allow to register extra beans in the context or import additional configuration classes   
   
