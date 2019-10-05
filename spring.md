@@ -154,6 +154,13 @@ List out the types of Dependency Injection
 ***Answer:***  
 
 
+***Question 10:***
+Types of Spring context and difference between them.  
+***Answer***  
+ApplicationContext  
+BeanFactory  
+
+
 [Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)
 
 
