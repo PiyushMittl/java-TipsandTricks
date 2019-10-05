@@ -7,6 +7,14 @@ www.geeksforgeeks.org/sql-group-by/amp/
 https://www.guru99.com/sql-server-joins.html  
 
 
+***Qustion***
+Difference between where and having  
+
+***Question***  
+what is view  
+
+***Question***  
+what is indexing  
 
 
 ***Interview Qiestion:***  
