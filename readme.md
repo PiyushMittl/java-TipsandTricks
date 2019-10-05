@@ -38,6 +38,27 @@
   15. Splay Trees
   
   
+### 🔌 Adapter
+
+<details>
+<summary>View contents</summary>
+
+* [`ary`](#ary)
+* [`call`](#call)
+* [`collectInto`](#collectinto)
+* [`flip`](#flip)
+* [`over`](#over)
+* [`overArgs`](#overargs)
+* [`pipeAsyncFunctions`](#pipeasyncfunctions)
+* [`pipeFunctions`](#pipefunctions)
+* [`promisify`](#promisify)
+* [`rearg`](#rearg)
+* [`spreadOver`](#spreadover)
+* [`unary`](#unary)
+
+</details>  
+  
+  
 2.Algorithm  
   1. Analysis
   2. Searching and Sorting
