@@ -172,9 +172,9 @@ BeanFactory
 ***Question 1:***  
 what is @Springbootapplication annotation.  
 ***Answer:***   
-A single @SpringBootApplication annotation can be used to enable those three features, that is:
-
-@EnableAutoConfiguration: enable Spring Boot’s auto-configuration mechanism
-@ComponentScan: enable @Component scan on the package where the application is located (see the best practices)
-@Configuration: allow to register extra beans in the context or import additional configuration classes
- 
+A single @SpringBootApplication annotation can be used to enable those three features, that is:  
+  
+@EnableAutoConfiguration: enable Spring Boot’s auto-configuration mechanism  
+@ComponentScan: enable @Component scan on the package where the application is located (see the best practices)  
+@Configuration: allow to register extra beans in the context or import additional configuration classes   
+  
