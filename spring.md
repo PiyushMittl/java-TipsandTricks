@@ -88,8 +88,8 @@ Few Miscellaneous modules are given below:
 Messaging – This module provides support for STOMP. It also supports an annotation programming model that is used for routing and processing STOMP messages from WebSocket clients.  
 Aspects – This module provides support to integration with AspectJ.  
 
-***Question 19:***
-What is the Bean life cycle in Spring Bean Factory Container?
+***Question 19:***  
+What is the Bean life cycle in Spring Bean Factory Container?  
 ***Answer***  
 Bean life cycle in Spring Bean Factory Container is as follows:
   
@@ -103,7 +103,7 @@ Finally, postProcessAfterInitialization() methods will be called if there are an
 
   
 ***Question***  
-Explain inner beans in Spring.
+Explain inner beans in Spring.  
 ***Answer***  
 A bean can be declared as an inner bean only when it is used as a property of another bean. For defining a bean, the Spring’s XML based configuration metadata provides the use of <bean> element inside the <property> or <constructor-arg>. Inner beans are always anonymous and they are always scoped as prototypes. For example, let’s say we have one Student class having reference of Person class. Here we will be creating only one instance of Person class and use it inside Student.  
   
@@ -157,8 +157,8 @@ List out the types of Dependency Injection
 ***Question 10:***  
 Types of Spring context and difference between them.   
 ***Answer***  
-ApplicationContext  
-BeanFactory  
+**BeanFactory:** BeanFactory is like a factory class that contains a collection of beans. It instantiates the bean whenever asked for by clients.  
+**ApplicationContext:** The ApplicationContext interface is built on top of the BeanFactory interface. It provides some extra functionality on top BeanFactory.   
 
 
 [Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)
