@@ -88,20 +88,6 @@ Few Miscellaneous modules are given below:
 
 Messaging – This module provides support for STOMP. It also supports an annotation programming model that is used for routing and processing STOMP messages from WebSocket clients.  
 Aspects – This module provides support to integration with AspectJ.  
-
-***Question 19:***  
-What is the Bean life cycle in Spring Bean Factory Container?  
-***Answer***  
-Bean life cycle in Spring Bean Factory Container is as follows:
-  
-The Spring container instantiates the bean from the bean’s definition in the XML file.  
-Spring populates all of the properties using the dependency injection, as specified in the bean definition.  
-The factory calls setBeanName() by passing the bean’s ID, if the bean implements the BeanNameAware interface.  
-The factory calls setBeanFactory() by passing an instance of itself, if the bean implements the BeanFactoryAware interface.  
-preProcessBeforeInitialization() methods are called if there are any BeanPostProcessors associated with the bean.    
-If an init-method is specified for the bean, then it will be called.  
-Finally, postProcessAfterInitialization() methods will be called if there are any BeanPostProcessors associated with the bean.   
-
   
 ***Question***  
 Explain inner beans in Spring.  
