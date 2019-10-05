@@ -3,6 +3,8 @@ what is `@Qualifier` annotation.
 ***Answer:***  
 When you create more than one bean of the same type and want to wire only one of them with a property  you can use the `@Qualifier` annotation along with `@Autowired` to remove the ambiguity by specifying which exact bean should be wired.  
 
+<br>[⬆ Back to top](***Question 1:***)
+
 ***Question 2:***  
 what is propogation in Spring.  
 ***Answer:***  
