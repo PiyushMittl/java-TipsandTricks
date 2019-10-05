@@ -185,7 +185,7 @@ What’s the difference between `@Component`, `@Controller`, `@Repository` & `@S
 
 
 
-## Spring Boot
+## Spring-Boot
 ***Question 1:***  
 what is `@Springbootapplication` annotation.  
 ***Answer:***   
@@ -195,4 +195,4 @@ A single `@SpringBootApplication` annotation can be used to enable those three f
 `@EnableAutoConfiguration:` enable Spring Boot’s auto-configuration mechanism  
 `@ComponentScan:` enable `@Component` scan on the package where the application is located (see the best practices)  
 `@Configuration:` allow to register extra beans in the context or import additional configuration classes   
-<br>[⬆ Back to top](#Spring Boot)  
+<br>[⬆ Back to top](#Spring-Boot)  
