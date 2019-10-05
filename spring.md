@@ -94,7 +94,11 @@ A bean can be declared as an inner bean only when it is used as a property of an
   
 Here’s a Student class followed by bean configuration file:
 
+<details>
+<summary>Examples</summary>
+
 Student.java
+
 ``` java
 public class Student
 {
@@ -122,6 +126,9 @@ studentbean.xml
 </property>
 </bean>  
 ```
+</details>
+
+
 
 ***Question 8:***  
 List out the different scopes of Bean  
