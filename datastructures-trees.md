@@ -23,3 +23,8 @@ avl tree
 ..  
 redblack tree  
 ..  
+binary tree
+..
+binary search tree
+..
+heap
