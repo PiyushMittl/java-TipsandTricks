@@ -7,7 +7,11 @@ Types of cache in Hibernate.
 ***Answer:***   
 
 topics:  
-
+1. Saving object
+    a. create an object of SessionFactory
+    b. open an Session
+    c. save an object
+    
 1. Embeded objects(saving sub objects)    
 2. Mapping (saving sub entities)   
     a. one to one  
@@ -27,7 +31,7 @@ topics:
 **have a look:**  
 [blog](https://github.com/PiyushMittl/hibernate-framework-bloglinks)    
 
-**Embedded objects class User with data member:***
+**Embedded objects class User with data member:**
 1. ArrayList<String>  
 2. ArrayList<Address> - called embedded objects iff Address is not an Entity  
 3. Address (Address is not an Entity) - called embedded object  
