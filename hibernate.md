@@ -8,15 +8,15 @@ Types of cache in Hibernate.
 
 topics:  
 
-1. Embeded objects(saving sub object which are not entities. when data member is not an Entity, then have some idea to save simple object and Collection(List) of such objects)    
-2. Mapping or Relationship(saving sub entities. When data member is of type Entity, then have some idea to save simple object and (Collection)List of such objects)   
+1. Embeded objects(saving sub objects)    
+2. Mapping (saving sub entities)   
     a. one to one  
     b. one to many  
     c. many to one  
 3. Inheritance  
-    a. single table strategy
-    b. table per class strategy
-    c. join table strategy
+    a. single table strategy  
+    b. table per class strategy  
+    c. join table strategy  
 4. Caching  
     a. level one  
     b. level two  
@@ -27,7 +27,7 @@ topics:
 **have a look:**  
 [blog](https://github.com/PiyushMittl/hibernate-framework-bloglinks)    
 
-**class User with data member:***
+** Embedded objects class User with data member:***
 1. ArrayList<String>  
 2. ArrayList<Address> - called embedded objects iff Address is not an Entity  
 3. Address (Address is not an Entity) - called embedded object  
