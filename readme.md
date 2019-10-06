@@ -76,6 +76,7 @@
 ## 3.Problem Solving using Data Structures and Algorithms  
 <details>
   <summary>View contents</summary>
+  
   1. [Arrays](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-arrays.md)
   2. Linked Lists
   3. Stacks
@@ -90,6 +91,7 @@
   12. Dynamic Programming
   13. Bit Manipulation
   14. Mathematical Algorithms
+  
   </summary>
 
 ## 4.Companies
