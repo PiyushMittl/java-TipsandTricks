@@ -21,6 +21,9 @@
   
   
 ## 1.Data Structures
+<details>
+  <summary>View contents</summary>
+  
   1. [Recursion](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/datastructures-recursion.md)
   2. Stacks
   3. Queues
@@ -37,6 +40,7 @@
   14. Segment Trees
   15. Splay Trees
   
+</details>
   
 ### 🔌 Adapter
 
