@@ -8,9 +8,9 @@ Types of cache in Hibernate.
 
 topics:  
 1. Saving object
-    a. create an object of SessionFactory
-    b. open an Session
-    c. save an object
+    a. create an object of SessionFactory   
+    b. open an Session  
+    c. save an object  
     
 1. Embeded objects(saving sub objects)    
 2. Mapping (saving sub entities)   
