@@ -27,7 +27,7 @@ topics:
 **have a look:**  
 [blog](https://github.com/PiyushMittl/hibernate-framework-bloglinks)    
 
-** Embedded objects class User with data member:***
+**Embedded objects class User with data member:***
 1. ArrayList<String>  
 2. ArrayList<Address> - called embedded objects iff Address is not an Entity  
 3. Address (Address is not an Entity) - called embedded object  
