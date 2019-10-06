@@ -75,7 +75,7 @@
   
 ## 3.Problem Solving using Data Structures and Algorithms  
 <details>
-  <summary>View contents</summary>
+<summary>View contents</summary>
   
   1. [Arrays](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-arrays.md)
   2. Linked Lists
@@ -92,12 +92,16 @@
   13. Bit Manipulation
   14. Mathematical Algorithms
   
-  </summary>
+</details>
 
 ## 4.Companies
+<details>
+<summary>View contents</summary>
+
   1. Amazon
   2. Directi
   3. ThoughtWorks
   4. OYO
   5. Visa
   
+</details>
