@@ -20,7 +20,7 @@
   
   
   
-1.Data Structures
+## 1.Data Structures
   1. [Recursion](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/datastructures-recursion.md)
   2. Stacks
   3. Queues
@@ -59,10 +59,9 @@
 </details>  
   
   
-2.Algorithm  
+## 2.Algorithm  
 <details>
 <summary>View contents</summary>
-
   1. Analysis
   2. Searching and Sorting
   3. Divide and Conquer
@@ -72,7 +71,9 @@
   7. Complexity Classes
 </details>  
   
-3.Problem Solving using Data Structures and Algorithms  
+## 3.Problem Solving using Data Structures and Algorithms  
+<details>
+  <summary>View contents</summary>
   1. [Arrays](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-arrays.md)
   2. Linked Lists
   3. Stacks
@@ -87,8 +88,9 @@
   12. Dynamic Programming
   13. Bit Manipulation
   14. Mathematical Algorithms
+  </summary>
 
-4.Companies
+## 4.Companies
   1. Amazon
   2. Directi
   3. ThoughtWorks
