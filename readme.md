@@ -60,6 +60,9 @@
   
   
 2.Algorithm  
+<details>
+<summary>View contents</summary>
+
   1. Analysis
   2. Searching and Sorting
   3. Divide and Conquer
@@ -67,7 +70,7 @@
   5. Back Tracking
   6. Dynamic Programming
   7. Complexity Classes
-  
+</details>  
   
 3.Problem Solving using Data Structures and Algorithms  
   1. [Arrays](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-arrays.md)
