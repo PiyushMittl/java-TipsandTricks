@@ -28,6 +28,9 @@ binary tree
 binary search tree  
 ..  
 **heap**  
-Heap a is always complete binary tree.  
+* Heap a is always complete binary tree.  
+* we only insert node at the bottom and then heapify the tree.  
+* we only delete the node from top and inset the last node at the place of deleted node and heapify.  
+
 
 
