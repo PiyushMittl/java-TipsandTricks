@@ -190,7 +190,7 @@ It provides several endpoints e.g. a REST endpoint to retrieve this kind of info
 It also comes with a remote shell which you can use to securely go inside Spring Boot application and run some command to expose the same set of data. You can even use JMX to control this behavior at runtime.  
  
 Btw, it's important to secure your Spring Actuator endpoints because it exposes a lot of confidential information and a potentially dangerous one-two. For example, by using /showdown endpoint you can kill a Spring Boot application.  
-</datais>
+</details>
  
 ***Have a look:***   
 [Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)  
