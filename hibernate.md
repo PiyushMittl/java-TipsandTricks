@@ -12,8 +12,8 @@ topics:
     b. open an Session  
     c. save an object  
     
-1. Embeded objects(when entity is saving sub objects)    
-2. Mapping (when entity is saving sub entities)   
+1. Embeded objects(when entity is saving(having data member as) sub objects)    
+2. Mapping (when entity is saving(having data member as) sub entities)   
     a. one to one  
     b. one to many  
     c. many to one  
@@ -45,6 +45,16 @@ topics:
 3. @Entity  
 4. @ElementCollection  
 5. @CollectionId  
+----  
+1. @Entity  
+2. @Table(name="###")  
+3. @Id
+4. @GenericGenerator(name="increment",strategy="org.hibernate.id.IncrementGenerator")
+
+3. @Iheritance(strategy=Inheritance.JOINED)  
+4. @Iheritance(strategy=Inheritance.SINGLE_TABLE)  
+5. @Iheritance(strategy=Inheritance.TABLE_PER_CLASS)  
+6. 
 
 
 
