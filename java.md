@@ -48,6 +48,7 @@ Bootstrap, Extension, System (BSE)
 12. Example/program for RuntimeException and Exception.
 13. Singleton design pattern (sample code).
 14. How to create immutable class.  
+  
 ***Question 15.***  
 Can we overload and override static metohds.  
 Answer:  
@@ -111,7 +112,7 @@ www.geeksforgeeks.org/association-composition-aggregation-java/amp/
 27. Find mid node of a linked list travesing only once when last node address is not given.
 27. Is overloading possible by changing return type.
 28. Is overriding possible by changing return type.
-29. Methods in object classe.
+29. Methods in object classe.  
 Question 30.  
 Answer:  
 ``` java
