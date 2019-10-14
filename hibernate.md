@@ -12,12 +12,12 @@ topics:
     b. open an Session  
     c. save an object  
     
-1. Embeded objects(saving sub objects)    
-2. Mapping (saving sub entities)   
+1. Embeded objects(when entity is saving sub objects)    
+2. Mapping (when entity is saving sub entities)   
     a. one to one  
     b. one to many  
     c. many to one  
-3. Inheritance  
+3. Inheritance (when entity is inheriting an entity)
     a. single table strategy  
     b. table per class strategy  
     c. join table strategy  
