@@ -6,6 +6,20 @@ differenece between @Entity and @Table
 Types of cache in Hibernate.  
 ***Answer:***   
 
+***Question 3:***   
+what is **Discriminator** in inheritance in hibernate  
+***Answer:***   
+
+***Question 5:***   
+what is **"FetchType.LAZY"** in mapping.  
+***Answer:***   
+
+***Question 6:***   
+what is **"CascadeType.ALL"** in mapping.  
+***Answer:***   
+
+
+
 topics:  
 1. Saving object
     a. create an object of SessionFactory   
