@@ -175,6 +175,20 @@ What’s the difference between `@Component`, `@Controller`, `@Repository` & `@S
 `@Service:` This annotation is a specialization of the component annotation. It doesn’t provide any additional behavior over the `@Component` annotation You can use `@Service` over `@Component` in service-layer classes as it specifies intent in a better way.  
 `@Repository:` This annotation is a specialization of the `@Component` annotation with similar use and functionality. It provides additional benefits specifically for DAOs. It imports the DAOs into the DI container and makes the unchecked exceptions eligible for translation into Spring DataAccessException.  
   
+
+***Question:***  
+What is Spring Actuator? What are its advantages?  
+***Answer:***  
+This is an interesting Spring Boot question and mostly asked on Java roles which also has some support responsibility. Spring Actuator is another cool Spring Boot feature which allows seeing inside a running application.  
+   
+Yes, you read it correctly. It allows you to see inside an application. Since Spring Boot is all about auto-configuration it makes debugging difficult and at some point in time, you want to know which beans are created in Spring's Application Context and how Controllers are mapped. Spring Actuator provides all that information.   
+ 
+It provides several endpoints e.g. a REST endpoint to retrieve this kind of information over the web. It also provides a lot of insight and metrics about application health e.g. CPU and memory usage, number of threads etc.   
+ 
+It also comes with a remote shell which you can use to securely go inside Spring Boot application and run some command to expose the same set of data. You can even use JMX to control this behavior at runtime.  
+ 
+Btw, it's important to secure your Spring Actuator endpoints because it exposes a lot of confidential information and a potentially dangerous one-two. For example, by using /showdown endpoint you can kill a Spring Boot application.  
+ 
   
 ***Have a look:***   
 [Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)  
