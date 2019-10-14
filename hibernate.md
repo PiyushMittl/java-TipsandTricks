@@ -47,14 +47,12 @@ topics:
 5. @CollectionId  
 ----  
 1. @Entity  
-2. @Table(name="###")  
-3. @Id
-4. @GenericGenerator(name="increment",strategy="org.hibernate.id.IncrementGenerator")
-
-3. @Iheritance(strategy=Inheritance.JOINED)  
-4. @Iheritance(strategy=Inheritance.SINGLE_TABLE)  
-5. @Iheritance(strategy=Inheritance.TABLE_PER_CLASS)  
-6. 
+2. @Table(name="parent")   
+3. @Id  
+4. @GenericGenerator(name="increment",strategy="org.hibernate.id.IncrementGenerator")  
+5. @GeneratedValue(generator="inrement")  
+4. @Iheritance(strategy=Inheritance.JOINED) OR @Iheritance(strategy=Inheritance.SINGLE_TABLE) OR Iheritance(strategy=Inheritance.TABLE_PER_CLASS)  
+6. @DiscriminatorValue("child1")
 
 
 
