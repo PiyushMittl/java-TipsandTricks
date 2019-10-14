@@ -47,8 +47,8 @@ Bootstrap, Extension, System (BSE)
 11. Base class of Exception.
 12. Example/program for RuntimeException and Exception.
 13. Singleton design pattern (sample code).
-14. How to create immutable class.
-Question 15.  
+14. How to create immutable class.  
+*** Question 15. ***  
 Can we overload and override static metohds.  
 Answer:  
 
