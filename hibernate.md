@@ -35,7 +35,7 @@ topics:
     a. single table strategy  
     b. table per class strategy  
     c. join table strategy  
-4. Caching  
+4. [Caching](https://github.com/PiyushMittl/hibernate-framework-bloglinks/blob/master/Caching.pdf)  
     a. level one  
     b. level two  
     
