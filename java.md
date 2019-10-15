@@ -1557,3 +1557,6 @@ public class OverrideDemo1{
 ***Question***
 How to prevent your class from being clonned.
 ***Answer***
+
+Qsn: alternate Singleton
+Ans: enum
