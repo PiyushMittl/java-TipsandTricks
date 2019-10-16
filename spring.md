@@ -178,9 +178,8 @@ What’s the difference between `@Component`, `@Controller`, `@Repository` & `@S
 
 ***Question:***  
 What is Spring Actuator? What are its advantages?  
-***Answer:***  
 <details>
-<summary>Vie</summary>
+<summary>Answer</summary>
 This is an interesting Spring Boot question and mostly asked on Java roles which also has some support responsibility. Spring Actuator is another cool Spring Boot feature which allows seeing inside a running application.  
    
 Yes, you read it correctly. It allows you to see inside an application. Since Spring Boot is all about auto-configuration it makes debugging difficult and at some point in time, you want to know which beans are created in Spring's Application Context and how Controllers are mapped. Spring Actuator provides all that information.   
