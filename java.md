@@ -11,6 +11,7 @@ Arrays is a utility class which implements Collections class.
 How many ways are there to create an Object.  
 <details>
   <summary>Answer</summary>  
+	
 **A.** Using new keyword  
 This is the most common way to create an object in java. Almost 99% of objects are created in this way.  
 ```
@@ -33,6 +34,7 @@ Object deserialization is nothing but creating an object from its serialized for
 ObjectInputStream inStream = new ObjectInputStream(anInputStream );
 MyObject object = (MyObject) inStream.readObject();
 ```
+
 </details>
 
 **Queation 3.**  
