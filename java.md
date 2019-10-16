@@ -38,9 +38,18 @@ MyObject object = (MyObject) inStream.readObject();
 </details>
 
 **Queation 3.**  
-3. Difference b/w "?" and Object in generics.  
+Difference b/w "?" and Object in generics.  
+<details>
+  <summary>Answer</summary>
+</details>
+
 **Queation 4.**  
-4. Multiply 50 digit numbers.  
+Multiply 50 digit numbers.  
+<details>
+  <summary>Answer</summary>
+</details>
+
+
 **Queation 5.**  
 5. Will finally be called if there is a return statement.  
 **Answer:**  
