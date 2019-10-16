@@ -7,7 +7,7 @@ Arrays is a utility class which implements Collections class.
 
 **Object**
 
-Queation 2.  
+**Queation 2.**  
 Ways to create an Object.  
   
 Answer.  
@@ -34,11 +34,31 @@ ObjectInputStream inStream = new ObjectInputStream(anInputStream );
 MyObject object = (MyObject) inStream.readObject();
 ```
 
+**Queation 3.**  
+3. Difference b/w "?" and Object in generics.  
+**Queation 4.**  
+4. Multiply 50 digit numbers.  
+**Queation 5.**  
+5. Will finally be called if there is a return statement.  
+**Answer:**  
+Yes.  
+Finally can be called if there is no return statement.  
 
-3. Difference b/w "?" and Object in generics.
-4. Multiply 50 digit numbers.
-5. Will finally be called if there is a return statement.
-6. What is Static import.
+**Queation 6.**  
+6. What is Static import.  
+**Answer:**  
+`` java
+import static java.lang.System.*;    
+class StaticImportExample{  
+  public static void main(String args[]){  
+     
+   out.println("Hello");//Now no need of System.out  
+   out.println("Java");  
+  
+ }   
+}   
+``  
+**Queation 7.**  
 7. what is final,finally and finalize.
 8. thread implementation (Thread class and Runnable interface).
 9. What is class loader. Types of class loader.  
