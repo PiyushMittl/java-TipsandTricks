@@ -8,6 +8,8 @@ Arrays is a utility class which implements Collections class.
 **Object**
 
 **Queation 2.**  
+<details>
+  <summary>Answer</summary>
 Ways to create an Object.  
   
 Answer.  
@@ -33,6 +35,7 @@ Object deserialization is nothing but creating an object from its serialized for
 ObjectInputStream inStream = new ObjectInputStream(anInputStream );
 MyObject object = (MyObject) inStream.readObject();
 ```
+</details>
 
 **Queation 3.**  
 3. Difference b/w "?" and Object in generics.  
