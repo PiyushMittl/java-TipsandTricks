@@ -1603,7 +1603,7 @@ Ans: enum
 What is producer consumer problem.  
 <details>
   <summary>Answer</summary>
-
+``` java
 package ProducerConsumer;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -1667,4 +1667,5 @@ public class ProducerConsumerExample2 {
         }
     }
 }
+```
 </details>
