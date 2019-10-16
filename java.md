@@ -76,6 +76,8 @@ A Java Classloader is of three types:
 11. Base class of Exception.  
 12. Example/program for RuntimeException and Exception.  
 13. Singleton design pattern (sample code).  
+**Answer:**  
+https://piyushanandmittal.blogspot.com/2018/06/javadesignpatternsingleton.html
 14. How to create immutable class.    
   
 ***Question 15.***  
