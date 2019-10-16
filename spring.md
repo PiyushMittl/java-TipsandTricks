@@ -190,7 +190,22 @@ It also comes with a remote shell which you can use to securely go inside Spring
  
 Btw, it's important to secure your Spring Actuator endpoints because it exposes a lot of confidential information and a potentially dangerous one-two. For example, by using /showdown endpoint you can kill a Spring Boot application.  
 </details>
- 
+
+**Question:**  
+DI vs IOC.  
+<details>
+<summary>Answer</summary>
+
+</details>
+
+**Question:**  
+Can we replace @Controller from @Component.  
+<details>
+<summary>Answer</summary>
+
+</details>
+
+
 ***Have a look:***   
 [Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)  
 [blog](https://github.com/PiyushMittl/spring-framework-bloglinks)    
