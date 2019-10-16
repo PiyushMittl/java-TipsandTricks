@@ -8,9 +8,9 @@ Arrays is a utility class which implements Collections class.
 **Object**
 
 **Queation 2.**  
-How many ways are there to create an Object.  
+How many ways are there to create an Object.
 <details>
-  <summary>Answer</summary>  
+  <summary>Answer</summary>
 	
 **A.** Using new keyword  
 This is the most common way to create an object in java. Almost 99% of objects are created in this way.  
