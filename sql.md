@@ -19,4 +19,5 @@ what is indexing
 
 ***Interview Qiestion:***  
 https://artoftesting.com/interviewSection/sql-queries-for-interview.html  
+  
 https://softwaretestinghelp.com/50-popular-sql-interview-questions-for-testers/amp/
