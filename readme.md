@@ -6,7 +6,8 @@
 6. [Data Structures](https://gist.github.com/PiyushMittl/de3547afaccd985dbdeb6848c29d6e1b)
 7. [Algorithms](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/dynamic-programming.md)
 8. [Problem Solving using DataStructures and Algorithm](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/dynamic-programming.md)
-9. [SQL](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/sql.md)  
+9. [SQL](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/sql.md)
+10. [miscellaneous](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/miscellaneous.md)
   
   
   
