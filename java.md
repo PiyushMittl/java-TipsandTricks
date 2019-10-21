@@ -1680,3 +1680,30 @@ public class ProducerConsumerExample2 {
 ```
 
 </details>
+
+
+
+**Question:**  
+What would be the value of i  
+
+...
+int i=0;
+function(){
+i++;
+}
+print(i);
+
+
+T1.function();
+T2.function();
+.
+.
+T10.function();
+
+.....
+
+
+**Answer:**  
+The value of i would be unpredictable.  
+
+
