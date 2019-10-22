@@ -44,7 +44,7 @@ topics:
     
 **have a look:**  
 [blog](https://github.com/PiyushMittl/hibernate-framework-bloglinks)    
-
+https://dzone.com/articles/hibernate-mapping
 **Embedded objects class User with data member:**
 1. ArrayList<String>  
 2. ArrayList<Address> - called embedded objects iff Address is not an Entity  
@@ -69,5 +69,4 @@ topics:
 6. @DiscriminatorValue("child1")
 ----
 1. 
-
 
