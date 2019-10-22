@@ -33,8 +33,11 @@ Second point is that by creating different classes you promote re-usability.
 **When we define the value object for the entity class we use @Embeddable.**  
 **When we use value type object in entity class we use @Embedded**  
 
+So, a thumb rule is,   
+If reuse -> @OneToOne,  
+If no reuse -> @Embeddable  
 
-
+-----------------------
 topics:  
 1. Saving object
     a. create an object of SessionFactory   
