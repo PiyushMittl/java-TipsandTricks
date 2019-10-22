@@ -1,9 +1,10 @@
-**Colleactions**
-Question 1.  
+**Colleactions**  
+**Question 1.**  
 What is Arrays class.  
-  
-Answer.  
+<details>
+<summary>Answer</summary>
 Arrays is a utility class which implements Collections class.
+</details>
 
 **Object**
 
@@ -454,8 +455,11 @@ since multiplication has higher precedence than addition. But instead, the expre
 x = x * (2 + 5);
 ```
 
-44.
+**Question:44**  
 Why string is immutable ??
+
+<details>
+  <summary>Answer</summary>
 
 One of the key goals of any good programming language is to make efficient use of memory. As applications grow, it's very common for String literals to occupy large amounts of a program's memory, and there is often a lot of redundancy within the
 
@@ -463,6 +467,8 @@ universe of String literals for a program. To make Java more memory efficient, t
 You might say, "Well that's all well and good, but what if someone overrides the String class functionality; couldn't that cause problems in the pool?" That's one of the main reasons that the String class is marked final. Nobody can override the behaviors of any of the String methods, so you can rest assured that the String objects you are counting on to be immutable will, in fact, be immutable.
 
  **ref:- book *book: Kathy Sierra, pg. 434, Chapter 6: Strings, I/O, Formatting, and Parsing***  
+
+</details>
 
 45.
 ``` java
@@ -752,7 +758,8 @@ Serializable is an interface, not a class. But that's the syntax, so burn it in!
 
  **ref:- book *book: Kathy Sierra, pg. 618***        
  
-56.
+56.  
+
 ``` java
 public void foo(List<?> list) { }
 public void foo(List<Object> list) { }
@@ -1742,6 +1749,7 @@ public class ProducerConsumerExample2 {
 **Question:**  
 What would be the value of i  
 
+``` java
 ...
 int i=0;
 function(){
@@ -1757,8 +1765,10 @@ T2.function();
 T10.function();
 
 .....
+```
 
-
-**Answer:**  
+<details>
+  <summary>Answer</summary>
 The value of i would be unpredictable.  
+</details>
 
