@@ -959,8 +959,10 @@ telnet and ping
 
 ***Question 69:***  
 Single server vs Sharding/partitioning vs clustring vs replication vs (redis)sentinel.  
-***Answer:***  
   
+<details>
+  <summary>Answer</summary>
+
 ***Replication:***  
 The strategy of duplicating data across more than one node. There are many varieties, simplest being Master-Slave(s) or Leader-Follower and can either be synchronous or asynchronous.  
 1. To have high availability of data. Even if a node goes down, the data is still available from other nodes in the cluster.  
@@ -1016,7 +1018,7 @@ The system should be capable enough to know which all systems are running, from 
 reference:  
 http://www.ndimensionz.com/kb/what-is-database-clustering-introduction-and-brief-explanation/
 
-
+</details>
 
 ***Question 70:***  
 what is master and slave replica-set.  
@@ -1301,6 +1303,9 @@ class Foo {
 
 Question: ConcurrentHashMap vs SynchronisedHashMap
 
+<details>
+  <summary>Answer</summary>
+
 Synchronized HashMap：
 
 Each method is synchronized using an object level lock. So the get and put methods on synchMap acquire a lock.
@@ -1312,6 +1317,8 @@ The effect of lower level locking is that you can have concurrent readers and wr
 ConcurrentHashMap does not throw a ConcurrentModificationException if one thread tries to modify it while another is iterating over it.
 This article Java 7: HashMap vs ConcurrentHashMap is a very good read. Highly recommended.
 
+</details>
+  
 
 ***Question:***
 How to reverse a linked list without using extra space.
@@ -1322,7 +1329,9 @@ https://javarevisited.blogspot.com/2013/03/top-15-data-structures-algorithm-inte
 ***Question:***
 Java sleep() and wait() – Discussion
 
-Answer:
+<details>
+  <summary>Answer</summary>
+
 ```
 sleep() is a method which is used to pause the process for few seconds or the time we want to. But in case of wait() method, thread goes in waiting state and it won’t come back automatically until we call the notify() or notifyAll().
 
@@ -1371,6 +1380,9 @@ wait() – for multi-thread-synchronization.
 Hope above information will add some value in your knowledge-base.
 ```
 https://www.google.co.in/amp/s/howtodoinjava.com/java/multi-threading/sleep-vs-wait/amp/
+
+</details>
+ 
 
 
 ***Question:***
@@ -1530,6 +1542,9 @@ dad
 ***Question:***  
 Overriding
 
+<details>
+  <summary>Answer</summary>
+
 ``` java
 package com.piyush.ds.arrays.operation;
 
@@ -1599,6 +1614,8 @@ public class OverrideDemo1{
 }
 ```
 
+</details>
+  
 
 ***Question:***  
 How to prevent your class from being clonned.
@@ -1705,5 +1722,4 @@ T10.function();
 
 **Answer:**  
 The value of i would be unpredictable.  
-
 
