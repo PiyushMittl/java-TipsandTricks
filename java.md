@@ -58,7 +58,10 @@ Finally can be called if there is no return statement.
 
 **Queation 6.**  
 6. What is Static import.  
-**Answer:**  
+
+<details>
+  <summary>Answer</summary>
+
 ``` java
 import static java.lang.System.*;    
 class StaticImportExample{  
@@ -70,17 +73,35 @@ class StaticImportExample{
  }   
 }   
 ```
+
+</details>
+
+
 **Queation 7.**  
 7. what is final,finally and finalize.  
+<details>
+  <summary>Answer</summary>
+</details>
+  
 8. thread implementation (Thread class and Runnable interface).  
-9. What is class loader. Types of class loader.    
+<details>
+  <summary>Answer</summary>
+</details>
+
+9. What is class loader. Types of class loader.  
+<details>
+  <summary>Answer</summary>
+	
 Bootstrap, Extension, System (BSE)    
 A Java Classloader is of three types:
-```
-**BootStrap ClassLoader:** A Bootstrap Classloader is a Machine code which kickstarts the operation when the JVM calls it. It is not a java class. Its job is to load the first pure Java ClassLoader. Bootstrap ClassLoader loads classes from the location rt.jar. Bootstrap ClassLoader doesn’t have any parent ClassLoaders. It is also called as the Primodial ClassLoader.  
+``
+**BootStrap ClassLoader:**  A Bootstrap Classloader is a Machine code which kickstarts the operation when the JVM calls it. It is not a java class. Its job is to load the first pure Java ClassLoader. Bootstrap ClassLoader loads classes from the location rt.jar. Bootstrap ClassLoader doesn’t have any parent ClassLoaders. It is also called as the Primodial ClassLoader.  
 **Extension ClassLoader:** The Extension ClassLoader is a child of Bootstrap ClassLoader and loads the extensions of core java classes from the respective JDK Extension library. It loads files from jre/lib/ext directory or any other directory pointed by the system property java.ext.dirs.  
 **System ClassLoader:** An Application ClassLoader is also known as a System ClassLoader. It loads the Application type classes found in the environment variable CLASSPATH, -classpath or -cp command line option. The Application ClassLoader is a child class of Extension ClassLoader.  
-```
+``
+
+</details>
+
 10. Can we have try without catch (yes).  
 11. Base class of Exception.  
 12. Example/program for RuntimeException and Exception.  
@@ -91,7 +112,9 @@ https://piyushanandmittal.blogspot.com/2018/06/javadesignpatternsingleton.html
   
 ***Question 15.***  
 Can we overload and override static metohds.  
-Answer:  
+<details>
+  <summary>Answer</summary>
+
 
 Static methods can not be overridden because there is nothing to override, as they would be two different methods. For example
 ``` java
@@ -115,6 +138,8 @@ public static class Main {
 }
 ```
 And yes static methods can be overloaded just like any other method.  
+
+</details>
 
 **Question :**  
 16. IS-A and HAS-A relationship with aggregation and composition example.  
@@ -172,13 +197,16 @@ Answer:
 ```      
 Question 31.  
 Difference between transient and volatile in Java?  
-Answer:  
-The volatile and transient modifiers apply to fields of classes.
+<details>
+  <summary>Answer</summary>
+
+The volatile and transient modifiers apply to fields of classes.  
 
 The transient modifier tells the Java object serialization subsystem to exclude the field when serializing an instance of the class. When the object is then deserialized, the field will be initialized to the default value; i.e. null for a reference type, and zero or false for a primitive type. Note that the JLS [see 8.3.1.3](https://docs.oracle.com/javase/specs/#8.3.1.3) does not say what transient means, but defers to the [Java Object Serialization Specification](https://docs.oracle.com/javase/6/docs/platform/serialization/spec/serialTOC.html). Other non-standard serialization mechanisms may also pay attention to a field's transient-ness.
 
 The volatile modifier tells the JVM that writes to the field should always be synchronously flushed to memory, and that reads of the field should always read from memory. This means that fields marked as volatile can be safely accessed and updated in a multi-thread application without using native or standard library-based synchronization. Similarly, reads and writes to volatile fields are atomic. (This does not apply to >>non-volatile<< long or double fields, which may be subject to "word tearing" on some JVMs.) The relevant parts of the JLS are [8.3.1.4](https://docs.oracle.com/javase/specs/#8.3.1.4), [17.4](https://docs.oracle.com/javase/specs/#17.4) and [7.7](https://docs.oracle.com/javase/specs/#17.7).  
 
+</details>
 
 Question 32.  
 will it call Thread constructor.
