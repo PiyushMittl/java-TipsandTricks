@@ -1772,3 +1772,41 @@ T10.function();
 The value of i would be unpredictable.  
 </details>
 
+
+  
+
+**Questions:**  
+Hashtable does not allow null keys or values, while HashMap allows null values and 1 null key.
+  
+Why is this so?  
+How is it useful to have such a key and values in HashMap?  
+
+<details>
+  <summary>Answer</summary>
+> 1\. Why is this so?
+
+HashMap is newer than Hashtable and fixes some of its limitations.
+
+I can only guess what the designers were thinking, but here are my guesses:
+
+ * Hashtable calculates a hash for each key by calling [`hashCode`][2] on each key. This would fail if the key were null, so this could be a reason for disallowing nulls as keys. 
+ * The method [`Hashtable.get`][1] returns null if the key is not present. If null were a valid value it would be ambiguous as to whether null meant that the key was present but had value null, or if the key was absent. Ambiguity is bad, so this could be a reason for disallowing nulls as values.
+
+However it turns out that sometimes you do actually want to store nulls so the restrictions were removed in HashMap. The following warning was also included in the documentation for [`HashMap.get`][3]:
+
+> A return value of null does not necessarily indicate that the map contains no mapping for the key; it is also possible that the map explicitly maps the key to null.
+
+---
+
+> 2\. How is it useful to have such a key and values in HashMap?
+
+It is useful to explicitly store null to distinguish between a key that you *know* exists but doesn't have an associated value and a key that doesn't exist. An example is a list of registered users and their birthdays. If you ask for a specific user's birthday you want to be able to distinguish between that user not existing and the user existing but they haven't entered their birthday.
+
+I can't think of any (good) reason for wanting to store null as a key, and in general I'd advise against using null as a key, but presumably there is at least one person somewhere that needs that keys that can be null.
+
+[1]: https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#get-java.lang.Object-
+[2]: https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html#hashCode-java.lang.Object-
+[3]: https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#get-java.lang.Object-
+
+The value of i would be unpredictable.  
+</details>
