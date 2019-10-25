@@ -111,5 +111,25 @@
   3. ThoughtWorks
   4. OYO
   5. Visa
+  6. Flipkart
+  7. Myntra
+  8. VMware
+  9. Citrix
+  10. Oracle
+  11. Cisco
+  12. Netapp
+  13. Goldman Sachs
+  14. Morgab Stanly
+  15. Visa
+  16. Uber
+  17. Ola
+  18. Adobe
+  19. Mentor Graphics
+  20. Saplabs
+  21. Juniper
+  22. Mathworks
+  23. Intel
+  24. Nvidia
+  25.
   
 </details>
