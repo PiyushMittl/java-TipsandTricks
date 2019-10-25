@@ -106,7 +106,10 @@
 <details>
 <summary>View contents</summary>
 
-  1. Amazon
+  1. Google 
+  2. Facebook
+  3. Apple
+  4. Amazon
   2. Directi
   3. ThoughtWorks
   4. OYO
@@ -139,7 +142,5 @@
   31. Grofers
   32. Zomato
   33. Paytm
-  34. Google
-  35. Facebook
-  36. Apple
+
 </details>
