@@ -130,6 +130,14 @@
   22. Mathworks
   23. Intel
   24. Nvidia
-  25.
+  25. Dell
+  26. EMC
+  27. American Express
+  28. Expedia
+  29. Cevant
+  30. Gartner
+  31. Grofers
+  32. Zomato
+  33. Paytm
   
 </details>
