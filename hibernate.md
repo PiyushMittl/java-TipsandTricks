@@ -52,7 +52,7 @@ topics:
 3. [Inheritance](https://github.com/PiyushMittl/hibernate-framework-bloglinks/blob/master/HibernateInheritance.pdf) (when entity is inheriting an entity)
     a. single table strategy  
     b. table per class strategy  
-    c. join table strategy  
+    c. join table strategy (table per concrete class)  
 4. [Caching](https://github.com/PiyushMittl/hibernate-framework-bloglinks/blob/master/Caching.pdf)  
     a. level one  
     b. level two  
