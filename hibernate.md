@@ -49,7 +49,7 @@ topics:
     a. one to one  
     b. one to many  
     c. many to one  
-3. Inheritance (when entity is inheriting an entity)
+3. [Inheritance] (when entity is inheriting an entity)(https://github.com/PiyushMittl/hibernate-framework-bloglinks/blob/master/HibernateInheritance.pdf)
     a. single table strategy  
     b. table per class strategy  
     c. join table strategy  
