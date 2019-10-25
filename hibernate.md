@@ -87,5 +87,13 @@ topics:
 4. @Iheritance(strategy=Inheritance.JOINED) OR @Iheritance(strategy=Inheritance.SINGLE_TABLE) OR Iheritance(strategy=Inheritance.TABLE_PER_CLASS)  
 6. @DiscriminatorValue("child1")
 ----
-1. 
+1. @ManyToMany(cascade=CascadeType.ALL)  
+   @JoinTable(name="usr_vehicle",joinColumns=@JoinColumn(name="user_id"),inverseJoinColumns=@JoinColumn(name="vehicle_id") )  
+   private Collection<Vehicle> vehicle=new ArrayList<>();  
+2. @OneToOne(cascade=CascadeType.ALL)  
+   @JoinColumn(name="address_id")  
+   private Address address;  
+3. @OneToMany(cascade=CascadeType.ALL)  
+   @JoinTable(name="user_mobile_mapping",joinColumns=@JoinColumn(name="user_id"),inverseJoinColumns=@JoinColumn(name="mobile_id"))  
+   private Collection<Mobile> mobile=new ArrayList<>();;  
 
