@@ -139,5 +139,7 @@
   31. Grofers
   32. Zomato
   33. Paytm
-  
+  34. Google
+  35. Facebook
+  36. Apple
 </details>
