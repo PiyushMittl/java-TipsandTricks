@@ -109,7 +109,7 @@
   1. Google .
   2. Facebook 
   3. Apple 
-  4. Amazon ..
+  4. ..Amazon ..
   5. PayPal .
   2. Directi .
   3. ThoughtWorks
@@ -142,7 +142,7 @@
   30. Gartner .
   31. Grofers .
   32. Zomato .
-  33. Paytm .
+  33. .Paytm .
   34. KPMG 
   35. Monster
 
