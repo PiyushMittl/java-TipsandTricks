@@ -1,6 +1,9 @@
 
 1. Functional interface  
-2.
+    1.1. Predicate  
+            a. Creatig Predicate  
+            b. Calling Predicate  
+2. 
 
 
 
