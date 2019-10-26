@@ -111,7 +111,7 @@
   3. Apple 
   4. Amazon ..
   5. PayPal .
-  2. Directi
+  2. Directi .
   3. ThoughtWorks
   4. OYO .
   5. Visa .
