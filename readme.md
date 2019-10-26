@@ -106,43 +106,43 @@
 <details>
 <summary>View contents</summary>
 
-  1. Google 
-  2. Facebook
-  3. Apple
-  4. Amazon
-  5. PayPal
+  1. Google .
+  2. Facebook 
+  3. Apple 
+  4. Amazon ..
+  5. PayPal .
   2. Directi
   3. ThoughtWorks
-  4. OYO
-  5. Visa
-  6. Flipkart
-  7. Myntra
-  8. VMware
-  9. Citrix
-  10. Oracle
-  11. Cisco
-  12. Netapp
-  13. Goldman Sachs
+  4. OYO .
+  5. Visa .
+  6. Flipkart .
+  7. Myntra .
+  8. VMware 
+  9. Citrix 
+  10. Oracle .
+  11. Cisco 
+  12. Netapp 
+  13. Goldman Sachs ..
   14. Morgab Stanly
-  15. Visa
-  16. Uber
-  17. Ola
-  18. Adobe
-  19. Mentor Graphics
-  20. Saplabs
-  21. Juniper
-  22. Mathworks
-  23. Intel
-  24. Nvidia
-  25. Dell
-  26. EMC
-  27. American Express
-  28. Expedia
-  29. Cevant
-  30. Gartner
-  31. Grofers
-  32. Zomato
-  33. Paytm
-  34. KPMG
+  15. Visa 
+  16. Uber 
+  17. Ola 
+  18. Adobe 
+  19. Mentor Graphics 
+  20. Saplabs 
+  21. Juniper 
+  22. Mathworks 
+  23. Intel 
+  24. Nvidia 
+  25. Dell 
+  26. EMC 
+  27. American Express .
+  28. Expedia .
+  29. Cevant .
+  30. Gartner .
+  31. Grofers .
+  32. Zomato .
+  33. Paytm .
+  34. KPMG 
 
 </details>
