@@ -19,7 +19,6 @@ public void print(){
       System.out.println("hello");
 }
 ```
-Lambda Expression  
 ``` java
 () -> {System.out.println("hello");}
 or
@@ -31,7 +30,6 @@ public void sum(int a,int b){
       System.out.println(a+b);
 }
 ```
-Lambda Expression  
 ``` java
 (int a,int b) -> System.out.println(a+b);
 or
