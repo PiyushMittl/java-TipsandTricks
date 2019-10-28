@@ -1,9 +1,15 @@
 
-1. Functional interface  
-    1.1. Predicate  
-            a. Creatig Predicate  
-            b. Calling Predicate  
-2. 
+1.Lambda Expression
+2. Functional interface  
+3. Default Methods  
+pre defined functional interfaces (PFSC)  
+    4. Predicates    
+    5. Functions
+       Supplier
+       Consumer
+6. Double Colon Operator (Constructor and Method Reference)  
+7. Stream API  
+8. Date and Time API
 
 
 
