@@ -49,8 +49,19 @@ public void square(int n){
 n -> n*n;
 ```
 
-
-
+**Notes:**
+1. Lambda Expression can have any number of arguments. 1,2,...   
+2. For one argument parenthesis are optional  
+3. ``` java (a,b) -> System.out.println(a+b); ``` (parenthesis are mandatory if more than one argument is there)  
+4. 
+``` java 
+    (a,b) -> {
+                  System.out.println(a+b);
+                  System.out.println(a-b);
+                  System.out.println(a*b);
+            }
+```        
+curly braces are mandatory if we have more than one line in method body 
 
 https://www.baeldung.com/java-8-interview-questions
 
