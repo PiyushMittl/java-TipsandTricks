@@ -64,7 +64,9 @@ n -> n*n;
 curly braces are mandatory if we have more than one line in method body  
 5. you can not call lambda function without using functional interface  
  Example for functional interfaces:  
- ``
+ 
+ ```
+ 
  SAM (Single Abstract Method)
   Runnable -> run()
   Callable -> call()
@@ -75,7 +77,8 @@ curly braces are mandatory if we have more than one line in method body
   RandonAccess
   Cloneable
   SigleThreadModel
-  ``
+  
+  ```
   
 https://www.baeldung.com/java-8-interview-questions
 
