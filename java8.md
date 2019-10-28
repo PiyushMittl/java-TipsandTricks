@@ -65,9 +65,10 @@ curly braces are mandatory if we have more than one line in method body
 5. you can not call lambda function without using functional interface  
  Example for functional interfaces:  
  ``
-  Runnable 
-  Callable
-  Comparable
+ SAM (Single Abstract Method)
+  Runnable -> run()
+  Callable -> call()
+  Comparable -> compareTo()
   
   (Marker Interface)
   Serializable
