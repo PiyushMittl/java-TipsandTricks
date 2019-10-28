@@ -35,6 +35,19 @@ public void sum(int a,int b){
 or
 (a,b) -> System.out.println(a+b);
 ```
+**Example 3:**
+``` java
+public void square(int n){
+   return n*n;
+}
+```
+``` java
+(int n) -> { return n*n; }
+(n) -> { return n*n; }
+(n) -> n*n;
+
+n -> n*n;
+```
 
 
 
