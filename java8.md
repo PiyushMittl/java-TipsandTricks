@@ -66,8 +66,7 @@ curly braces are mandatory if we have more than one line in method body
  Example for functional interfaces:  
  
  ```
- 
- SAM (Single Abstract Method)
+  SAM (Single Abstract Method)
   Runnable -> run()
   Callable -> call()
   Comparable -> compareTo()
@@ -76,9 +75,18 @@ curly braces are mandatory if we have more than one line in method body
   Serializable
   RandonAccess
   Cloneable
-  SigleThreadModel
-  
+  SigleThreadModel  
   ```
+6. Prior to `java 1.8` `interfaces` could have only `abstract` methods. but java 1.8 onwards it could have default and static methods also.  
+
+``` java
+default void m1(){
+}
+
+static void m2(){
+}
+```
+   
   
 https://www.baeldung.com/java-8-interview-questions
 
