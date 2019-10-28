@@ -560,6 +560,9 @@ if yes then will it compile ??
 50.
 what is 'headSet()' and 'tailSet()'
 
+<details>
+  <summary>Answer</summary>
+	
 ``` java
 import java.util.TreeSet;
 
@@ -671,6 +674,8 @@ Polling
 Descending Order
 
  **ref:- book *book: Kathy Sierra, pg. 589***  
+ 
+</details>
  
  
 51.
@@ -937,7 +942,9 @@ between class names, type parameter placeholders, and variable identifi ers.
       
 ***Question 61:***  
 What is base condition in recursion?
-***Answer:***  
+<details>
+  <summary>Answer</summary>
+	  
 In recursive program, the solution to base case is provided and solution of bigger problem is expressed in terms of smaller problems.
 ``` java
 int fact(int n)
@@ -949,6 +956,8 @@ int fact(int n)
 }
 ```
 In the above example, base case for `n < = 1` is defined and larger value of number can be solved by converting to smaller one till base case is reached.
+
+</details>
 
 
 62.
@@ -1219,7 +1228,10 @@ Pg 738 ch 9
 
 ***Question 79:***
 Why character array is better than String for Storing password in Java
-Ans:
+
+<details>
+  <summary>Answer</summary>
+
 Since Strings are immutable in Java if you store password as plain text it will be available in memory until Garbage collector clears it and since String are used in String pool for reusability there is pretty high chance that it will be remain in memory for long duration, which pose a security threat. Since any one who has access to memory dump can find the password in clear text and that's another reason you should always used an encrypted password than plain text. Since Strings are immutable there is no way contents of Strings can be changed because any change will produce new String, while if you char[] you can still set all his element as blank or zero and it will not left any string in memory like string due to immutability. So Storing password in character array clearly mitigates security risk of stealing password.
 
 
@@ -1227,7 +1239,9 @@ We should not store our password in string because when we change the value of o
 Anyone who can get a memory dump can access the password in plain txt
 
 But if you use char array you can actually update the value of array and it will not left any string in memory.
+</details>
 
+	
 ***Question 80:***
 Why wait() and notify() is defined in Object class.
 Ans:
@@ -1783,6 +1797,7 @@ How is it useful to have such a key and values in HashMap?
 
 <details>
   <summary>Answer</summary>
+
 > 1\. Why is this so?
 
 HashMap is newer than Hashtable and fixes some of its limitations.
