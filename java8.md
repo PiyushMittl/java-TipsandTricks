@@ -87,6 +87,8 @@ static void m2(){
 }
 ```
    
+7. Functional interface can have only one abstract method and multiple default and static methods.  
+8. 
   
 https://www.baeldung.com/java-8-interview-questions
 
