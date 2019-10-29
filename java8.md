@@ -6,17 +6,20 @@
   <summary>View contents</summary>
          1.7v:  
          every method in interface is by default public and abstract  
-         ``` java
+        
+ ``` java
+         
          void m1()  
          public void m1()  
          abstract void m1()  
          public void abstract void m1()  
-         ```
+         
+ ```
+         
          1.8v:
          default and static methods are also allowed
          1.9v:
-         private methods are also allowed
-         
+         private methods are also allowed 
          variables:
          private final
 </details>         
