@@ -2,6 +2,24 @@
 1. Lambda Expression  
 2. Functional interface  
 3. Default Methods  
+<details>
+  <summary>View contents</summary>
+         1.7v:  
+         every method in interface is by default public and abstract  
+         ``` java
+         void m1()  
+         public void m1()  
+         abstract void m1()  
+         public void abstract void m1()  
+         ```
+         1.8v:
+         default and static methods are also allowed
+         1.9v:
+         private methods are also allowed
+         
+         variables:
+         private final
+</details>         
 pre defined functional interfaces (PFSC)  
 4. Predicates     
 5. Functions  
