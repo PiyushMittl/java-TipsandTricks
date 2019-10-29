@@ -88,7 +88,37 @@ static void m2(){
 ```
    
 7. Functional interface can have only one abstract method and multiple default and static methods.  
-8. 
+
+``` java
+@FunctionalInterface
+interface Interf{
+public abstract void m1(); // can have only one abstract method
+default void m2() {} // can have multipe default method
+static void m3() {} // can have multiple static methods
+}
+```
+
+``` java
+@FunctionalInterface
+interface Interf{
+public abstract void m1(); // can have only one abstract method
+public abstract void m4(); // can have only one abstract method
+// error
+default void m2() {} // can have multipe default method
+static void m3() {} // can have multiple static methods
+}
+```
+
+``` java
+
+interface Interf{
+public abstract void m1();
+public abstract void m4();
+// works fine if remove @FunctionalInterface annotation
+default void m2() {}
+static void m3() {}
+}
+```
+
   
 https://www.baeldung.com/java-8-interview-questions
-
