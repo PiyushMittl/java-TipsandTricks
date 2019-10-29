@@ -195,7 +195,7 @@ interface B extends A{
 
 
 <details>
-  <summary>3. Default Methods</summary>
+  <summary>3. Default and Static Methods</summary>
 
 1.7v:  
 every method in interface is by default public and abstract   
