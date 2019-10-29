@@ -137,4 +137,57 @@ interface Interf{
 
 ```
 
+10.  
+``` java
+@FuntionalInterface
+interface A{
+  public void m1(); 
+}
+ 
+@FuntionalInterface
+interface B extends A{
+}
+
+// works fine
+```
+since Functional Interface should have at least one abstract method and here its coming from interface A.
+
+11.  
+``` java
+@FuntionalInterface
+interface A{
+  public void m1(); 
+}
+ 
+@FuntionalInterface
+interface B extends A{
+  public void m1(); 
+}
+
+// works fine
+```
+we can override method from parent interface from one funtional interface to another functional interface.
+
+
+12.  
+``` java
+@FuntionalInterface
+interface A{
+  public void m1(); 
+}
+ 
+@FuntionalInterface
+interface B extends A{
+  public void m2(); 
+}
+
+// error
+```
+since one abstract method is coming from interface A we can not define one more abstract method in functional interface.
+
+
+
+
+
+
 https://www.baeldung.com/java-8-interview-questions
