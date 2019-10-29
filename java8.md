@@ -186,7 +186,14 @@ interface B extends A{
 ```
 </details>
   
-2. Functional interface  
+
+
+<details>
+  <summary>2. Functional interface</summary>
+</details>
+
+
+
 <details>
   <summary>3. Default Methods</summary>
 
