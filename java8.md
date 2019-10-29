@@ -70,12 +70,9 @@ curly braces are mandatory if we have more than one line in method body
   Runnable -> run()
   Callable -> call()
   Comparable -> compareTo()
+  Comparator -> compare()
+  ActionListener -> actionPerformed()
   
-  (Marker Interface)
-  Serializable
-  RandonAccess
-  Cloneable
-  SigleThreadModel  
   ```
 6. Prior to `java 1.8` `interfaces` could have only `abstract` methods. but java 1.8 onwards it could have default and static methods also.  
 
