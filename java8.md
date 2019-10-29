@@ -312,11 +312,39 @@ public void m3(){
 }
 }
 ```
+
+static methods
+----
+if static methods are not related to instance variable then why not to allow them in interface.
+
+``` java
+interface I1{
+default void m1(){}
+}
+
+
+class Test1 implements I1,I2{
+public static void main(){
+
+T1.m1();
+Test1.m1();//error
+m1();//error
+Test t1=new Test();
+t1.m1();//error
+
+}
+}
+```
+
+
+
 note:
 default method can not be defined in a class.
 
-
 </details>         
+
+
+
 
 pre defined functional interfaces (PFSC)  
 4. Predicates     
