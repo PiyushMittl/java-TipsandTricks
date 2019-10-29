@@ -1,10 +1,10 @@
 
-1.Lambda Expression  
+1. Lambda Expression  
 2. Functional interface  
 3. Default Methods  
 pre defined functional interfaces (PFSC)  
-      4. Predicates     
-      5. Functions  
+4. Predicates     
+5. Functions  
          Supplier  
          Consumer  
 6. Double Colon Operator (Constructor and Method Reference)  
