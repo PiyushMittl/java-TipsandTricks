@@ -183,6 +183,19 @@ interface B extends A{
 ```
 since one abstract method is coming from interface A we can not define one more abstract method in functional interface.
 
+13.  
+``` java
+@FuntionalInterface
+interface A{
+  public void m1(); 
+}
+ 
+
+interface B extends A{
+  public void m2(); // works fine
+}
+
+```
 
 
 
