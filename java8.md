@@ -305,7 +305,10 @@ default void m3(){}
 
 class Test1 implements I1,I2{
 public static void main(){
-public void m3(){}// works fine
+public void m3(){
+//I1.super.m3();//can call m3 from I1
+//I2.super.m3();//can call m3 from I2
+}// works fine
 }
 }
 ```
