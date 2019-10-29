@@ -120,5 +120,14 @@ static void m3() {}
 }
 ```
 
-  
+8. Since below interface doesnot contains any abstract method, is not a functional interface.
+``` java
+@FuntionalInterface
+interface Interf{
+}
+```
+
+
+
+
 https://www.baeldung.com/java-8-interview-questions
