@@ -275,6 +275,40 @@ public void m2(){}
 }
 ```
 
+diamond operator problem in interface
+------
+
+``` java
+interface I1{
+default void m3(){}
+}
+
+interface I2{
+default void m3(){}
+}
+
+class Test1 implements I1,I2{
+public static void main(){
+//error 
+}
+}
+```
+we need to override method in Test1 class to remove error
+``` java
+interface I1{
+default void m3(){}
+}
+
+interface I2{
+default void m3(){}
+}
+
+class Test1 implements I1,I2{
+public static void main(){
+public void m3(){}// works fine
+}
+}
+```
 note:
 default method can not be defined in a class.
 
