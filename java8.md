@@ -146,8 +146,8 @@ interface A{
  
 @FuntionalInterface
 interface B extends A{
-}
 
+}
 // works fine
 ```
 since Functional Interface should have at least one abstract method and here its coming from interface A.
@@ -161,10 +161,9 @@ interface A{
  
 @FuntionalInterface
 interface B extends A{
-  public void m1(); 
+  public void m1(); //works fine
 }
 
-// works fine
 ```
 we can override method from parent interface from one funtional interface to another functional interface.
 
@@ -178,10 +177,9 @@ interface A{
  
 @FuntionalInterface
 interface B extends A{
-  public void m2(); 
+  public void m2(); // error
 }
 
-// error
 ```
 since one abstract method is coming from interface A we can not define one more abstract method in functional interface.
 
