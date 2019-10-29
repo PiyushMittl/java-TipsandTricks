@@ -1,6 +1,7 @@
 
 <details>
   <summary>1. Lambda Expression</summary>
+
 ## Lambda Expression Examples:  
 
 **Example 1:**
