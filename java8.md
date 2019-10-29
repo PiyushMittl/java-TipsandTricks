@@ -58,7 +58,7 @@ interface I{
 public void m1();
 public void m2();
 public void m3(); //error in sub class untill we implement this method in sub class
-default void m3(); //no error in sub class even if we do not implement this method in sub class
+default void m3(){} //no error in sub class even if we do not implement this method in sub class
 }
 
 class Test1 implements I{
@@ -82,6 +82,8 @@ public void m2(){}
 }
 ```
 
+note:
+default method can not be defined in a class.
 
 
 </details>         
