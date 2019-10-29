@@ -125,9 +125,16 @@ static void m3() {}
 @FuntionalInterface
 interface Interf{
 }
+//error
 ```
 
+9.  
+``` java
+@FuntionalInterface
+interface Interf{
+  public void m1(); // works fine
+}
 
-
+```
 
 https://www.baeldung.com/java-8-interview-questions
