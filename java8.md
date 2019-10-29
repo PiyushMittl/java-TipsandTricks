@@ -3,8 +3,9 @@
 2. Functional interface  
 <details>
   <summary>3. Default Methods</summary>
+
 1.7v:  
-every method in interface is by default public and abstract  
+every method in interface is by default public and abstract   
 
 ``` java
  void m1()  
@@ -12,12 +13,12 @@ every method in interface is by default public and abstract
  abstract void m1()  
  public void abstract void m1()  
 ```         
-1.8v:
-default and static methods are also allowed
-1.9v:
-private methods are also allowed 
-variables:
-private final
+1.8v:  
+default and static methods are also allowed  
+1.9v:  
+private methods are also allowed  
+variables:  
+private final  
 
 </details>         
 
