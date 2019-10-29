@@ -20,6 +20,70 @@ private methods are also allowed
 variables:  
 private final  
 
+why we need default method in java 8
+------
+``` java
+interface I{
+public void m1();
+public void m2();
+}
+
+class Test1 implements I{
+public void m1(){}
+public void m2(){}
+}
+
+class Test2 implements I{
+public void m1(){}
+public void m2(){}
+}
+
+class Test3 implements I{
+public void m1(){}
+public void m2(){}
+}
+
+class Test4 implements I{
+public void m1(){}
+public void m2(){}
+}
+```
+here each class need to implement the method available in interface I and if i want to extend the functionality if interface I  
+each implementation needs to implement that new method added in interface I, else it will break all the implemented class.  
+
+**Solution:**
+default method introduced to overcome this situation.
+``` java
+interface I{
+public void m1();
+public void m2();
+public void m3(); //error in sub class untill we implement this method in sub class
+default void m3(); //no error in sub class even if we do not implement this method in sub class
+}
+
+class Test1 implements I{
+public void m1(){}
+public void m2(){}
+}
+
+class Test2 implements I{
+public void m1(){}
+public void m2(){}
+}
+
+class Test3 implements I{
+public void m1(){}
+public void m2(){}
+}
+
+class Test4 implements I{
+public void m1(){}
+public void m2(){}
+}
+```
+
+
+
 </details>         
 
 pre defined functional interfaces (PFSC)  
