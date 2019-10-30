@@ -113,9 +113,9 @@
   5. PayPal .
   2. Directi .
   3. ThoughtWorks
-  4. OYO .
+  4. OYO ...
   5. Visa .
-  6. Flipkart .
+  6. Flipkart(walmart labs).
   7. Myntra .
   8. VMware 
   9. Citrix 
@@ -145,5 +145,6 @@
   33. .Paytm .
   34. KPMG 
   35. Monster
+  36. PayU .
 
 </details>
