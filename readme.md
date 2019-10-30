@@ -124,7 +124,7 @@
   12. Netapp 
   13. Goldman Sachs ..
   14. Morgab Stanly
-  15. Visa 
+  15. Visa .
   16. Uber 
   17. Ola 
   18. Adobe 
