@@ -190,7 +190,7 @@ interface B extends A{
 
 <details>
   <summary>2. Functional interface</summary>
-
+PFSC  
 **Function –** it takes one argument and returns a result.  
 **Consumer –** it takes one argument and returns no result (represents a side effect).  
 **Supplier –** it takes not argument and returns a result.  
@@ -356,15 +356,9 @@ default method can not be defined in a class.
 
 
 
-
-pre defined functional interfaces (PFSC)  
-4. Predicates     
-5. Functions  
-         Supplier  
-         Consumer  
-6. Double Colon Operator (Constructor and Method Reference)  
-7. Stream API   
-8. Date and Time API  
+4. Double Colon Operator (Constructor and Method Reference)  
+5. Stream API   
+6. Date and Time API  
 
 
 
