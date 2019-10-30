@@ -190,7 +190,9 @@ interface B extends A{
 
 <details>
   <summary>2. Functional interface</summary>
+
 PFSC  
+
 **Function –** it takes one argument and returns a result.  
 **Consumer –** it takes one argument and returns no result (represents a side effect).  
 **Supplier –** it takes not argument and returns a result.  
