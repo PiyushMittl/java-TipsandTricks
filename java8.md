@@ -365,3 +365,5 @@ default method can not be defined in a class.
 
 
 https://www.baeldung.com/java-8-interview-questions
+https://www.tutorialspoint.com/java8/java8_interview_questions.htm
+
