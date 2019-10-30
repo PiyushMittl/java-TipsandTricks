@@ -191,14 +191,13 @@ interface B extends A{
 <details>
   <summary>2. Functional interface</summary>
 
-**Function –** it takes one argument and returns a result
-**Consumer –** it takes one argument and returns no result (represents a side effect)
-**Supplier –** it takes not argument and returns a result
-**Predicate –** it takes one argument and returns a boolean
-**BiFunction –** it takes two arguments and returns a result
-**BinaryOperator –** it is similar to a BiFunction, taking two arguments and returning a result. The two arguments and the result are all of the same types
-**UnaryOperator –** it is similar to a Function, taking a single argument and returning a result of the same type
-
+**Function –** it takes one argument and returns a result.  
+**Consumer –** it takes one argument and returns no result (represents a side effect).  
+**Supplier –** it takes not argument and returns a result.  
+**Predicate –** it takes one argument and returns a boolean.  
+**BiFunction –** it takes two arguments and returns a result.  
+**BinaryOperator –** it is similar to a BiFunction, taking two arguments and returning a result. The two arguments and the result are all of the same types.  
+**UnaryOperator –** it is similar to a Function, taking a single argument and returning a result of the same type.  
 
 
 
