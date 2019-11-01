@@ -1,6 +1,6 @@
 [Programs](https://github.com/PiyushMittl/DS-ALGO/tree/master/trees)
 
-binary tree  
+# binary tree  
 https://www.geeksforgeeks.org/binary-tree-data-structure/
 
 traversal:  
@@ -17,6 +17,8 @@ operation:
 count level wise nodes
 mirror
 diameter
+find depth
+find height
 ```
 
 avl tree  
@@ -24,7 +26,9 @@ avl tree
 redblack tree  
 ..  
 binary tree  
-..  
+```
+
+```
 binary search tree  
 ..  
 **heap**  
