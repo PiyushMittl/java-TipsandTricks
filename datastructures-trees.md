@@ -25,11 +25,12 @@ avl tree
 ..  
 redblack tree  
 ..  
-binary tree  
+## binary search tree  
 ```
-
+insertion
+deletion
 ```
-binary search tree  
+ 
 ..  
 **heap**  
 * Heap a is always complete binary tree.  
