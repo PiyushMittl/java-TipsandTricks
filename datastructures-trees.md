@@ -24,6 +24,8 @@ find height
 ## binary search tree  
 ```
 insertion
+https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
+
 deletion
 ```
  
