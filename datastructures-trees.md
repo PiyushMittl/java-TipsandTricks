@@ -1,6 +1,6 @@
 [Programs](https://github.com/PiyushMittl/DS-ALGO/tree/master/trees)
 
-# binary tree  
+## binary tree  
 https://www.geeksforgeeks.org/binary-tree-data-structure/
 
 traversal:  
