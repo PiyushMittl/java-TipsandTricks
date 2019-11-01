@@ -21,9 +21,9 @@ find depth
 find height
 ```
 
-avl tree  
+## avl tree  
 ..  
-redblack tree  
+## redblack tree  
 ..  
 ## binary search tree  
 ```
