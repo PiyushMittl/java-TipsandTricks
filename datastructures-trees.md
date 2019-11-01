@@ -21,16 +21,18 @@ find depth
 find height
 ```
 
-## avl tree  
-..  
-## redblack tree  
-..  
 ## binary search tree  
 ```
 insertion
 deletion
 ```
  
+
+## avl tree  
+..  
+## redblack tree  
+..  
+
 ..  
 **heap**  
 * Heap a is always complete binary tree.  
