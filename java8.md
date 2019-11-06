@@ -367,3 +367,6 @@ default method can not be defined in a class.
 https://www.baeldung.com/java-8-interview-questions
 https://www.tutorialspoint.com/java8/java8_interview_questions.htm
 https://dzone.com/articles/supplier-and-consumer-interface-in-java8
+
+
+https://www.youtube.com/playlist?list=PLd3UqWTnYXOlrKZWFTbgguqNRA_uVyeBl
