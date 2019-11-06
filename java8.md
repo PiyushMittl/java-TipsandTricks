@@ -1,4 +1,5 @@
 
+
 <details>
   <summary>1. Lambda Expression</summary>
 
@@ -371,3 +372,8 @@ https://dzone.com/articles/supplier-and-consumer-interface-in-java8
 
 https://www.youtube.com/playlist?list=PLd3UqWTnYXOlrKZWFTbgguqNRA_uVyeBl
 https://youtu.be/5duxFiseLRE
+
+Methods in stream:  
+
+Filter  
+Map  
