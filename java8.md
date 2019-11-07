@@ -194,10 +194,10 @@ interface B extends A{
 
 PFSC  
 
-**Function –** it takes one argument and returns a result.  
-**Consumer –** it takes one argument and returns no result (represents a side effect).  
-**Supplier –** it takes not argument and returns a result.  
-**Predicate –** it takes one argument and returns a boolean.  
+**Function –** it takes one argument and returns a result.  Function<T,R> —-> return R —-> R apply(T t)  
+**Consumer –** it takes one argument and returns no result (represents a side effect).  Consumer<T> —-> return void —-> accept(T)  
+**Supplier –** it takes not argument and returns a result.  Supplier<R> —-> return R —-> R accept()  
+**Predicate –** it takes one argument and returns a boolean.  Predicate<T> —-> return boolean —-> boolean test(T)  
 **BiFunction –** it takes two arguments and returns a result.  
 **BinaryOperator –** it is similar to a BiFunction, taking two arguments and returning a result. The two arguments and the result are all of the same types.  
 **UnaryOperator –** it is similar to a Function, taking a single argument and returning a result of the same type.  
