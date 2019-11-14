@@ -1825,3 +1825,19 @@ I can't think of any (good) reason for wanting to store null as a key, and in ge
 
 The value of i would be unpredictable.  
 </details>
+
+
+**Questions:**  
+How to implement your own HashMap.
+<details>
+  <summary>Answer</summary>
+</details>
+
+
+**Questions:**  
+What is fork,join and forkjoinpool.
+<details>
+  <summary>Answer</summary>
+</details>
+
+
