@@ -28,3 +28,9 @@ Find the intersection of two linked list.
 Answer:  
 Abdul Bari  
 
+Question 7:  
+How to print list element in reverse order.  
+Answer:  
+push all element in Stack and then pop one by one and print.  
+
+
