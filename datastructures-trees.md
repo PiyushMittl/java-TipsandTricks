@@ -5,20 +5,29 @@ https://www.geeksforgeeks.org/binary-tree-data-structure/
 
 traversal:  
 ```
-level order
-inorder
-preorder
-postorder
+level order (using recursion, iterative, my way) -Imp
+inorder -Imp
+preorder -Imp
+postorder -Imp
+
 zigzag
+boundry 
+left view
+right view
+botton view
+top view
 ```
 
 operation:  
 ```
+depth of tree -Imp
+
 count level wise nodes
 mirror
 diameter
 find depth
 find height
+
 ```
 
 ## binary search tree  
@@ -27,6 +36,7 @@ insertion
 https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
 
 deletion
+
 ```
  
 
