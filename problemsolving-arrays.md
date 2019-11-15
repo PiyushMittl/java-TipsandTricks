@@ -20,4 +20,11 @@ Answer:
 
 Question 5:  
 Find the smallest missing number in an unsorted array.  
-Answer:
+Answer:  
+Abdul Bari  
+
+Question 6:  
+Find the intersection of two linked list.  
+Answer:  
+Abdul Bari  
+
