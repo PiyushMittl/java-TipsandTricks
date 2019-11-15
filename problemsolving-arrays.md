@@ -15,4 +15,7 @@ first at start say i and and second at last say j
 swap element from first to last till they meet at same index or i became greater than j  
 
 Question 4:  
+Insert an element in sorted Array.  
+Answer:  
+
 
