@@ -91,7 +91,7 @@
   3. Stacks
   4. Queues
   5. Trees
-  6. Heaps
+  6. [Heaps](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-heaps.md)
   7. String
   8. Divide and Conquer
   9. Backtracking
