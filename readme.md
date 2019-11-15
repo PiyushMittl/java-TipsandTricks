@@ -8,6 +8,7 @@
 8. [Problem Solving using DataStructures and Algorithm](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/dynamic-programming.md)
 9. [SQL](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/sql.md)
 10. [System Design etc](https://www.teamblind.com/article/PM-Interview-Prep-Plan-How-I-got-PM-offers-from-Google-Expedia-Microsoft-and-Facebook-pj56HMHQ)  
+11. [Operating System]
 11. [miscellaneous](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/miscellaneous.md)  
 
 
