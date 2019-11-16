@@ -97,7 +97,7 @@
   9. Backtracking
   10. Greedy
   11. [Pattern Searching and Mactching](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-patternmatching.md)
-  12. Dynamic Programming
+  12. [Dynamic Programming](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-dp.md)
   13. Bit Manipulation
   14. Mathematical Algorithms
   
