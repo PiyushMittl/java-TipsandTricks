@@ -1841,3 +1841,13 @@ What is fork,join and forkjoinpool.
 </details>
 
 
+**Questions:**  
+How HashMap internally works.  
+
+
+**Question:**  
+How LinkedHashMap internally works.  
+<details>
+  <summary>Answer</summary>
+https://medium.com/@mr.anmolsehgal/java-linkedhashmap-internal-implementation-44e2e2893036
+</details>
