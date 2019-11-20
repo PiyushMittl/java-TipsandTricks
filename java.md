@@ -1849,5 +1849,6 @@ How HashMap internally works.
 How LinkedHashMap internally works.  
 <details>
   <summary>Answer</summary>
-https://medium.com/@mr.anmolsehgal/java-linkedhashmap-internal-implementation-44e2e2893036
+https://medium.com/@mr.anmolsehgal/java-linkedhashmap-internal-implementation-44e2e2893036  
+https://www.google.co.in/amp/s/www.dineshonjava.com/internal-working-of-linkedhashmap-in-java/amp/  
 </details>
