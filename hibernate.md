@@ -39,21 +39,21 @@ If no reuse -> @Embeddable
 
 -----------------------
 topics:  
-1. Saving object
+1. Saving object  
     a. create an object of SessionFactory   
     b. open an Session  
     c. save an object  
-    
-1. Embeded objects(when entity is saving(having data member as) sub objects)    
-2. Mapping (when entity is saving(having data member as) sub entities)   
+2. Embeded objects(when entity is saving(having data member as) sub objects)    
+    a. EmbeddedId
+3. Mapping (when entity is saving(having data member as) sub entities)   
     a. one to one  
     b. one to many  
     c. many to one  
-3. [Inheritance](https://github.com/PiyushMittl/hibernate-framework-bloglinks/blob/master/HibernateInheritance.pdf) (when entity is inheriting an entity)  
+4. [Inheritance](https://github.com/PiyushMittl/hibernate-framework-bloglinks/blob/master/HibernateInheritance.pdf) (when entity is inheriting an entity)  
     a. single table strategy  
     b. table per class strategy  
     c. join table strategy (table per concrete class)  
-4. [Caching](https://github.com/PiyushMittl/hibernate-framework-bloglinks/blob/master/Caching.pdf)  
+5. [Caching](https://github.com/PiyushMittl/hibernate-framework-bloglinks/blob/master/Caching.pdf)  
     a. level one  
     b. level two  
     
@@ -75,9 +75,10 @@ topics:
 ----
 1. @Embedded  
 2. @Embeddeble  
-3. @Entity  
-4. @ElementCollection  
-5. @CollectionId  
+3. @EmbeddedId  
+4. @Entity  
+5. @ElementCollection  
+6. @CollectionId  
 ----  
 1. @Entity  
 2. @Table(name="parent")   
