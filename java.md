@@ -1852,3 +1852,31 @@ How LinkedHashMap internally works.
 https://medium.com/@mr.anmolsehgal/java-linkedhashmap-internal-implementation-44e2e2893036  
 https://www.google.co.in/amp/s/www.dineshonjava.com/internal-working-of-linkedhashmap-in-java/amp/  
 </details>
+
+
+**Question:**  
+x+=y vs c=x+y.  
+<details>
+  <summary>Answer</summary>
+The "common knowledge" of programming is that `x += y` is an equivalent shorthand notation of `x = x + y`. As long as `x` and `y` are of the same type (for example, both are `int`s), you may consider the two statements equivalent.
+
+However, in Java, `x += y` *is not* identical to `x = x + y` in general. 
+
+If `x` and `y` are of different types, the behavior of the two statements differs due to the rules of the language. For example, let's have `x == 0` (int) and `y == 1.1` (double):
+
+		int x = 0;
+		x += 1.1;    // just fine; hidden cast, x == 1 after assignment
+		x = x + 1.1; // won't compile! 'cannot convert from double to int'
+
+`+=` performs an implicit cast, whereas for `+` you need to explicitly cast the second operand, otherwise you'd get a compiler error.
+
+Quote from Joshua Bloch's *Java Puzzlers*:
+
+> (...) compound assignment expressions automatically cast the result of
+> the computation they perform  to the type of the variable on their
+> left-hand side. If the type of the result is identical to the type of
+> the variable, the cast has no effect. If, however, the type of the
+> result is wider than that of the variable,  the  compound 
+> assignment  operator  performs  a  silent  narrowing  primitive
+> conversion [[JLS 5.1.3](http://java.sun.com/docs/books/jls/second_edition/html/conversions.doc.html#25363)].
+</details>
