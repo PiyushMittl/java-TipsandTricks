@@ -11,11 +11,12 @@ preorder -Imp
 postorder -Imp
 
 zigzag
-boundry 
+boundry view 
 left view
 right view
 botton view
 top view
+vertical view
 ```
 
 operation:  
