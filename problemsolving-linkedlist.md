@@ -11,3 +11,7 @@ Question 3:
 Reverse k element in linked list.  
 Answer:  
 
+Question 4:  
+Reverse linked list.  
+Answer:  
+
