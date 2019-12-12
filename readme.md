@@ -87,14 +87,14 @@
 <summary>View contents</summary>
   
   1. [Arrays](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-arrays.md)
-  2. Linked Lists
+  2. [Linked Lists](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-linkedlist.md)
   3. Stacks
   4. Queues
-  5. Trees
+  5. [Trees](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-trees.md)
   6. [Heaps](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-heaps.md)
   7. String
   8. Divide and Conquer
-  9. Backtracking
+  9. [Backtracking](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-backtracking.md)
   10. Greedy
   11. [Pattern Searching and Mactching](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-patternmatching.md)
   12. [Dynamic Programming](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-dp.md)
@@ -114,7 +114,7 @@
   5. PayPal .
   2. Directi .
   3. ThoughtWorks
-  4. OYO ...
+  4. .. OYO ...
   5. Visa .
   6. Flipkart(walmart labs).
   7. Myntra .
