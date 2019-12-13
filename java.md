@@ -1880,3 +1880,10 @@ Quote from Joshua Bloch's *Java Puzzlers*:
 > assignment  operator  performs  a  silent  narrowing  primitive
 > conversion [[JLS 5.1.3](http://java.sun.com/docs/books/jls/second_edition/html/conversions.doc.html#25363)].
 </details>
+
+
+Qsn:
+Types of map
+
+https://youtu.be/APL28XpFP0c
+
