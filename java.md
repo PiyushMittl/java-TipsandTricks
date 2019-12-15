@@ -1887,3 +1887,9 @@ Types of map
 
 https://youtu.be/APL28XpFP0c
 
+
+
+**Question:**  
+Difference between Runnable and Callable  
+<details>
+  <summary>Answer</summary>
