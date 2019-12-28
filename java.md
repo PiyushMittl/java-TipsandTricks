@@ -1882,7 +1882,7 @@ Quote from Joshua Bloch's *Java Puzzlers*:
 </details>
 
 
-Qsn:
+**Question:**
 Types of map
 
 https://youtu.be/APL28XpFP0c
@@ -1893,6 +1893,7 @@ https://youtu.be/APL28XpFP0c
 Difference between Runnable and Callable  
 <details>
   <summary>Answer</summary>
+
 </derails>
 
 **Question:**
@@ -1901,5 +1902,3 @@ Advance Threading concept.
   <summary>Answer</summary>
 https://www.youtube.com/playlist?list=PLhfHPmPYPPRk6yMrcbfafFGSbE2EPK_A6
 </details>
-
-https://www.youtube.com/playlist?list=PLhfHPmPYPPRk6yMrcbfafFGSbE2EPK_A6
