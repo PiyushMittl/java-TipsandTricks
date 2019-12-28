@@ -1895,11 +1895,11 @@ Difference between Runnable and Callable
   <summary>Answer</summary>
 </derails>
 
-*Question:**
+**Question:**
 Advance Threading concept.
 <details>
   <summary>Answer</summary>
 https://www.youtube.com/playlist?list=PLhfHPmPYPPRk6yMrcbfafFGSbE2EPK_A6
-</derails>
+</details>
 
 https://www.youtube.com/playlist?list=PLhfHPmPYPPRk6yMrcbfafFGSbE2EPK_A6
