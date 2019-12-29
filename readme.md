@@ -114,7 +114,9 @@
   5. PayPal .
   2. Directi .
   3. ThoughtWorks
-  4. .. OYO ...
+  4. .. OYO ...  
+Round1: Puzzle,DB,System Design  
+Round2: System Design for OYO usecase  
   5. Visa .
   6. Flipkart(walmart labs).
   7. Myntra .
@@ -145,7 +147,8 @@
   32. Zomato .
   33. .Paytm .  
 Round 1: list, Map put and get implementation  
-Round 2: Trees  
+Round 2: Trees, System Design   
+Round 3: DB,core-java,Collection hierarchies,join   
   34. KPMG 
   35. Monster
   36. PayU .
