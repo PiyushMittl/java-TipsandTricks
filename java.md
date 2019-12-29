@@ -1902,3 +1902,9 @@ Advance Threading concept.
   <summary>Answer</summary>
 https://www.youtube.com/playlist?list=PLhfHPmPYPPRk6yMrcbfafFGSbE2EPK_A6
 </details>
+
+**Question:**
+Call vs Run.
+<details>
+  <summary>Answer</summary>
+</details>
