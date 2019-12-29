@@ -1,16 +1,18 @@
-**Colleactions**
-Question 1.  
+**Colleactions**  
+**Question 1.**  
 What is Arrays class.  
-  
-Answer.  
+<details>
+<summary>Answer</summary>
 Arrays is a utility class which implements Collections class.
+</details>
 
 **Object**
 
-Queation 2.  
-Ways to create an Object.  
-  
-Answer.  
+**Queation 2.**  
+How many ways are there to create an Object.
+<details>
+  <summary>Answer</summary>
+	
 **A.** Using new keyword  
 This is the most common way to create an object in java. Almost 99% of objects are created in this way.  
 ```
@@ -34,23 +36,97 @@ ObjectInputStream inStream = new ObjectInputStream(anInputStream );
 MyObject object = (MyObject) inStream.readObject();
 ```
 
+</details>
 
-3. Difference b/w "?" and Object in generics.
-4. Multiply 50 digit numbers.
-5. Will finally be called if there is a return statement.
-6. What is Static import.
-7. what is final,finally and finalize.
-8. thread implementation (Thread class and Runnable interface).
-9. What is class loader. Types of class loader.  
-Bootstrap, Extension, System (BSE)  
-10. Can we have try without catch (yes).
-11. Base class of Exception.
-12. Example/program for RuntimeException and Exception.
-13. Singleton design pattern (sample code).
-14. How to create immutable class.
-Question 15.  
+**Queation 3.**  
+Difference b/w "?" and Object in generics.  
+<details>
+  <summary>Answer</summary>
+</details>
+
+**Queation 4.**  
+Multiply 50 digit numbers.  
+<details>
+  <summary>Answer</summary>
+</details>
+
+
+**Queation 5.**  
+Will finally be called if there is a return statement.  
+**Answer:**  
+Yes.  
+Finally can be called if there is no return statement.  
+
+**Queation 6.**  
+What is Static import.  
+
+<details>
+  <summary>Answer</summary>
+
+``` java
+import static java.lang.System.*;    
+class StaticImportExample{  
+  public static void main(String args[]){  
+     
+   out.println("Hello");//Now no need of System.out  
+   out.println("Java");  
+  
+ }   
+}   
+```
+
+</details>
+
+
+**Queation 7.**  
+what is final,finally and finalize.  
+<details>
+  <summary>Answer</summary>
+</details>
+  
+**Queation 8.**  
+thread implementation (Thread class and Runnable interface).  
+<details>
+  <summary>Answer</summary>
+</details>
+
+**Queation 9.**  
+What is class loader. Types of class loader.  
+<details>
+  <summary>Answer</summary>
+	
+Bootstrap, Extension, System (BSE)    
+A Java Classloader is of three types:
+``
+**BootStrap ClassLoader:**  A Bootstrap Classloader is a Machine code which kickstarts the operation when the JVM calls it. It is not a java class. Its job is to load the first pure Java ClassLoader. Bootstrap ClassLoader loads classes from the location rt.jar. Bootstrap ClassLoader doesn’t have any parent ClassLoaders. It is also called as the Primodial ClassLoader.  
+**Extension ClassLoader:** The Extension ClassLoader is a child of Bootstrap ClassLoader and loads the extensions of core java classes from the respective JDK Extension library. It loads files from jre/lib/ext directory or any other directory pointed by the system property java.ext.dirs.  
+**System ClassLoader:** An Application ClassLoader is also known as a System ClassLoader. It loads the Application type classes found in the environment variable CLASSPATH, -classpath or -cp command line option. The Application ClassLoader is a child class of Extension ClassLoader.  
+``
+
+</details>
+
+**Queation 10.**  
+Can we have try without catch (yes).  
+
+**Queation 11.**  
+Base class of Exception.  
+
+**Queation 12.**  
+Example/program for RuntimeException and Exception.  
+
+**Queation 13.**  
+Singleton design pattern (sample code).  
+**Answer:**  
+https://piyushanandmittal.blogspot.com/2018/06/javadesignpatternsingleton.html
+
+**Queation 14.**  
+How to create immutable class.    
+  
+***Question 15.***  
 Can we overload and override static metohds.  
-Answer:  
+<details>
+  <summary>Answer</summary>
+
 
 Static methods can not be overridden because there is nothing to override, as they would be two different methods. For example
 ``` java
@@ -75,13 +151,21 @@ public static class Main {
 ```
 And yes static methods can be overloaded just like any other method.  
 
-16. IS-A and HAS-A relationship with aggregation and composition example.
-Association is relation between two separate classes which establishes through their Objects. Association can be one-to-one, one-to-many, many-to-one, many-to-many.
-In Object-Oriented programming, an Object communicates to other Object to use functionality and services provided by that object. Composition and Aggregation are the two forms of association.
+</details>
 
+**Question :**  
+16. IS-A and HAS-A relationship with aggregation and composition example.  
+**Answer:**  
+Association is relation between two separate classes which establishes through their Objects. Association can be one-to-one, one-to-many, many-to-one, many-to-many.  
+In Object-Oriented programming, an Object communicates to other Object to use functionality and services provided by that object.     
+  
+**Composition and Aggregation are the two forms of association.**  
+  
+```
 Bank —> accountholder1  
      —> accountholder2  
      —> accountholder3
+```
 Above example is Aggregation
 It represents Has-A relationship.
 It is a unidirectional association i.e. a one way relationship. For example, department can have students but vice versa is not possible and thus unidirectional in nature.
@@ -111,7 +195,7 @@ www.geeksforgeeks.org/association-composition-aggregation-java/amp/
 27. Find mid node of a linked list travesing only once when last node address is not given.
 27. Is overloading possible by changing return type.
 28. Is overriding possible by changing return type.
-29. Methods in object classe.
+29. Methods in object classe.  
 Question 30.  
 Answer:  
 ``` java
@@ -125,13 +209,16 @@ Answer:
 ```      
 Question 31.  
 Difference between transient and volatile in Java?  
-Answer:  
-The volatile and transient modifiers apply to fields of classes.
+<details>
+  <summary>Answer</summary>
+
+The volatile and transient modifiers apply to fields of classes.  
 
 The transient modifier tells the Java object serialization subsystem to exclude the field when serializing an instance of the class. When the object is then deserialized, the field will be initialized to the default value; i.e. null for a reference type, and zero or false for a primitive type. Note that the JLS [see 8.3.1.3](https://docs.oracle.com/javase/specs/#8.3.1.3) does not say what transient means, but defers to the [Java Object Serialization Specification](https://docs.oracle.com/javase/6/docs/platform/serialization/spec/serialTOC.html). Other non-standard serialization mechanisms may also pay attention to a field's transient-ness.
 
 The volatile modifier tells the JVM that writes to the field should always be synchronously flushed to memory, and that reads of the field should always read from memory. This means that fields marked as volatile can be safely accessed and updated in a multi-thread application without using native or standard library-based synchronization. Similarly, reads and writes to volatile fields are atomic. (This does not apply to >>non-volatile<< long or double fields, which may be subject to "word tearing" on some JVMs.) The relevant parts of the JLS are [8.3.1.4](https://docs.oracle.com/javase/specs/#8.3.1.4), [17.4](https://docs.oracle.com/javase/specs/#17.4) and [7.7](https://docs.oracle.com/javase/specs/#17.7).  
 
+</details>
 
 Question 32.  
 will it call Thread constructor.
@@ -368,8 +455,11 @@ since multiplication has higher precedence than addition. But instead, the expre
 x = x * (2 + 5);
 ```
 
-44.
+**Question:44**  
 Why string is immutable ??
+
+<details>
+  <summary>Answer</summary>
 
 One of the key goals of any good programming language is to make efficient use of memory. As applications grow, it's very common for String literals to occupy large amounts of a program's memory, and there is often a lot of redundancy within the
 
@@ -377,6 +467,8 @@ universe of String literals for a program. To make Java more memory efficient, t
 You might say, "Well that's all well and good, but what if someone overrides the String class functionality; couldn't that cause problems in the pool?" That's one of the main reasons that the String class is marked final. Nobody can override the behaviors of any of the String methods, so you can rest assured that the String objects you are counting on to be immutable will, in fact, be immutable.
 
  **ref:- book *book: Kathy Sierra, pg. 434, Chapter 6: Strings, I/O, Formatting, and Parsing***  
+
+</details>
 
 45.
 ``` java
@@ -468,6 +560,9 @@ if yes then will it compile ??
 50.
 what is 'headSet()' and 'tailSet()'
 
+<details>
+  <summary>Answer</summary>
+	
 ``` java
 import java.util.TreeSet;
 
@@ -580,6 +675,8 @@ Descending Order
 
  **ref:- book *book: Kathy Sierra, pg. 589***  
  
+</details>
+ 
  
 51.
 Itâ€™s important to know some of the details of natural ordering. The
@@ -666,7 +763,8 @@ Serializable is an interface, not a class. But that's the syntax, so burn it in!
 
  **ref:- book *book: Kathy Sierra, pg. 618***        
  
-56.
+56.  
+
 ``` java
 public void foo(List<?> list) { }
 public void foo(List<Object> list) { }
@@ -844,7 +942,9 @@ between class names, type parameter placeholders, and variable identifi ers.
       
 ***Question 61:***  
 What is base condition in recursion?
-***Answer:***  
+<details>
+  <summary>Answer</summary>
+	  
 In recursive program, the solution to base case is provided and solution of bigger problem is expressed in terms of smaller problems.
 ``` java
 int fact(int n)
@@ -856,6 +956,8 @@ int fact(int n)
 }
 ```
 In the above example, base case for `n < = 1` is defined and larger value of number can be solved by converting to smaller one till base case is reached.
+
+</details>
 
 
 62.
@@ -912,8 +1014,10 @@ telnet and ping
 
 ***Question 69:***  
 Single server vs Sharding/partitioning vs clustring vs replication vs (redis)sentinel.  
-***Answer:***  
   
+<details>
+  <summary>Answer</summary>
+
 ***Replication:***  
 The strategy of duplicating data across more than one node. There are many varieties, simplest being Master-Slave(s) or Leader-Follower and can either be synchronous or asynchronous.  
 1. To have high availability of data. Even if a node goes down, the data is still available from other nodes in the cluster.  
@@ -969,7 +1073,7 @@ The system should be capable enough to know which all systems are running, from 
 reference:  
 http://www.ndimensionz.com/kb/what-is-database-clustering-introduction-and-brief-explanation/
 
-
+</details>
 
 ***Question 70:***  
 what is master and slave replica-set.  
@@ -1124,7 +1228,10 @@ Pg 738 ch 9
 
 ***Question 79:***
 Why character array is better than String for Storing password in Java
-Ans:
+
+<details>
+  <summary>Answer</summary>
+
 Since Strings are immutable in Java if you store password as plain text it will be available in memory until Garbage collector clears it and since String are used in String pool for reusability there is pretty high chance that it will be remain in memory for long duration, which pose a security threat. Since any one who has access to memory dump can find the password in clear text and that's another reason you should always used an encrypted password than plain text. Since Strings are immutable there is no way contents of Strings can be changed because any change will produce new String, while if you char[] you can still set all his element as blank or zero and it will not left any string in memory like string due to immutability. So Storing password in character array clearly mitigates security risk of stealing password.
 
 
@@ -1132,7 +1239,9 @@ We should not store our password in string because when we change the value of o
 Anyone who can get a memory dump can access the password in plain txt
 
 But if you use char array you can actually update the value of array and it will not left any string in memory.
+</details>
 
+	
 ***Question 80:***
 Why wait() and notify() is defined in Object class.
 Ans:
@@ -1254,6 +1363,9 @@ class Foo {
 
 Question: ConcurrentHashMap vs SynchronisedHashMap
 
+<details>
+  <summary>Answer</summary>
+
 Synchronized HashMap：
 
 Each method is synchronized using an object level lock. So the get and put methods on synchMap acquire a lock.
@@ -1265,6 +1377,8 @@ The effect of lower level locking is that you can have concurrent readers and wr
 ConcurrentHashMap does not throw a ConcurrentModificationException if one thread tries to modify it while another is iterating over it.
 This article Java 7: HashMap vs ConcurrentHashMap is a very good read. Highly recommended.
 
+</details>
+  
 
 ***Question:***
 How to reverse a linked list without using extra space.
@@ -1275,7 +1389,9 @@ https://javarevisited.blogspot.com/2013/03/top-15-data-structures-algorithm-inte
 ***Question:***
 Java sleep() and wait() – Discussion
 
-Answer:
+<details>
+  <summary>Answer</summary>
+
 ```
 sleep() is a method which is used to pause the process for few seconds or the time we want to. But in case of wait() method, thread goes in waiting state and it won’t come back automatically until we call the notify() or notifyAll().
 
@@ -1324,6 +1440,9 @@ wait() – for multi-thread-synchronization.
 Hope above information will add some value in your knowledge-base.
 ```
 https://www.google.co.in/amp/s/howtodoinjava.com/java/multi-threading/sleep-vs-wait/amp/
+
+</details>
+ 
 
 
 ***Question:***
@@ -1483,6 +1602,9 @@ dad
 ***Question:***  
 Overriding
 
+<details>
+  <summary>Answer</summary>
+
 ``` java
 package com.piyush.ds.arrays.operation;
 
@@ -1551,3 +1673,239 @@ public class OverrideDemo1{
 	
 }
 ```
+
+</details>
+  
+
+***Question:***  
+How to prevent your class from being clonned.
+***Answer***  
+
+**Question:**  
+alternate Singleton.  
+Ans: enum  
+
+**Question:**  
+What is producer consumer problem.  
+<details>
+  <summary>Answer</summary>
+
+``` java
+package ProducerConsumer;
+import java.util.LinkedList;
+import java.util.Queue;
+public class ProducerConsumerExample2 {
+    public static void main(String[] args) throws InterruptedException {
+        Buffer buffer = new Buffer(2);
+        Thread producerThread = new Thread(() -> {
+            try {
+                int value = 0;
+                while (true) {
+                    buffer.add(value);
+                    System.out.println("Produced " + value);
+                    value ++;
+                    Thread.sleep(1000);
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        Thread consumerThread = new Thread(() -> {
+            try {
+                while (true) {
+                    int value = buffer.poll();
+                    System.out.println("Consume " + value);
+                    Thread.sleep(1000);
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        producerThread.start();
+        consumerThread.start();
+        producerThread.join();
+        consumerThread.join();
+    }
+    static class Buffer {
+        private Queue<Integer> list;
+        private int size;
+        public Buffer(int size) {
+            this.list = new LinkedList<>();
+            this.size = size;
+        }
+        public void add(int value) throws InterruptedException {
+            synchronized (this) {
+                while (list.size() >= size) {
+                    wait();
+                }
+                list.add(value);
+                notify();
+            }
+        }
+        public int poll() throws InterruptedException {
+            synchronized (this) {
+                while (list.size() == 0) {
+                    wait();
+                }
+                int value = list.poll();
+                notify();
+                return value;
+            }
+        }
+    }
+}
+```
+
+</details>
+
+
+
+**Question:**  
+What would be the value of i  
+
+``` java
+...
+int i=0;
+function(){
+i++;
+}
+print(i);
+
+
+T1.function();
+T2.function();
+.
+.
+T10.function();
+
+.....
+```
+
+<details>
+  <summary>Answer</summary>
+The value of i would be unpredictable.  
+</details>
+
+
+  
+
+**Questions:**  
+Hashtable does not allow null keys or values, while HashMap allows null values and 1 null key.
+  
+Why is this so?  
+How is it useful to have such a key and values in HashMap?  
+
+<details>
+  <summary>Answer</summary>
+
+> 1\. Why is this so?
+
+HashMap is newer than Hashtable and fixes some of its limitations.
+
+I can only guess what the designers were thinking, but here are my guesses:
+
+ * Hashtable calculates a hash for each key by calling [`hashCode`][2] on each key. This would fail if the key were null, so this could be a reason for disallowing nulls as keys. 
+ * The method [`Hashtable.get`][1] returns null if the key is not present. If null were a valid value it would be ambiguous as to whether null meant that the key was present but had value null, or if the key was absent. Ambiguity is bad, so this could be a reason for disallowing nulls as values.
+
+However it turns out that sometimes you do actually want to store nulls so the restrictions were removed in HashMap. The following warning was also included in the documentation for [`HashMap.get`][3]:
+
+> A return value of null does not necessarily indicate that the map contains no mapping for the key; it is also possible that the map explicitly maps the key to null.
+
+---
+
+> 2\. How is it useful to have such a key and values in HashMap?
+
+It is useful to explicitly store null to distinguish between a key that you *know* exists but doesn't have an associated value and a key that doesn't exist. An example is a list of registered users and their birthdays. If you ask for a specific user's birthday you want to be able to distinguish between that user not existing and the user existing but they haven't entered their birthday.
+
+I can't think of any (good) reason for wanting to store null as a key, and in general I'd advise against using null as a key, but presumably there is at least one person somewhere that needs that keys that can be null.
+
+[1]: https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#get-java.lang.Object-
+[2]: https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html#hashCode-java.lang.Object-
+[3]: https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#get-java.lang.Object-
+
+The value of i would be unpredictable.  
+</details>
+
+
+**Questions:**  
+How to implement your own HashMap.
+<details>
+  <summary>Answer</summary>
+</details>
+
+
+**Questions:**  
+What is fork,join and forkjoinpool.
+<details>
+  <summary>Answer</summary>
+</details>
+
+
+**Questions:**  
+How HashMap internally works.  
+
+
+**Question:**  
+How LinkedHashMap internally works.  
+<details>
+  <summary>Answer</summary>
+https://medium.com/@mr.anmolsehgal/java-linkedhashmap-internal-implementation-44e2e2893036  
+https://www.google.co.in/amp/s/www.dineshonjava.com/internal-working-of-linkedhashmap-in-java/amp/  
+</details>
+
+
+**Question:**  
+x+=y vs c=x+y.  
+<details>
+  <summary>Answer</summary>
+The "common knowledge" of programming is that `x += y` is an equivalent shorthand notation of `x = x + y`. As long as `x` and `y` are of the same type (for example, both are `int`s), you may consider the two statements equivalent.
+
+However, in Java, `x += y` *is not* identical to `x = x + y` in general. 
+
+If `x` and `y` are of different types, the behavior of the two statements differs due to the rules of the language. For example, let's have `x == 0` (int) and `y == 1.1` (double):
+
+		int x = 0;
+		x += 1.1;    // just fine; hidden cast, x == 1 after assignment
+		x = x + 1.1; // won't compile! 'cannot convert from double to int'
+
+`+=` performs an implicit cast, whereas for `+` you need to explicitly cast the second operand, otherwise you'd get a compiler error.
+
+Quote from Joshua Bloch's *Java Puzzlers*:
+
+> (...) compound assignment expressions automatically cast the result of
+> the computation they perform  to the type of the variable on their
+> left-hand side. If the type of the result is identical to the type of
+> the variable, the cast has no effect. If, however, the type of the
+> result is wider than that of the variable,  the  compound 
+> assignment  operator  performs  a  silent  narrowing  primitive
+> conversion [[JLS 5.1.3](http://java.sun.com/docs/books/jls/second_edition/html/conversions.doc.html#25363)].
+</details>
+
+
+**Question:**  
+Types of map    
+<details>
+  <summary>Answer</summary>
+https://youtu.be/APL28XpFP0c  
+</details>
+
+
+
+**Question:**  
+Difference between Runnable and Callable  
+<details>
+  <summary>Answer</summary>
+</details>
+
+**Question:**
+Advance Threading concept.  
+<details>
+  <summary>Answer</summary>
+(Defog Tech)[https://www.youtube.com/playlist?list=PLhfHPmPYPPRk6yMrcbfafFGSbE2EPK_A6]
+</details>
+
+**Question:**
+Call vs Run.  
+<details>
+  <summary>Answer</summary>
+</details>
