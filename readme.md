@@ -108,7 +108,7 @@
 <summary>View contents</summary>
 
   1. Google .  
-  [prepration](https://github.com/PiyushMittl/java-TipsandTricks/tree/master/companies/google)
+  [prepration](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/companies/google/readme.md)
   2. Facebook 
   3. Apple 
   4. ..Amazon ..
