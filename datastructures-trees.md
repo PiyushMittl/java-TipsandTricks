@@ -17,6 +17,7 @@ right view
 botton view
 top view
 vertical view
+diagonal view
 ```
 
 operation:  
