@@ -155,7 +155,8 @@ And yes static methods can be overloaded just like any other method.
 
 **Question :**  
 16. IS-A and HAS-A relationship with aggregation and composition example.  
-**Answer:**  
+<details>
+  <summary>Answer</summary>
 Association is relation between two separate classes which establishes through their Objects. Association can be one-to-one, one-to-many, many-to-one, many-to-many.  
 In Object-Oriented programming, an Object communicates to other Object to use functionality and services provided by that object.     
   
@@ -182,6 +183,9 @@ When there is a composition between two entities, the composed object cannot exi
 
 Ref:
 www.geeksforgeeks.org/association-composition-aggregation-java/amp/
+
+</details>
+
 
 18. (intâ€¦ values) is passed as parameter to a method when you are not aware of the number of input parameter but know that the type of parameter(
 19. Why array index starts with 0.
