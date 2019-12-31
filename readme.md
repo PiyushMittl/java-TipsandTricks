@@ -8,7 +8,7 @@
 8. [Problem Solving using DataStructures and Algorithm](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/dynamic-programming.md)
 9. [SQL](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/sql.md)
 10. [System Design etc](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/systemdesign.md)  
-11. [Operating System]
+11. [Operating System](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/os.md)
 11. [miscellaneous](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/miscellaneous.md)  
 
 
