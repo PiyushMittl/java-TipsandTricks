@@ -211,7 +211,8 @@ Answer:
       void doStuff5(int... x, char... y) { } // too many var-args
       void doStuff6(String... s, byte b) { } // var-arg must be last
 ```      
-Question 31.  
+
+**Question 31.**  
 Difference between transient and volatile in Java?  
 <details>
   <summary>Answer</summary>
@@ -224,12 +225,13 @@ The volatile modifier tells the JVM that writes to the field should always be sy
 
 </details>
 
-Question 32.  
+**Question 32.**  
 will it call Thread constructor.
 ``` java
 Thread[] threads = new Thread[5];
 ```
-Answer:  
+<details>
+  <summary>Answer</summary>
 Remember thatâ€”despite how the code appearsâ€”the Thread constructor is not
 being invoked. We're not creating a Thread instance, but rather a single Thread
 array object. After the preceding statement, there are still no actual Thread objects!  
@@ -242,9 +244,9 @@ int[] carList = new int[]; // Will not compile; needs a size
 ```
   
 **ref:- *book: Kathy Sierra, pg. 221***  
+</details>  
   
-  
-Question 33.   
+**Question 33.**   
 ``` java
 Thread[] threads = new Thread[5]; // works fine
 Thread[] threads = new Thread[]; // Will not compile; needs a size
@@ -876,9 +878,6 @@ public class GenericsTest {
 ```
 
 
-
-
-
  **ref:- book *book: Kathy Sierra, pg. 619***     
  
  57.
@@ -1010,11 +1009,12 @@ dc.setXxxx(); //yes
 dc= new DenoClass();//won work because we can not reassign new reference to final object
 ```
 
-Question 68.
+**Question 68.**
 if you are facing some issue in the connectivity with your database. how would you diagnose ??
-
-Answer:
+<details>
+  <summary>Answer</summary>
 telnet and ping
+</details>
 
 ***Question 69:***  
 Single server vs Sharding/partitioning vs clustring vs replication vs (redis)sentinel.  
@@ -1081,7 +1081,9 @@ http://www.ndimensionz.com/kb/what-is-database-clustering-introduction-and-brief
 
 ***Question 70:***  
 what is master and slave replica-set.  
-***Answer:***  
+<details>
+  <summary>Answer</summary>
+</details>
 
 
 ***Question 71:***  
@@ -1136,9 +1138,11 @@ List<String> list=new ArrayList();
 	list.add("three");
 addAll(list);	
 
-***Answer:***  
+<details>
+  <summary>Answer</summary>
 output would be 6  
 since addAll lenght will count it as 3 and then again addAll from super class will call child method to add element which will again increment count with three.  
+</details>
 
 
 ***Question 73:***  
@@ -1155,17 +1159,21 @@ phonebook structure
 read propery and put properties in cache of jvm. but you have to update properties and you don't have to restart app and have to update cache in jvm.  
 ***Answer***  
 
-***Question 75:***  
-***Answer***  
+**Question 75:**  
+<details>
+  <summary>Answer</summary>
 The overriding method cannot have a more restrictive access modifier than the method being overridden (for example, you can't override a method marked public and make it protected).  
 
 **ref:- book *book: Kathy Sierra, pg. 105***   
+</details>
 
 ***Question 75:***  
 private vs final methods.  
-***Answer***  
+<details>
+  <summary>Answer</summary>  
 private method can not be accessed outside other class and due to which can not override do.  
 a final methid can be accessed as per its access modifier but can not be override.  
+</details>
 
 ***Question 76:***  
 If a method is overridden but you use a polymorphic (supertype) reference to refer to the subtype object with the overriding method, the compiler assumes youâ€™re calling the supertype version of the method. If the supertype version declares a checked exception, but the overriding subtype method does not, the compiler still thinks you are calling a method that declares an exception.  
@@ -1212,15 +1220,15 @@ class UseAnimals {
 }
 ```
 
-***Answer:***
-
+<details>
+  <summary>Answer</summary>
 The output is what you expect:
 in the Animal version
 in the Horse version
 in the Animal version
 
 **ref:- book *book: Kathy Sierra, pg. 112***   
-
+</details>
 
 ***Question 78:***
 What if i create a protected constructor
