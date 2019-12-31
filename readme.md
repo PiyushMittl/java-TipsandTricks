@@ -34,8 +34,8 @@
   3. Queues
   4. Linked List
   5. [Trees](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/datastructures-trees.md)
-  6. Hashing
-  7. Graphs
+  6. [Hashing](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/datastructures-hashing.md)
+  7. [Graphs](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/datastructures-graphs.md)
   8. Binomial Heap
   9. Fibonacci Heap
   10. Skip List
