@@ -214,7 +214,7 @@ Answer:
 ```      
 <details>
   <summary>Answer</summary>
-<details>
+</details>
 	
 **Question 31.**  
 Difference between transient and volatile in Java?  
