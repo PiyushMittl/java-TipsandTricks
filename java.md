@@ -1689,6 +1689,138 @@ How to prevent your class from being clonned.
 alternate Singleton.  
 Ans: enum  
 
+
+
+
+
+
+
+**Question:**  
+x+=y vs c=x+y.  
+<details>
+  <summary>Answer</summary>
+The "common knowledge" of programming is that `x += y` is an equivalent shorthand notation of `x = x + y`. As long as `x` and `y` are of the same type (for example, both are `int`s), you may consider the two statements equivalent.
+
+However, in Java, `x += y` *is not* identical to `x = x + y` in general. 
+
+If `x` and `y` are of different types, the behavior of the two statements differs due to the rules of the language. For example, let's have `x == 0` (int) and `y == 1.1` (double):
+
+		int x = 0;
+		x += 1.1;    // just fine; hidden cast, x == 1 after assignment
+		x = x + 1.1; // won't compile! 'cannot convert from double to int'
+
+`+=` performs an implicit cast, whereas for `+` you need to explicitly cast the second operand, otherwise you'd get a compiler error.
+
+Quote from Joshua Bloch's *Java Puzzlers*:
+
+> (...) compound assignment expressions automatically cast the result of
+> the computation they perform  to the type of the variable on their
+> left-hand side. If the type of the result is identical to the type of
+> the variable, the cast has no effect. If, however, the type of the
+> result is wider than that of the variable,  the  compound 
+> assignment  operator  performs  a  silent  narrowing  primitive
+> conversion [[JLS 5.1.3](http://java.sun.com/docs/books/jls/second_edition/html/conversions.doc.html#25363)].
+</details>
+
+
+
+
+
+
+
+## Threading and Concurrency
+**Question:**  
+Difference between Runnable and Callable  
+<details>
+  <summary>Answer</summary>
+</details>
+
+**Question:**
+Advance Threading concept.  
+<details>
+  <summary>Answer</summary>
+(Defog Tech)[https://www.youtube.com/playlist?list=PLhfHPmPYPPRk6yMrcbfafFGSbE2EPK_A6]
+</details>
+
+**Question:**
+Call vs Run.  
+<details>
+  <summary>Answer</summary>
+</details>
+
+**Questions:**  
+What is fork,join and forkjoinpool.
+<details>
+  <summary>Answer</summary>
+</details>
+
+
+## Maps
+**Question:**  
+Types of map    
+<details>
+  <summary>Answer</summary>
+https://youtu.be/APL28XpFP0c  
+</details>
+
+**Questions:**  
+How to implement your own HashMap.
+<details>
+  <summary>Answer</summary>
+</details>
+
+**Questions:**  
+How HashMap internally works.  
+<details>
+  <summary>Answer</summary>
+</details>
+
+
+**Question:**  
+How LinkedHashMap internally works.  
+<details>
+  <summary>Answer</summary>
+https://medium.com/@mr.anmolsehgal/java-linkedhashmap-internal-implementation-44e2e2893036  
+https://www.google.co.in/amp/s/www.dineshonjava.com/internal-working-of-linkedhashmap-in-java/amp/  
+</details>
+
+**Questions:**  
+Hashtable does not allow null keys or values, while HashMap allows null values and 1 null key.
+  
+Why is this so?  
+How is it useful to have such a key and values in HashMap?  
+
+<details>
+  <summary>Answer</summary>
+
+> 1\. Why is this so?
+
+HashMap is newer than Hashtable and fixes some of its limitations.
+
+I can only guess what the designers were thinking, but here are my guesses:
+
+ * Hashtable calculates a hash for each key by calling [`hashCode`][2] on each key. This would fail if the key were null, so this could be a reason for disallowing nulls as keys. 
+ * The method [`Hashtable.get`][1] returns null if the key is not present. If null were a valid value it would be ambiguous as to whether null meant that the key was present but had value null, or if the key was absent. Ambiguity is bad, so this could be a reason for disallowing nulls as values.
+
+However it turns out that sometimes you do actually want to store nulls so the restrictions were removed in HashMap. The following warning was also included in the documentation for [`HashMap.get`][3]:
+
+> A return value of null does not necessarily indicate that the map contains no mapping for the key; it is also possible that the map explicitly maps the key to null.
+
+---
+
+> 2\. How is it useful to have such a key and values in HashMap?
+
+It is useful to explicitly store null to distinguish between a key that you *know* exists but doesn't have an associated value and a key that doesn't exist. An example is a list of registered users and their birthdays. If you ask for a specific user's birthday you want to be able to distinguish between that user not existing and the user existing but they haven't entered their birthday.
+
+I can't think of any (good) reason for wanting to store null as a key, and in general I'd advise against using null as a key, but presumably there is at least one person somewhere that needs that keys that can be null.
+
+[1]: https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#get-java.lang.Object-
+[2]: https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html#hashCode-java.lang.Object-
+[3]: https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#get-java.lang.Object-
+
+The value of i would be unpredictable.  
+</details>
+
 **Question:**  
 What is producer consumer problem.  
 <details>
@@ -1791,125 +1923,3 @@ The value of i would be unpredictable.
 </details>
 
 
-  
-
-**Questions:**  
-Hashtable does not allow null keys or values, while HashMap allows null values and 1 null key.
-  
-Why is this so?  
-How is it useful to have such a key and values in HashMap?  
-
-<details>
-  <summary>Answer</summary>
-
-> 1\. Why is this so?
-
-HashMap is newer than Hashtable and fixes some of its limitations.
-
-I can only guess what the designers were thinking, but here are my guesses:
-
- * Hashtable calculates a hash for each key by calling [`hashCode`][2] on each key. This would fail if the key were null, so this could be a reason for disallowing nulls as keys. 
- * The method [`Hashtable.get`][1] returns null if the key is not present. If null were a valid value it would be ambiguous as to whether null meant that the key was present but had value null, or if the key was absent. Ambiguity is bad, so this could be a reason for disallowing nulls as values.
-
-However it turns out that sometimes you do actually want to store nulls so the restrictions were removed in HashMap. The following warning was also included in the documentation for [`HashMap.get`][3]:
-
-> A return value of null does not necessarily indicate that the map contains no mapping for the key; it is also possible that the map explicitly maps the key to null.
-
----
-
-> 2\. How is it useful to have such a key and values in HashMap?
-
-It is useful to explicitly store null to distinguish between a key that you *know* exists but doesn't have an associated value and a key that doesn't exist. An example is a list of registered users and their birthdays. If you ask for a specific user's birthday you want to be able to distinguish between that user not existing and the user existing but they haven't entered their birthday.
-
-I can't think of any (good) reason for wanting to store null as a key, and in general I'd advise against using null as a key, but presumably there is at least one person somewhere that needs that keys that can be null.
-
-[1]: https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#get-java.lang.Object-
-[2]: https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html#hashCode-java.lang.Object-
-[3]: https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#get-java.lang.Object-
-
-The value of i would be unpredictable.  
-</details>
-
-
-**Questions:**  
-How to implement your own HashMap.
-<details>
-  <summary>Answer</summary>
-</details>
-
-
-**Questions:**  
-What is fork,join and forkjoinpool.
-<details>
-  <summary>Answer</summary>
-</details>
-
-
-**Questions:**  
-How HashMap internally works.  
-
-
-**Question:**  
-How LinkedHashMap internally works.  
-<details>
-  <summary>Answer</summary>
-https://medium.com/@mr.anmolsehgal/java-linkedhashmap-internal-implementation-44e2e2893036  
-https://www.google.co.in/amp/s/www.dineshonjava.com/internal-working-of-linkedhashmap-in-java/amp/  
-</details>
-
-
-**Question:**  
-x+=y vs c=x+y.  
-<details>
-  <summary>Answer</summary>
-The "common knowledge" of programming is that `x += y` is an equivalent shorthand notation of `x = x + y`. As long as `x` and `y` are of the same type (for example, both are `int`s), you may consider the two statements equivalent.
-
-However, in Java, `x += y` *is not* identical to `x = x + y` in general. 
-
-If `x` and `y` are of different types, the behavior of the two statements differs due to the rules of the language. For example, let's have `x == 0` (int) and `y == 1.1` (double):
-
-		int x = 0;
-		x += 1.1;    // just fine; hidden cast, x == 1 after assignment
-		x = x + 1.1; // won't compile! 'cannot convert from double to int'
-
-`+=` performs an implicit cast, whereas for `+` you need to explicitly cast the second operand, otherwise you'd get a compiler error.
-
-Quote from Joshua Bloch's *Java Puzzlers*:
-
-> (...) compound assignment expressions automatically cast the result of
-> the computation they perform  to the type of the variable on their
-> left-hand side. If the type of the result is identical to the type of
-> the variable, the cast has no effect. If, however, the type of the
-> result is wider than that of the variable,  the  compound 
-> assignment  operator  performs  a  silent  narrowing  primitive
-> conversion [[JLS 5.1.3](http://java.sun.com/docs/books/jls/second_edition/html/conversions.doc.html#25363)].
-</details>
-
-
-**Question:**  
-Types of map    
-<details>
-  <summary>Answer</summary>
-https://youtu.be/APL28XpFP0c  
-</details>
-
-
-
-**Question:**  
-Difference between Runnable and Callable  
-<details>
-  <summary>Answer</summary>
-</details>
-
-**Question:**
-Advance Threading concept.  
-<details>
-  <summary>Answer</summary>
-(Defog Tech)[https://www.youtube.com/playlist?list=PLhfHPmPYPPRk6yMrcbfafFGSbE2EPK_A6]
-</details>
-
-**Question:**
-Call vs Run.  
-<details>
-  <summary>Answer</summary>
-</details>
