@@ -1233,10 +1233,6 @@ in the Animal version
 ***Question 78:***
 What if i create a protected constructor
 Does it mean we can create object in child class only ??
-Can we start thread twice
-How to create deadlock
-Synchronized block in static method
-Pg 738 ch 9
 
 ***Question 79:***
 Why character array is better than String for Storing password in Java
@@ -1734,9 +1730,20 @@ Quote from Joshua Bloch's *Java Puzzlers*:
 
 
 
-
-
 ## Threading and Concurrency
+**Question:**
+Can we start thread twice
+<details>
+  <summary>Answer</summary>
+</details>
+
+**Question:**
+How to create deadlock
+Pg 738 ch 9
+<details>
+  <summary>Answer</summary>
+</details>
+
 **Question:**  
 Difference between Runnable and Callable  
 <details>
@@ -1758,6 +1765,12 @@ Call vs Run.
 
 **Questions:**  
 What is fork,join and forkjoinpool.
+<details>
+  <summary>Answer</summary>
+</details>
+
+**Questions:**  
+What difference between Volatile and Atomic.
 <details>
   <summary>Answer</summary>
 </details>
