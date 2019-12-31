@@ -200,7 +200,8 @@ www.geeksforgeeks.org/association-composition-aggregation-java/amp/
 27. Is overloading possible by changing return type.
 28. Is overriding possible by changing return type.
 29. Methods in object classe.  
-Question 30.  
+
+**Question 30.**  
 Answer:  
 ``` java
       void doStuff(int... x) { } // expects from 0 to many ints as parameters
@@ -211,7 +212,10 @@ Answer:
       void doStuff5(int... x, char... y) { } // too many var-args
       void doStuff6(String... s, byte b) { } // var-arg must be last
 ```      
-
+<details>
+  <summary>Answer</summary>
+<details>
+	
 **Question 31.**  
 Difference between transient and volatile in Java?  
 <details>
