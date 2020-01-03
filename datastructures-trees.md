@@ -49,6 +49,7 @@ deletion
 
 ..  
 **heap**  
+https://www.youtube.com/watch?v=HqPJF2L5h9U&t=899s
 * Heap a is always complete binary tree.  
 * we only insert node at the bottom and then heapify the tree.  
 * we only delete the node from top and inset the last node at the place of deleted node and heapify.  
