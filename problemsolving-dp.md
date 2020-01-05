@@ -21,7 +21,7 @@ Answer:
 Longest Common Subsequence  
 Ex.  
 String1: **abc**da**f**  
-String2: acbcf  
+String2: **a**c**bcf**  
 Common Sub String: abcf  
 
 Longest Common Substring  
