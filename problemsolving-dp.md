@@ -16,3 +16,12 @@ Answer:
 [Coin Changing Minimum Numbers of Coin](https://youtu.be/Y0ZqKpToTic)  
 
 Question:
+Longest Common Subsequence & Longest Common Substring  
+Answer:  
+Longest Common Subsequence  
+
+Longest Common Substring  
+Ex.  
+String1: abcdaf  
+String2: zbcdf  
+Common Sub String: bcd
