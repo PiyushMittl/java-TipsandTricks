@@ -11,8 +11,8 @@ https://youtu.be/Fi5INvcmDos
 
 Question:  
 Subset Sub Problem & Coin Changing Minimum Numbers of Coin.  
-Answer:
+Answer:  
 [Subset Sub Problem](https://youtu.be/s6FhG--P7z0)  
 [Coin Changing Minimum Numbers of Coin](https://youtu.be/Y0ZqKpToTic)  
 
-Wuestion:
+Question:
