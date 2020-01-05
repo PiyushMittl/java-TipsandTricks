@@ -19,9 +19,13 @@ Question:
 Longest Common Subsequence & Longest Common Substring  
 Answer:  
 Longest Common Subsequence  
+Ex.  
+String1: abcdaf  
+String2: acbcf  
+Common Sub String: abcf  
 
 Longest Common Substring  
 Ex.  
 String1: abcdaf  
 String2: zbcdf  
-Common Sub String: bcd
+Common Sub String: bcd  
