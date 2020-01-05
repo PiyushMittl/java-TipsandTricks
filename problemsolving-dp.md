@@ -20,7 +20,7 @@ Longest Common Subsequence & Longest Common Substring
 Answer:  
 Longest Common Subsequence  
 Ex.  
-String1: abcdaf  
+String1: **a**bcdaf  
 String2: acbcf  
 Common Sub String: abcf  
 
