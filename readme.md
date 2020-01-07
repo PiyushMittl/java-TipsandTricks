@@ -100,7 +100,8 @@
   6. [Heaps](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-heaps.md)
   7. String
   8. Divide and Conquer
-  9. [Backtracking](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-backtracking.md)
+  9. [Backtracking](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-backtracking.md)   
+[sudoku](https://youtu.be/P9_F7kuHU90)  
   10. Greedy
   11. [Pattern Searching and Mactching](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-patternmatching.md)
   12. [Dynamic Programming](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-dp.md)
