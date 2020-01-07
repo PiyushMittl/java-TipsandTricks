@@ -75,7 +75,7 @@
   1. Analysis
   2. Searching and Sorting
   3. Divide and Conquer
-  4. Greedy
+  4. [Greedy](https://www.geeksforgeeks.org/greedy-algorithms/#standardGreedyAlgorithms)
   5. Back Tracking
   6. Dynamic Programming
   7. Complexity Classes
