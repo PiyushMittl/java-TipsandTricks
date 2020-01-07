@@ -76,9 +76,10 @@
   2. Searching and Sorting
   3. Divide and Conquer
   4. Greedy
-  [geeksforgeeks](https://www.geeksforgeeks.org/greedy-algorithms/#standardGreedyAlgorithms)
-  [hackerearth](https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/)
-  5. Back Tracking
+  [geeksforgeeks](https://www.geeksforgeeks.org/greedy-algorithms/#standardGreedyAlgorithms)  
+  [hackerearth](https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/)  
+  5. Back Tracking  
+  [hackerearth](https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/tutorial/)
   6. Dynamic Programming
   7. Complexity Classes
   8. Randomized Algo
