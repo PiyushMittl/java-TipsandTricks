@@ -79,6 +79,7 @@
   5. Back Tracking
   6. Dynamic Programming
   7. Complexity Classes
+  8. Randomized Algo
   
 </details>  
   
