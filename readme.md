@@ -80,6 +80,8 @@
   6. Dynamic Programming
   7. Complexity Classes
   8. Randomized Algo
+  9. Bruite Force
+  10. Recursion
   
 </details>  
   
