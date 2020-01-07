@@ -75,7 +75,7 @@
   1. Analysis
   2. Searching and Sorting
   3. Divide and Conquer
-  4. Greedy
+  4. Greedy  
   [geeksforgeeks](https://www.geeksforgeeks.org/greedy-algorithms/#standardGreedyAlgorithms)  
   [hackerearth](https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/)  
   5. Back Tracking  
