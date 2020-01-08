@@ -80,6 +80,8 @@
   [hackerearth](https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/)  
   5. Back Tracking  
   [hackerearth](https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/tutorial/)
+[gfg-intro](https://www.google.co.in/amp/s/www.geeksforgeeks.org/backtracking-introduction/amp/?client=safari)  
+[gfg-qsn](https://www.geeksforgeeks.org/backtracking-algorithms/)  
   6. Dynamic Programming
   7. Complexity Classes
   8. Randomized Algo
