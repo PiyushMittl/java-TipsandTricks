@@ -83,7 +83,7 @@
 [gfg-intro](https://www.google.co.in/amp/s/www.geeksforgeeks.org/backtracking-introduction/amp/?client=safari)  
 [gfg-qsn](https://www.geeksforgeeks.org/backtracking-algorithms/)  
   6. Dynamic Programming  
-[gfg](https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/)  
+[hackerearth](https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/)  
   7. Complexity Classes
   8. Randomized Algo
   9. Bruite Force
