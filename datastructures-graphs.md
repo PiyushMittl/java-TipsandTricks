@@ -24,7 +24,7 @@ Dijkstra vs Prims vs Kruskal
 In Minimum Spanning tree(`Prim's` or `Kruskal's` algorithm) you get minimum egdes with minimum edge value.  
 
 
-1. Dijksra Algorithm(use greedy and sigle souce shortest path doesn't work with negetive weight)  
+1. Dijksra Algorithm(use greedy and sigle souce shortest path, workes with directed and undirected both but doesn't work with negetive weight)  
 Dijkstra’s algorithm is a Greedy algorithm and time complexity is O(VLogV) (with the use of Fibonacci heap). Dijkstra doesn’t work for Graphs with negative weight edges, Bellman-Ford works for such graphs. Bellman-Ford is also simpler than Dijkstra and suites well for distributed systems. But time complexity of Bellman-Ford is O(VE), which is more than Dijkstra  
 
 2. Prims Algorithm 
