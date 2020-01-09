@@ -32,6 +32,8 @@ Dijkstra’s algorithm is a Greedy algorithm and time complexity is O(VLogV) (wi
 * works for connected and undirected graph  
 3. Kruskal Algorithm  
 * used to find minimum cost spanning tree  
+* can work for un-connected graph
+
 
 
 4. Bellman Ford Algorithm(use DP and sibgle source shortest path also, failed if there is -ve weight with cycle)  
