@@ -13,7 +13,7 @@ Question:
 Subset Sub Problem & Coin Changing Minimum Numbers of Coin.  
 Answer:  
 Subset Sum Problem [sol1](https://youtu.be/s6FhG--P7z0),[sol2](https://youtu.be/zKwwjAkaXLI)  
-Problem can also be solved using backtrack https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-backtracking.md    
+Problem can also be solved using [backtrack](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-backtracking.md)     
 [Coin Changing Minimum Numbers of Coin](https://youtu.be/Y0ZqKpToTic)  
 
 Question:
