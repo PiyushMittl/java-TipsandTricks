@@ -12,7 +12,7 @@ https://youtu.be/Fi5INvcmDos
 Question:  
 Subset Sub Problem & Coin Changing Minimum Numbers of Coin.  
 Answer:  
-[Subset Sub Problem](https://youtu.be/s6FhG--P7z0)  
+Subset Sum Problem [sol1](https://youtu.be/s6FhG--P7z0),[sol2](https://youtu.be/zKwwjAkaXLI)  
 [Coin Changing Minimum Numbers of Coin](https://youtu.be/Y0ZqKpToTic)  
 
 Question:
