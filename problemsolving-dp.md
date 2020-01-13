@@ -26,7 +26,7 @@ String2: **a**c**bcf**
 Common Sub String: abcf  
 
 Longest Common Substring  
-Ex.
+Ex.  
 String1: a**bcd**af  
 String2: z**bcd**f  
 Common Sub String: bcd  
