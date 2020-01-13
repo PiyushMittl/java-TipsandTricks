@@ -12,7 +12,7 @@ https://youtu.be/Fi5INvcmDos
 Question:  
 Subset Sub Problem & Coin Changing Minimum Numbers of Coin.  
 Answer:  
-Subset Sum Problem [sol1](https://youtu.be/s6FhG--P7z0),[sol2](https://youtu.be/zKwwjAkaXLI)  
+[sol1](https://youtu.be/s6FhG--P7z0),[sol2](https://youtu.be/zKwwjAkaXLI)  
 Problem can also be solved using [backtrack](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-backtracking.md)     
 [Coin Changing Minimum Numbers of Coin](https://youtu.be/Y0ZqKpToTic)  
 
@@ -30,3 +30,23 @@ Ex.
 String1: a**bcd**af  
 String2: z**bcd**f  
 Common Sub String: bcd  
+
+Question:  
+Minimum Edit Distance  
+Answer:  
+```
+Input:   str1 = "geek", str2 = "gesek"
+Output:  1
+We can convert str1 into str2 by inserting a 's'.
+
+Input:   str1 = "cat", str2 = "cut"
+Output:  1
+We can convert str1 into str2 by replacing 'a' with 'u'.
+
+Input:   str1 = "sunday", str2 = "saturday"
+Output:  3
+Last three and first characters are same.  We basically
+need to convert "un" to "atur".  This can be done using
+below three operations. 
+Replace 'n' with 'r', insert t, insert a
+```
