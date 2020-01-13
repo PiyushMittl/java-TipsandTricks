@@ -21,18 +21,16 @@ Longest Common Subsequence & Longest Common Substring
 Answer:  
 Longest Common Subsequence  
 Ex.  
-```
 String1: **abc**da**f**  
 String2: **a**c**bcf**  
 Common Sub String: abcf  
-```
+
 Longest Common Substring  
 Ex.
-```
 String1: a**bcd**af  
 String2: z**bcd**f  
 Common Sub String: bcd  
-```
+
 
 Question:  
 Minimum Edit Distance  
