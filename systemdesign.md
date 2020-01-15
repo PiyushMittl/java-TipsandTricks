@@ -6,6 +6,6 @@ Videos:
 [Tech Dummies](https://www.youtube.com/watch?v=mhUQe4BKZXs&list=PLkQkbY7JNJuBoTemzQfjym0sqbOHt5fnV)  
 [Success in tech](https://www.youtube.com/channel/UC-vYrOAmtrx9sBzJAf3x_xw)  
 
-Distributed Cache:  
+ 
 [System Design Interview - Distributed Cache](https://www.youtube.com/watch?v=iuqZvajTOyA)
 
