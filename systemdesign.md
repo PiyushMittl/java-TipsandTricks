@@ -6,6 +6,8 @@ Videos:
 [Tech Dummies](https://www.youtube.com/watch?v=mhUQe4BKZXs&list=PLkQkbY7JNJuBoTemzQfjym0sqbOHt5fnV)  
 [Success in tech](https://www.youtube.com/channel/UC-vYrOAmtrx9sBzJAf3x_xw)  
 
- 
+Cache Implementation:   
 [System Design Interview - Distributed Cache](https://www.youtube.com/watch?v=iuqZvajTOyA)
 
+Hashing:  
+[What is Consistent Hashing and Where is it used?](https://www.youtube.com/watch?v=zaRkONvyGr8)
