@@ -16,7 +16,7 @@ Answer:
 Problem can also be solved using [backtrack](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-backtracking.md)     
 [Coin Changing Minimum Numbers of Coin](https://youtu.be/Y0ZqKpToTic)  
 
-Question:
+Question:  
 Coin changing number of ways to get total.  
 Answer:  
 https://youtu.be/_fgjrs570YE  
