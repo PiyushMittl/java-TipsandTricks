@@ -72,3 +72,9 @@ Replace 'n' with 'r', insert t, insert a
 Question:  
 Cutting rod maximum profit & Cutting rod minimum profit.  
 
+Question:  
+Maximum size rectangle of all 1's.  
+Answer:
+https://youtu.be/g8bSdXCG-lA  
+
+
