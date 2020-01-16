@@ -17,6 +17,11 @@ Problem can also be solved using [backtrack](https://github.com/PiyushMittl/java
 [Coin Changing Minimum Numbers of Coin](https://youtu.be/Y0ZqKpToTic)  
 
 Question:
+Coin changing number of ways to get total.  
+Answer:  
+https://youtu.be/_fgjrs570YE  
+
+Question:
 Longest Common Subsequence & Longest Common Substring  
 Answer:  
 Longest Common Subsequence  
