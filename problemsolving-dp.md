@@ -68,3 +68,7 @@ need to convert "un" to "atur".  This can be done using
 below three operations. 
 Replace 'n' with 'r', insert t, insert a
 ```
+
+Question:  
+Cutting rod maximum profit & Cutting rod minimum profit.  
+
