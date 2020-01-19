@@ -77,4 +77,9 @@ Maximum size rectangle of all 1's.
 Answer:
 https://youtu.be/g8bSdXCG-lA  
 
+Question:  
+Minimum Cost Path.  
+Answer:  
+https://youtu.be/lBRtnuxg-gU  
+
 
