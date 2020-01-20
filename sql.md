@@ -57,7 +57,8 @@ The system should be capable enough to know which all systems are running, from 
 
 
 reference:  
-http://www.ndimensionz.com/kb/what-is-database-clustering-introduction-and-brief-explanation/
+http://www.ndimensionz.com/kb/what-is-database-clustering-introduction-and-brief-explanation/  
+https://www.slideshare.net/gabidavila/lamp-desenvolvendo-alm-do-trivial?next_slideshow=1  
 
 </details>
 
