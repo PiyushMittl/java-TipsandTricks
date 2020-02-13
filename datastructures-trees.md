@@ -55,4 +55,7 @@ https://www.youtube.com/watch?v=HqPJF2L5h9U&t=899s
 * we only delete the node from top and inset the last node at the place of deleted node and heapify.  
 
 
+  Tree interview question:
+
+  https://www.youtube.com/playlist?list=PLqM7alHXFySHCXD7r1J0ky9Zg_GBB1dbk
 
