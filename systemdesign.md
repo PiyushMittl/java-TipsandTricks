@@ -11,3 +11,9 @@ Cache Implementation:
 
 Hashing:  
 [What is Consistent Hashing and Where is it used?](https://www.youtube.com/watch?v=zaRkONvyGr8)
+
+Questions:
+Longest palindrome substring
+Longest common substring
+Longest common subsequence
+Maximum sum subarray
