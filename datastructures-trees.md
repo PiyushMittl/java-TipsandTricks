@@ -29,6 +29,8 @@ mirror
 diameter
 find depth
 find height
+b-tree to doubly linked list
+Print node at k distance
 
 ```
 
