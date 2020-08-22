@@ -31,10 +31,12 @@ Dijkstra’s algorithm is a Greedy algorithm and time complexity is O(VLogV) (wi
 * used to find minimum cost spanning tree  
 * works for connected and undirected graph  
 * algo starts with a node
+* we select minimum connected edge to the current node
 3. Kruskal Algorithm  
 * used to find minimum cost spanning tree  
 * can work for un-connected and indirected graph
 * algo starts with an edge
+* we select minimum edge irrespective of connected or not
 
 
 
