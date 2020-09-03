@@ -1,6 +1,6 @@
 **What is DFS and BFS**  
-**DFS:** use stack
-**BFS:** use queue
+**DFS:** use stack  
+**BFS:** use queue  
 
 
 **Spanning Tree vs Minimum Spanning Tree**  
