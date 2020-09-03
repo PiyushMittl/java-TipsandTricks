@@ -1,4 +1,4 @@
-**What is DFS and BFS**
+**What is DFS and BFS**  
 **DFS:** use stack
 **BFS:** use queue
 
