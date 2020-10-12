@@ -1,6 +1,6 @@
-1. for(i=0;i<n;i++)
+1. for(i=0;i<n;i=ix2)
 ``` java
-for(i=0;i<n;i++)
+for(i=0;i<n;i=ix2)
 {
   statement;
 }
@@ -51,3 +51,33 @@ hence n/2^k = 1
 n=2^k
 k=logn
 ```
+
+3. for(i=0;ixi<n;i++)
+``` java
+for(i=0;i<n;i=ix2)
+{
+  statement;
+}
+```
+
+```
+i=
+1
+1x2=2
+2x2=2^2
+2^2x2=2^3
+.
+.
+2^k
+```
+
+```
+Assume: i*i<n
+becuase i*i>=n
+hence i^2>=n
+i=n^1/2 (root n)
+
+```
+
+
+
