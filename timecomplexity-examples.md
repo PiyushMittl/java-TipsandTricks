@@ -1,4 +1,4 @@
-
+1. for(i=0;i<n;i++)
 ``` java
 for(i=0;i<n;i++)
 {
@@ -22,5 +22,32 @@ Assume: i>n
 becuase i=2^k
 hence 2^k>=n
 2^k=n
+k=logn
+```
+
+
+2. for(i=n;i>=1;i=i/2)
+``` java
+for(i=n;i>=1;i=i/2)
+{
+  statement;
+}
+```
+
+```
+i/n=
+n/2
+n/2^2
+n/2^3
+.
+.
+n/2^k
+```
+
+```
+Assume: i<1
+becuase n/2^k < 1
+hence n/2^k = 1
+n=2^k
 k=logn
 ```
