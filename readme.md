@@ -23,7 +23,14 @@
   
   
   
+### 🔌 TimeComplexity
+
+<details>
+<summary>View contents</summary>
+
+  1. [Exmaples](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/timecomplexity-examples.md)
   
+</details>   
   
 ## 1.Data Structures
 <details>
@@ -46,27 +53,7 @@
   15. Splay Trees
   
 </details>
-  
-### 🔌 Adapter
-
-<details>
-<summary>View contents</summary>
-
-* [`ary`](#ary)
-* [`call`](#call)
-* [`collectInto`](#collectinto)
-* [`flip`](#flip)
-* [`over`](#over)
-* [`overArgs`](#overargs)
-* [`pipeAsyncFunctions`](#pipeasyncfunctions)
-* [`pipeFunctions`](#pipefunctions)
-* [`promisify`](#promisify)
-* [`rearg`](#rearg)
-* [`spreadOver`](#spreadover)
-* [`unary`](#unary)
-
-</details>  
-  
+   
   
 ## 2.Algorithm  
 <details>
