@@ -1721,6 +1721,16 @@ What difference between Volatile and Atomic.
 </details>
 
 
+**Questions:**  
+Types of threadpool in Executor framework
+<details>
+  <summary>Answer</summary>
+1. Fixed Thread Pool
+2. Cached Thread Pool
+3. Scheduled Thread Pool
+4. Single Thread Executor
+</details>
+
 ## Maps
 **Question:**  
 Types of map    
@@ -1740,6 +1750,8 @@ How HashMap internally works.
 <details>
   <summary>Answer</summary>
 </details>
+
+
 
 
 **Question:**  
