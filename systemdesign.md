@@ -13,8 +13,6 @@ Hashing:
 [What is Consistent Hashing and Where is it used?](https://www.youtube.com/watch?v=zaRkONvyGr8)
 
 CAP theorem:  
-https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/&ved=2ahUKEwjWudTO-ZzuAhUm5nMBHXXBAaYQFjAkegQILRAB&usg=AOvVaw2_PMCs5PO2FZNL83k1wccl&cshid=1610680671937
-
 https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/
 
 Questions:  
