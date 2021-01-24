@@ -5,6 +5,7 @@ Videos:
 [Gaurav Sen](https://www.youtube.com/watch?v=quLrc3PbuIw&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX)  
 [Tech Dummies](https://www.youtube.com/watch?v=mhUQe4BKZXs&list=PLkQkbY7JNJuBoTemzQfjym0sqbOHt5fnV)  
 [Success in tech](https://www.youtube.com/channel/UC-vYrOAmtrx9sBzJAf3x_xw)  
+https://leetcode.com/discuss/interview-question/system-design/457451/Resources-for-System-Design  
 
 Cache Implementation:   
 [System Design Interview - Distributed Cache](https://www.youtube.com/watch?v=iuqZvajTOyA)
