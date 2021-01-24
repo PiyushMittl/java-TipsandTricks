@@ -98,3 +98,5 @@ topics:
    @JoinTable(name="user_mobile_mapping",joinColumns=@JoinColumn(name="user_id"),inverseJoinColumns=@JoinColumn(name="mobile_id"))  
    private Collection<Mobile> mobile=new ArrayList<>();;  
 
+** we use mappedBy="table_name" annotation in case we do not want to create seperate table for mapping **  
+
