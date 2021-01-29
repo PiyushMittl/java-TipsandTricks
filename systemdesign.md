@@ -17,7 +17,9 @@ CAP theorem:
 https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/
 
 back-of-envelop-calculations-for-storage-size-bandwidth-traffic-etc-estimates:  
-https://itsallbinary.com/system-design-back-of-envelop-calculations-for-storage-size-bandwidth-traffic-etc-estimates/
+https://itsallbinary.com/system-design-back-of-envelop-calculations-for-storage-size-bandwidth-traffic-etc-estimates/  
+https://matthewdbill.medium.com/back-of-envelope-calculations-cheat-sheet-d6758d276b05  
+https://gist.github.com/mwakaba2/8ad25dda8c71fe529855994c70743733  
 
 
 Questions:  
