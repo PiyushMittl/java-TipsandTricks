@@ -16,6 +16,10 @@ Hashing:
 CAP theorem:  
 https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/
 
+back-of-envelop-calculations-for-storage-size-bandwidth-traffic-etc-estimates:  
+https://itsallbinary.com/system-design-back-of-envelop-calculations-for-storage-size-bandwidth-traffic-etc-estimates/
+
+
 Questions:  
 Longest palindrome substring  
 Longest common substring  
