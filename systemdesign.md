@@ -21,6 +21,11 @@ https://itsallbinary.com/system-design-back-of-envelop-calculations-for-storage-
 https://matthewdbill.medium.com/back-of-envelope-calculations-cheat-sheet-d6758d276b05  
 https://gist.github.com/mwakaba2/8ad25dda8c71fe529855994c70743733  
 
+DB indexing:  
+https://www.guru99.com/indexing-in-database.html  
+https://youtu.be/E--yzX05_k8  
+
+
 HDFS:  
 https://www.youtube.com/watch?v=bAyrObl7TYE  
 
