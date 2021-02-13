@@ -29,9 +29,9 @@ https://youtu.be/E--yzX05_k8
 HDFS:  
 https://www.youtube.com/watch?v=bAyrObl7TYE  
 
-Trie DataStructures:
-Topological Sorting:
-Khans algorithm:
+Trie DataStructures:  
+Topological Sorting:  
+Khans algorithm:  
 
 
 Questions:  
