@@ -77,6 +77,7 @@ www.geeksforgeeks.org/sql-group-by/amp/
 
 ***Joins:***  
 https://www.guru99.com/sql-server-joins.html  
+https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/  
 
 
 ***Qustion***  
