@@ -47,14 +47,12 @@ Multiply 50 digit numbers.
 </details>
 
 
-**Queation 5.**  
-Will finally be called if there is a return statement.  
+**5.**  Will finally be called if there is a return statement.  
 **Answer:**  
 Yes.  
 Finally can be called if there is no return statement.  
 
-**Queation 6.**  
-What is Static import.  
+**6.**  What is Static import.  
 
 <details>
   <summary>Answer</summary>
@@ -74,20 +72,17 @@ class StaticImportExample{
 </details>
 
 
-**Queation 7.**  
-what is final,finally and finalize.  
+**7.**  what is final,finally and finalize.  
 <details>
   <summary>Answer</summary>
 </details>
   
-**Queation 8.**  
-thread implementation (Thread class and Runnable interface).  
+**8.**  thread implementation (Thread class and Runnable interface).  
 <details>
   <summary>Answer</summary>
 </details>
 
-**Queation 9.**  
-What is class loader. Types of class loader.  
+**9.**  What is class loader. Types of class loader.  
 <details>
   <summary>Answer</summary>
 	
@@ -101,25 +96,19 @@ A Java Classloader is of three types:
 
 </details>
 
-**Queation 10.**  
-Can we have try without catch (yes).  
+**10.**  Can we have try without catch (yes).  
 
-**Queation 11.**  
-Base class of Exception.  
+**11.**  Base class of Exception.  
 
-**Queation 12.**  
-Example/program for RuntimeException and Exception.  
+**12.**  Example/program for RuntimeException and Exception.  
 
-**Queation 13.**  
-Singleton design pattern (sample code).  
+**13.**  Singleton design pattern (sample code).  
 **Answer:**  
 https://piyushanandmittal.blogspot.com/2018/06/javadesignpatternsingleton.html
 
-**Queation 14.**  
-How to create immutable class.    
+**14.**  How to create immutable class.    
   
-***Question 15.***  
-Can we overload and override static metohds.  
+***15.***  Can we overload and override static metohds.  
 <details>
   <summary>Answer</summary>
 
