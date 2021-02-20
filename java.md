@@ -1,6 +1,4 @@
-**Colleactions**  
-**Question 1.**  
-What is Arrays class.  
+**1.**  What is Arrays class.  
 <details>
 <summary>Answer</summary>
 Arrays is a utility class which implements Collections class.
