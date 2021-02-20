@@ -141,13 +141,16 @@ List out the different scopes of Bean
 (ii) Prototype: a new bean is created whenever requested.
 (iii) Request: Every HTTP Request creates a bean.
 (iv) Session: A bean for every HTTP Session.  
-() Global Session: 
+(v) Global Session: 
 ```
 
 ***Question 9:***  
 List out the types of Dependency Injection  
 ***Answer:***  
-
+```
+1. Setter Based
+2. Constructor Based
+```
 
 ***Question 10:***  
 Types of Spring context and difference between them.   
