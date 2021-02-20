@@ -194,19 +194,38 @@ interface B extends A{
 
 PFSC (Predicate,Function,Supplier,Consumer)->(test,apply,get,accept)  
 
-**Predicate –** it takes one argument and returns a boolean.    Predicate<T> —-> return boolean —-> boolean test(T)  
-``` java  
-<Predicate> p=i->i%2;
-p.test(10);  
-```  
+**Predicate –** it takes one argument and returns a boolean.    Predicate<T> —-> return boolean —-> boolean test(T)    
 **Function –** it takes one argument and returns a result.    Function<T,R> —-> return R —-> R apply(T t)    
 **Supplier –** it takes not argument and returns a result.    Supplier<R> —-> return R —-> R get()    
 **Consumer –** it takes one argument and returns no result (represents a side effect).    Consumer<T> —-> return void —-> accept(T)  
 
-
 **BiFunction –** it takes two arguments and returns a result.  
 **BinaryOperator –** it is similar to a BiFunction, taking two arguments and returning a result. The two arguments and the result are all of the same types.  
 **UnaryOperator –** it is similar to a Function, taking a single argument and returning a result of the same type.  
+
+Examples:  
+
+**Predicate –**  
+``` java  
+<Predicate> p=i->i%2;
+p.test(10);  
+```
+**Function –**  
+``` java  
+Function <String,Integer> f=s->s.length();
+f.apply("hello");  
+```
+**Supplier –**  
+``` java  
+Supplier<Date> s=()-> new Date();
+s.get();  
+```
+**Consumer –**  
+``` java  
+Consumer<String> c=s->sop(s);
+c.accep("hello");  
+```
+
 
 
 
