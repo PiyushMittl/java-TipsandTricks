@@ -201,7 +201,12 @@ www.geeksforgeeks.org/association-composition-aggregation-java/amp/
 
 24. Where in collection we have limitation of giving heterogeniuos elements only (tree set, tree map).  
 25. Size vs capacity in collection.  
-26. Zig-zab problem in matrix (print element).  
+```
+**Arrays** are fixed size. Once we initialize the array with some int value as its size, it can't change. The size and capacity are equal to each other too.
+
+**ArrayList‘s** size and capacity are not fixed. The logical size of the list changes based on the insertion and removal of elements in it. This is managed separately from its physical storage size. Also when the threshold of ArrayList capacity is reached, it increases its capacity to make room for more elements.
+```
+26. Zig-zag problem in matrix (print element).  
 27. Implement queue using stack.  
 28. Find mid node of a linked list travesing only once when last node address is not given.  
 29. Is overloading possible by changing return type.  
