@@ -391,7 +391,7 @@ public static void main(String a[]){
 
 38. why Map is not the part of collection.
 
-39. does abstract class has contructor??
+39. does abstract class has contructor??  
 Abstract classes have constructors, and those constructors are always called when a concrete subclass is instantiated.
 
 Question 40. 
