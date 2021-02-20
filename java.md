@@ -580,8 +580,12 @@ in a most efficient way.
 ans: divide and conquer.
 
 49.
-can we define main method as private.
-if yes then will it compile ??
+can we define main method as private.  
+if yes then will it compile ??  
+<details>
+  <summary>Answer</summary>
+	yes it will compile but throw an error at runtime.  
+</details>
 
 50.
 what is 'headSet()' and 'tailSet()'
