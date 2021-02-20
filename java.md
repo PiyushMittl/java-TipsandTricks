@@ -396,7 +396,9 @@ Abstract classes have constructors, and those constructors are always called whe
 
 Question 40. 
 What is Floating point number and Double numbers in java and whats the relation between them.  
-Answer:  
+<details>
+  <summary>Answer</summary>
+
 `Floating-point` numbers have slightly different assignment behavior than `integer` types. First, you must know that every floating-point literal is implicitly a `double (64 bits)`, not a `float`. So the literal `32.3`, for example, is considered a double. If you try to assign a double to a float, the compiler knows you don't have enough room in a `32-bit` float container to hold the precision of a `64-bit` double, and it lets you know. The following code looks good, but won't compile:  
 ```
 float f = 32.3;
@@ -407,6 +409,7 @@ float f = (float) 32.3;
 float g = 32.3f;
 float h = 32.3F;
 ```
+</details>
 
 41.
 ``` java
