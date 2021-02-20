@@ -6,8 +6,7 @@ Arrays is a utility class which implements Collections class.
 
 **Object**
 
-**Queation 2.**  
-How many ways are there to create an Object.
+**2.**  How many ways are there to create an Object.
 <details>
   <summary>Answer</summary>
 	
@@ -36,8 +35,7 @@ MyObject object = (MyObject) inStream.readObject();
 
 </details>
 
-**Queation 3.**  
-Difference b/w "?" and Object in generics.  
+**3.**  Difference b/w "?" and Object in generics.  
 <details>
   <summary>Answer</summary>
 </details>
@@ -506,6 +504,11 @@ else
 System.out.println("not equals");
 }
 ```
+<details>
+  <summary>Answer</summary>
+	``` not equals```
+	since ``String`` object is not an ``instanceOf`` ``StringBuffer``
+</details>
 
 46.
 ``` java
