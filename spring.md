@@ -208,6 +208,11 @@ Can we replace @Controller from @Component.
 </details>
 
 
+***Question:***  
+What’s the difference between `@Controller`, `@RestController` annotations in Spring?  
+***Answer:***  
+
+
 ***Have a look:***   
 [Spring interview question](https://www.edureka.co/blog/interview-questions/spring-interview-questions/)  
 [blog](https://github.com/PiyushMittl/spring-framework-bloglinks)    
