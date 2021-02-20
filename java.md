@@ -956,8 +956,7 @@ between class names, type parameter placeholders, and variable identifi ers.
       
 **ref:- book *book: Kathy Sierra, pg. 629***     
       
-***Question 61:***  
-What is base condition in recursion?
+***61:***  What is base condition in recursion?
 <details>
   <summary>Answer</summary>
 	  
@@ -976,7 +975,7 @@ In the above example, base case for `n < = 1` is defined and larger value of num
 </details>
 
 
-62.
+62. What is `tail recursion` and `head recursion`.  
 
 63.
 
@@ -985,7 +984,7 @@ In the above example, base case for `n < = 1` is defined and larger value of num
 65.  
 
 
-Question 66.
+66.
 ``` java
 public class DemoClass{
 
@@ -1013,7 +1012,8 @@ public final DemoClass dc=new DemoClass();
 dc.setXxxx(); //will it work ??
 ```
 
-Answer:
+<details>
+  <summary>Answer</summary>
 yes we can call setters of any final class.
 but we can not reassign the reference of another creatd object.
 ``` java
@@ -1021,9 +1021,10 @@ public final DemoClass dc=new DemoClass();
 dc.setXxxx(); //yes
 dc= new DenoClass();//won work because we can not reassign new reference to final object
 ```
+</details>
 
-**Question 68.**
-if you are facing some issue in the connectivity with your database. how would you diagnose ??
+**68.**if you are facing some issue in the connectivity with your database. how would you diagnose ??
+
 <details>
   <summary>Answer</summary>
 telnet and ping
@@ -1067,8 +1068,7 @@ overloading and overriding
 https://www.google.co.in/amp/s/www.geeksforgeeks.org/overriding-in-java/amp/
 
 
-***Question 72:***  
-what is the output of following code snippet.
+***72:***  what is the output of following code snippet.
 
 ``` java
 public static void main(String a[]){
@@ -1099,18 +1099,15 @@ since addAll lenght will count it as 3 and then again addAll from super class wi
 </details>
 
 
-***Question 73:***  
-Implement cache (TTl,LRU)  
+***73:***  Implement cache (TTl,LRU)  
 ***Answer***  
 
 
-***Question 74:***  
-phonebook structure  
+***74:***  phonebook structure (Which Data Structures we should use here)    
 ***Answer***  
 
 
-***Question 74:***  
-read propery and put properties in cache of jvm. but you have to update properties and you don't have to restart app and have to update cache in jvm.  
+***74:***  read propery and put properties in cache of jvm. but you have to update properties and you don't have to restart app and have to update cache in jvm.  
 ***Answer***  
 
 **Question 75:**  
@@ -1121,16 +1118,15 @@ The overriding method cannot have a more restrictive access modifier than the me
 **ref:- book *book: Kathy Sierra, pg. 105***   
 </details>
 
-***Question 75:***  
-private vs final methods.  
+***75:***  private vs final methods.  
 <details>
   <summary>Answer</summary>  
-private method can not be accessed outside other class and due to which can not override do.  
-a final methid can be accessed as per its access modifier but can not be override.  
+`private` method can not be accessed outside other class and due to which can not `override` do.  
+a `final` methid can be accessed as per its access modifier but can not be `override`.  
 </details>
 
-***Question 76:***  
-If a method is overridden but you use a polymorphic (supertype) reference to refer to the subtype object with the overriding method, the compiler assumes youâ€™re calling the supertype version of the method. If the supertype version declares a checked exception, but the overriding subtype method does not, the compiler still thinks you are calling a method that declares an exception.  
+***76:***  
+If a method is overridden but you use a polymorphic (supertype) reference to refer to the subtype object with the overriding method, the compiler assumes you are calling the supertype version of the method. If the supertype version declares a checked exception, but the overriding subtype method does not, the compiler still thinks you are calling a method that declares an exception.  
 ``` java
 class Animal {  
 public void eat() throws Exception {
@@ -1150,7 +1146,7 @@ a.eat();           // compiler error -
 This code will not compile because of the Exception declared on the Animal eat() method. This happens even though, at runtime, the eat() method used would be the Dog version, which does not declare the exception.  
 
 
-***Question 77:***
+***77:***
 ``` java
 class UseAnimals {
 	public void doStuff(Animal a) {
