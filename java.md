@@ -1200,11 +1200,11 @@ But if you use char array you can actually update the value of array and it will
 </details>
 
 	
-***Question 80:***
-Why wait() and notify() is defined in Object class.
-Ans:
+***80:*** Why wait() and notify() is defined in Object class.  
+<details>
+  <summary>Answer</summary>
 These methods works on the locks and locks are associated with Object and not Threads. Hence, it is in Object class. The methods wait(), notify() and notifyAll() are not only just methods, these are synchronization utility and used in communication mechanism among threads in Java.
-
+</details>
 
 ***Question 81:***
 Qsn:
@@ -1218,9 +1218,7 @@ b += 7;  //will work; it actually puts implicit cast
 byte b=3;
 b = (byte) (b+7) //wont compile without cast
 
-***Question 82:***
-Qsn:
-Local variable inside method should always be initialized but instance variables are optional to initialized.
+***82:*** Local variable inside method should always be initialized but instance variables are optional to initialized.
 Below is the default values.
 Obj reference: null
 byte, short, int, long: 0
@@ -1230,7 +1228,7 @@ char: â€˜\u0000â€™
 
 
 
-***Question 83:***
+***83:***
 
 ``` java
 class Animal {
@@ -1253,7 +1251,7 @@ class DogTest {
 **ref:- book *book: Kathy Sierra, pg. 118***   
 
 
-***Question 84:***
+***84:*** Overloading between Integer,double and float  
 
 ``` java
 
@@ -1324,15 +1322,14 @@ Question: ConcurrentHashMap vs SynchronisedHashMap
 <details>
   <summary>Answer</summary>
 
-Synchronized HashMap：
-
+Synchronized HashMap： 
 Each method is synchronized using an object level lock. So the get and put methods on synchMap acquire a lock.
-Locking the entire collection is a performance overhead. While one thread holds on to the lock, no other thread can use the collection.
-ConcurrentHashMap was introduced in JDK 5.
+Locking the entire collection is a performance overhead. While one thread holds on to the lock, no other thread can use the collection.  
 
+ConcurrentHashMap was introduced in JDK 5:
 There is no locking at the object level,The locking is at a much finer granularity. For a ConcurrentHashMap, the locks may be at a hashmap bucket level.
-The effect of lower level locking is that you can have concurrent readers and writers which is not possible for synchronized collections. This leads to much more scalability.
-ConcurrentHashMap does not throw a ConcurrentModificationException if one thread tries to modify it while another is iterating over it.
+The effect of lower level locking is that you can have concurrent readers and writers which is not possible for synchronized collections. This leads to much more scalability.  
+`ConcurrentHashMap` does not throw a `ConcurrentModificationException` if one thread tries to modify it while another is iterating over it.
 This article Java 7: HashMap vs ConcurrentHashMap is a very good read. Highly recommended.
 
 </details>
@@ -1344,7 +1341,7 @@ How to reverse a linked list without using extra space.
 https://javarevisited.blogspot.com/2013/03/top-15-data-structures-algorithm-interview-questions-answers-java-programming.html?m=1
 
 
-***Question:***
+***Question 89:***
 Java sleep() and wait() – Discussion
 
 <details>
@@ -1403,29 +1400,27 @@ https://www.google.co.in/amp/s/howtodoinjava.com/java/multi-threading/sleep-vs-w
  
 
 
-***Question:***
+***95:***
 Which pattern is used when we call ``` Collections.sort(al,nameComparator()); ```
-Answer:
-Strategy design pattern is used when we use comparator design pattern.
+<details>
+  <summary>Answer</summary>
+`Strategy` design pattern is used when we use comparator design pattern.
 Because here we pass the object of nameComparator() to Collections class and on the basis of object 
 It further descide what sorting it should perform.  
+</details>
 
-
-***Question:***
-Class not found vs class def not found.
+***100:*** Class not found vs class def not found.  
   
 
-***Question:***  
-What is throable.  
+***105:***  What is throwable.  
 
 
-***Question:***  
-Can we cath errors.  
+***110:***  Can we cath errors.  
 Ans:  
 Yes. 
 
 
-***Question:***  
+***115:***  
 Thread related methods in Thread and Object class.  
 Ans:  
 Thread class: sleep, yield, join, setPriority.  
@@ -1433,7 +1428,7 @@ Object class: wait, notify, notifyAll.
 
 
 
-***Question:***  
+***120:***  
 Mirror a binary tree.  
 Answer:  
 
@@ -1493,7 +1488,7 @@ public void mirrorIterative() {
 
 
 
-***Question:***  
+***125:***  
 ``` java
    class GameShape {
                    public void displayShape() {
@@ -1528,7 +1523,7 @@ The key point is that the doShapes() method is declared with a GameShape argumen
 ```
   
 
-***Question:***
+***130:***
 ``` java
 class Dad
 {
@@ -1557,7 +1552,7 @@ dad
   
 
 
-***Question:***  
+***135:***  
 Overriding
 
 <details>
