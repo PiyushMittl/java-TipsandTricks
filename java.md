@@ -196,15 +196,15 @@ www.geeksforgeeks.org/association-composition-aggregation-java/amp/
   <summary>Answer</summary>
 	***Collection*** is an interface 
 	***Collections*** is a utility class
-</details>
-24. Where in collection we have limitation of giving heterogeniuos elements only (tree set, tree map).
-25. Size vs capacity in collection.
-26. Zig-zab problem in matrix (print element)
-27. Implement queue using stack.
-28. Find mid node of a linked list travesing only once when last node address is not given.
-29. Is overloading possible by changing return type.
-30. Is overriding possible by changing return type.
-31. Methods in object classe.  
+</details>  
+24. Where in collection we have limitation of giving heterogeniuos elements only (tree set, tree map).  
+25. Size vs capacity in collection.  
+26. Zig-zab problem in matrix (print element).  
+27. Implement queue using stack.  
+28. Find mid node of a linked list travesing only once when last node address is not given.  
+29. Is overloading possible by changing return type.  
+30. Is overriding possible by changing return type.  
+31. Methods in object classe.   
 
 **Question 30.**  
 Answer:  
