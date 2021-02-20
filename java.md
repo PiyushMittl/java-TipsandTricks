@@ -479,7 +479,7 @@ x = x * (2 + 5);
 ```
 
 **Question:44**  
-Why string is immutable ??
+Why string is immutable ??, How can you create your own immutable class?  
 
 <details>
   <summary>Answer</summary>
