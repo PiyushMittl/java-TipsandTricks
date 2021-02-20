@@ -27,8 +27,7 @@ what is proxy in Spring.
 spring
 
 
-***Question 5:***  
-Types of bean scopes in Spring.  
+***Question 5:***    
 ***Answer:***  
 
 
