@@ -192,9 +192,13 @@ interface B extends A{
 <details>
   <summary>2. Functional interface</summary>
 
-PFSC (Predicate,Function,Supplier,Consumer)  
+PFSC (Predicate,Function,Supplier,Consumer)->(test,apply,get,accept)  
 
 **Predicate –** it takes one argument and returns a boolean.    Predicate<T> —-> return boolean —-> boolean test(T)  
+``` java  
+<Predicate> p=i->i%2;
+p.test(10);  
+```  
 **Function –** it takes one argument and returns a result.    Function<T,R> —-> return R —-> R apply(T t)    
 **Supplier –** it takes not argument and returns a result.    Supplier<R> —-> return R —-> R get()    
 **Consumer –** it takes one argument and returns no result (represents a side effect).    Consumer<T> —-> return void —-> accept(T)  
