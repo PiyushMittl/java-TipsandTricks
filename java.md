@@ -1762,6 +1762,15 @@ https://medium.com/@mr.anmolsehgal/java-linkedhashmap-internal-implementation-44
 https://www.google.co.in/amp/s/www.dineshonjava.com/internal-working-of-linkedhashmap-in-java/amp/  
 </details>
 
+**Question:**  
+How a node is added in HashMap when collision occur, what is the time complexity in this case.  
+<details>
+  <summary>Answer</summary>
+see iPad notes HashMap in Java 
+</details>
+
+
+
 **Questions:**  
 Hashtable does not allow null keys or values, while HashMap allows null values and 1 null key.
   
