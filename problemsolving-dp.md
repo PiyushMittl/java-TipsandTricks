@@ -82,4 +82,10 @@ Minimum Cost Path.
 Answer:  
 https://youtu.be/lBRtnuxg-gU  
 
+ref:  
+https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns  
+https://emre.me/coding-patterns/longest-common-substring-subsequence/  
+
+
+
 
