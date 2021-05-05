@@ -88,4 +88,34 @@ https://emre.me/coding-patterns/longest-common-substring-subsequence/
 
 
 
+Basic Foundation Questions for DP  
 
+1. 0/1 Knapsack (6 problems)  
+2. Unbounded Knapsack (5 problems)  
+3. Fibonacci (7 problems)  
+4. LCS (Longest Common Substring) (15 problems)  
+5. LIS (Longest Increasing Subsequence) (10 problems)  
+6. Kadane's Algorithm (6 problems)  
+7. MCM (Matrix Chain Multiplication) (7 problems)  
+8. DP on Trees (4 problems)  
+9. DP on Grid (14 problems)  
+10. Catalan Numbers (10 problems)  
+11. Others  
+
+Questions Links for recursive, topdown and bottom-up approach  
+1. 0/1 Knapsack (6 problems)  
+    1.1. Subset Sum  
+    1.2. Equal Sum Partition
+    1.3. Count the Subset Sum with a given sum
+2. Unbounded Knapsack (5 problems)  
+3. Fibonacci (7 problems)  
+4. LCS (Longest Common Substring) (15 problems)  
+5. LIS (Longest Increasing Subsequence) (10 problems)  
+6. Kadane's Algorithm (6 problems)  
+7. MCM (Matrix Chain Multiplication) (7 problems)  
+8. DP on Trees (4 problems)  
+9. DP on Grid (14 problems)  
+10. Catalan Numbers (10 problems)  
+11. Others  
+
+note: fractional knapsack is not included here since it uses Greedy approach to solve the problems  
