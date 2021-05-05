@@ -107,15 +107,45 @@ Questions Links for recursive, topdown and bottom-up approach
     1.1. Subset Sum  
     1.2. Equal Sum Partition
     1.3. Count the Subset Sum with a given sum
+    1.4. Minimum Subset Sum difference  
+    1.5. Count the no of Subset with given Sum  
+    1.6. Target Sum  
 2. Unbounded Knapsack (5 problems)  
+    2.1.   
+    2.2.   
+    2.3.   
 3. Fibonacci (7 problems)  
 4. LCS (Longest Common Substring) (15 problems)  
+    4.1.   
+    4.2.   
+    4.3.   
+    4.4.   
+    4.5.   
+    4.6.   
+    4.7.   
+    4.8.   
+    4.9.   
+    4.10.   
+
+
 5. LIS (Longest Increasing Subsequence) (10 problems)  
 6. Kadane's Algorithm (6 problems)  
 7. MCM (Matrix Chain Multiplication) (7 problems)  
+
 8. DP on Trees (4 problems)  
+
 9. DP on Grid (14 problems)  
 10. Catalan Numbers (10 problems)  
+
 11. Others  
+    4.1.   
+    4.2.   
+    4.3.   
+    4.4.   
+    4.5.   
+    4.6.   
+    4.7.   
+    4.8.   
+    4.9.   
 
 note: fractional knapsack is not included here since it uses Greedy approach to solve the problems  
