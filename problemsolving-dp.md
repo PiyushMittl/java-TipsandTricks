@@ -88,7 +88,7 @@ https://emre.me/coding-patterns/longest-common-substring-subsequence/
 
 
 
-Basic Foundation Questions for DP  
+## Basic Foundation Questions for DP  
 
 1. 0/1 Knapsack (6 problems)  
 2. Unbounded Knapsack (5 problems)  
