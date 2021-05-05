@@ -137,23 +137,22 @@ Questions Links for recursive, topdown and bottom-up approach
     7.3. Scrambled String  
 
 8. DP on Trees (4 problems)  
-    8.1.   
-    8.2.   
-    8.3.   
-    8.4.   
+    8.1. Diameter on Trees  
+    8.2. Maximum path sum | from any node to any node  
+    8.3. Maximum path sum | from leaf node to leaf node    
 
 9. DP on Grid (14 problems)  
 10. Catalan Numbers (10 problems)  
+    10.1. Number of BST  
+    11.2. Unbalanced Trees  
+    11.3. N. Parantheses (with and without letter)  
+    11.4. Dyck words  
+    11.5. Mountain Ranges  
+    11.6. Path on Grids  
+    11.7. Convex Polygon  
+    11.8. Connect Disjoint Chords  
+    11.9. Ways of Triangulation  
 
 11. Others  
-    11.1.   
-    11.2.   
-    11.3.   
-    11.4.   
-    11.5.   
-    11.6.   
-    11.7.   
-    11.8.   
-    11.9.   
 
 
