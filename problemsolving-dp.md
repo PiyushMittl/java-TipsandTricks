@@ -104,28 +104,28 @@ https://emre.me/coding-patterns/longest-common-substring-subsequence/
 
 Questions Links for recursive, topdown and bottom-up approach  
 1. 0/1 Knapsack (6 problems)  
-    1.1. Subset Sum  
-    1.2. Equal Sum Partition
-    1.3. Count the Subset Sum with a given sum
-    1.4. Minimum Subset Sum difference  
-    1.5. Count the no of Subset with given Sum  
-    1.6. Target Sum  
+    1.1. 0/1 Knapsack  
+    1.2. Subset Sum  
+    1.3. Equal Sum Partition
+    1.4. Count the Subset Sum with a given sum
+    1.5. Minimum Subset Sum difference  
+    1.6. Count the no of Subset with given Sum  
+    1.7. Target Sum  
 2. Unbounded Knapsack (5 problems)  
-    2.1.   
-    2.2.   
-    2.3.   
+    2.1. Rod Cutting Problem  
+    2.2. Coin Change-1 (max ways)  
+    2.3. Coin Change-2 (min no of coins required)   
 3. Fibonacci (7 problems)  
 4. LCS (Longest Common Substring) (15 problems)  
-    4.1.   
-    4.2.   
-    4.3.   
-    4.4.   
-    4.5.   
-    4.6.   
-    4.7.   
-    4.8.   
-    4.9.   
-    4.10.   
+    4.1. Longest Common Substring  
+    4.2. Longest Common Subsequence  
+    4.3. Longest Super Subsequence  
+    4.4. Longest Palindropmic Subsequence
+    4.5. Minimum no of insertion and deletion required to convert String A to Atring B  
+    4.6. Print Shortest Common Supersequence  
+    4.7. Longest Repeating Subsequence  
+    4.8. Sequence Pattern Matching    
+    4.9. Minimum no of insertion in a String to make it a palindrom  
 
 
 5. LIS (Longest Increasing Subsequence) (10 problems)  
