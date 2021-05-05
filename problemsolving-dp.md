@@ -115,6 +115,7 @@ Questions Links for recursive, topdown and bottom-up approach
     2.1. Rod Cutting Problem  
     2.2. Coin Change-1 (max ways)  
     2.3. Coin Change-2 (min no of coins required)   
+    ``note: fractional knapsack is not included here since it uses Greedy approach to solve the problems``  
 3. Fibonacci (7 problems)  
 4. LCS (Longest Common Substring) (15 problems)  
     4.1. Longest Common Substring  
@@ -131,21 +132,28 @@ Questions Links for recursive, topdown and bottom-up approach
 5. LIS (Longest Increasing Subsequence) (10 problems)  
 6. Kadane's Algorithm (6 problems)  
 7. MCM (Matrix Chain Multiplication) (7 problems)  
+    7.1. Matrix Chain Multiplication  
+    7.2. Evaluate Expression to true boolean prenthesization  
+    7.3. Scrambled String  
 
 8. DP on Trees (4 problems)  
+    8.1.   
+    8.2.   
+    8.3.   
+    8.4.   
 
 9. DP on Grid (14 problems)  
 10. Catalan Numbers (10 problems)  
 
 11. Others  
-    4.1.   
-    4.2.   
-    4.3.   
-    4.4.   
-    4.5.   
-    4.6.   
-    4.7.   
-    4.8.   
-    4.9.   
+    11.1.   
+    11.2.   
+    11.3.   
+    11.4.   
+    11.5.   
+    11.6.   
+    11.7.   
+    11.8.   
+    11.9.   
 
-note: fractional knapsack is not included here since it uses Greedy approach to solve the problems  
+
