@@ -102,12 +102,12 @@ https://emre.me/coding-patterns/longest-common-substring-subsequence/
 10. Catalan Numbers (10 problems)  
 11. Others  
 
-Questions Links for recursive, topdown and bottom-up approach  
+Questions/reference Links for recursive, topdown and bottom-up approach  
 1. 0/1 Knapsack (6 problems)  
     1.1. 0/1 Knapsack  
     1.2. Subset Sum  
-    1.3. Equal Sum Partition
-    1.4. Count the Subset Sum with a given sum
+    1.3. Equal Sum Partition  
+    1.4. Count the Subset Sum with a given sum  
     1.5. Minimum Subset Sum difference  
     1.6. Count the no of Subset with given Sum  
     1.7. Target Sum  
