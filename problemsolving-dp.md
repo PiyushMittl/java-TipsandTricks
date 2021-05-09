@@ -123,7 +123,7 @@ Questions/reference Links for recursive, topdown and bottom-up approach
 2. Unbounded Knapsack (5 problems)  
     2.1. Rod Cutting Problem  
     2.2. Coin Change-1 (max ways)  
-           https://www.geeksforgeeks.org/coin-change-dp-7/  
+           - https://www.geeksforgeeks.org/coin-change-dp-7/  
     4.3. Coin Change-2 (min no of coins required)   
     ``note: fractional knapsack is not included here since it uses Greedy approach to solve the problems``  
 3. Fibonacci (7 problems)  
