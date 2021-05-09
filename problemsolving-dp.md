@@ -106,25 +106,15 @@ Questions/reference Links for recursive, topdown and bottom-up approach
 1. 0/1 Knapsack (6 problems)  
     1.1. 0/1 Knapsack  
     3.2. Subset Sum  
-          - Topdown (recursion):  
-               https://www.geeksforgeeks.org/subset-sum-problem-dp-25/  
-          - Memoization (recursion+memory):  
-          - Botton-Up (tabular):  
     3.2. Subset Sum  
     3.3. Equal Sum Partition  
     4.4. Count the Subset Sum with a given sum  
     5.5. Minimum Subset Sum difference  
-            - https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/  
     7.6. Count the no of Subset with given Sum  
-            - https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x-using-recursion/  
-            - https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x/
-            
     8.7. Target Sum  
 2. Unbounded Knapsack (5 problems)  
-    - https://leetcode.com/problems/integer-break/discuss/843882/java-similar-to-unbounded-knapsack-brute-force-recursion-with-memoization-2d-dynamic-programming
     2.1. Rod Cutting Problem  
     2.2. Coin Change-1 (max ways)  
-           - https://www.geeksforgeeks.org/coin-change-dp-7/  
     4.3. Coin Change-2 (min no of coins required)   
     ``note: fractional knapsack is not included here since it uses Greedy approach to solve the problems``  
 3. Fibonacci (7 problems)  
@@ -138,20 +128,16 @@ Questions/reference Links for recursive, topdown and bottom-up approach
     4.7. Longest Repeating Subsequence  
     4.8. Sequence Pattern Matching    
     4.9. Minimum no of insertion in a String to make it a palindrom  
-
-
 5. LIS (Longest Increasing Subsequence) (10 problems)  
 6. Kadane's Algorithm (6 problems)  
 7. MCM (Matrix Chain Multiplication) (7 problems)  
     7.1. Matrix Chain Multiplication  
     7.2. Evaluate Expression to true boolean prenthesization  
     7.3. Scrambled String  
-
 8. DP on Trees (4 problems)  
     8.1. Diameter on Trees  
     8.2. Maximum path sum | from any node to any node  
     8.3. Maximum path sum | from leaf node to leaf node    
-
 9. DP on Grid (14 problems)  
 10. Catalan Numbers (10 problems)  
     10.1. Number of BST  
@@ -163,8 +149,11 @@ Questions/reference Links for recursive, topdown and bottom-up approach
     11.7. Convex Polygon  
     11.8. Connect Disjoint Chords  
     11.9. Ways of Triangulation  
-    12.
-
 11. Others  
+
+referece:  
+https://docs.google.com/spreadsheets/d/1S8ukVXMAArl1_nTQRKSSuBvhzlq2MdQjrw0U_tdpK_Q/edit#gid=0
+
+
 
 
