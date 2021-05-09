@@ -111,7 +111,7 @@ Questions/reference Links for recursive, topdown and bottom-up approach
         https://www.geeksforgeeks.org/subset-sum-problem-dp-25/  
         Memoization (recursion+memory):  
         Botton-Up (tabular):  
-    </details>
+    </details>  
     3.2. Subset Sum  
     3.3. Equal Sum Partition  
     4.4. Count the Subset Sum with a given sum  
