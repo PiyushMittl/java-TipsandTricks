@@ -107,7 +107,7 @@ Questions/reference Links for recursive, topdown and bottom-up approach
     1.1. 0/1 Knapsack  
     3.2. Subset Sum  
           - Topdown (recursion):  
-              https://www.geeksforgeeks.org/subset-sum-problem-dp-25/  
+              - https://www.geeksforgeeks.org/subset-sum-problem-dp-25/  
           - Memoization (recursion+memory):  
           - Botton-Up (tabular):  
     3.2. Subset Sum  
