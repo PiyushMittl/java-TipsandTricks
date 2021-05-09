@@ -105,11 +105,14 @@ https://emre.me/coding-patterns/longest-common-substring-subsequence/
 Questions/reference Links for recursive, topdown and bottom-up approach  
 1. 0/1 Knapsack (6 problems)  
     1.1. 0/1 Knapsack  
-    1.2. Subset Sum  
-    Topdown (recursion):  
-    https://www.geeksforgeeks.org/subset-sum-problem-dp-25/  
-    Memoization (recursion+memory):  
-    Botton-Up (tabular):  
+    <details>
+    <summary>3.2. Subset Sum</summary>
+        Topdown (recursion):  
+        https://www.geeksforgeeks.org/subset-sum-problem-dp-25/  
+        Memoization (recursion+memory):  
+        Botton-Up (tabular):  
+    </details>
+    3.2. Subset Sum  
     3.3. Equal Sum Partition  
     4.4. Count the Subset Sum with a given sum  
     5.5. Minimum Subset Sum difference  
