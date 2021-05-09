@@ -121,6 +121,7 @@ Questions/reference Links for recursive, topdown and bottom-up approach
             
     8.7. Target Sum  
 2. Unbounded Knapsack (5 problems)  
+    - https://leetcode.com/problems/integer-break/discuss/843882/java-similar-to-unbounded-knapsack-brute-force-recursion-with-memoization-2d-dynamic-programming
     2.1. Rod Cutting Problem  
     2.2. Coin Change-1 (max ways)  
            - https://www.geeksforgeeks.org/coin-change-dp-7/  
