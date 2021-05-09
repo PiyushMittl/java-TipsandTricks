@@ -106,11 +106,12 @@ Questions/reference Links for recursive, topdown and bottom-up approach
 1. 0/1 Knapsack (6 problems)  
     1.1. 0/1 Knapsack  
     1.2. Subset Sum  
-    1.3. Equal Sum Partition  
-    1.4. Count the Subset Sum with a given sum  
-    1.5. Minimum Subset Sum difference  
-    1.6. Count the no of Subset with given Sum  
-    1.7. Target Sum  
+    https://www.geeksforgeeks.org/subset-sum-problem-dp-25/  
+    3.3. Equal Sum Partition  
+    4.4. Count the Subset Sum with a given sum  
+    5.5. Minimum Subset Sum difference  
+    6.6. Count the no of Subset with given Sum  
+    7.7. Target Sum  
 2. Unbounded Knapsack (5 problems)  
     2.1. Rod Cutting Problem  
     2.2. Coin Change-1 (max ways)  
