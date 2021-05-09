@@ -114,7 +114,7 @@ Questions/reference Links for recursive, topdown and bottom-up approach
     3.3. Equal Sum Partition  
     4.4. Count the Subset Sum with a given sum  
     5.5. Minimum Subset Sum difference  
-            - https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/
+            - https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/  
     7.6. Count the no of Subset with given Sum  
             - https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x-using-recursion/  
             - https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x/
@@ -123,7 +123,8 @@ Questions/reference Links for recursive, topdown and bottom-up approach
 2. Unbounded Knapsack (5 problems)  
     2.1. Rod Cutting Problem  
     2.2. Coin Change-1 (max ways)  
-    2.3. Coin Change-2 (min no of coins required)   
+           - https://www.geeksforgeeks.org/coin-change-dp-7/  
+    4.3. Coin Change-2 (min no of coins required)   
     ``note: fractional knapsack is not included here since it uses Greedy approach to solve the problems``  
 3. Fibonacci (7 problems)  
 4. LCS (Longest Common Substring) (15 problems)  
