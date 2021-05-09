@@ -106,10 +106,10 @@ Questions/reference Links for recursive, topdown and bottom-up approach
 1. 0/1 Knapsack (6 problems)  
     1.1. 0/1 Knapsack  
     3.2. Subset Sum  
-           - Topdown (recursion):  
-           - https://www.geeksforgeeks.org/subset-sum-problem-dp-25/  
-           - Memoization (recursion+memory):  
-           - Botton-Up (tabular):  
+               - Topdown (recursion):  
+               - https://www.geeksforgeeks.org/subset-sum-problem-dp-25/  
+               - Memoization (recursion+memory):  
+               - Botton-Up (tabular):  
     3.2. Subset Sum  
     3.3. Equal Sum Partition  
     4.4. Count the Subset Sum with a given sum  
