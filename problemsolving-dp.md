@@ -115,7 +115,8 @@ Questions/reference Links for recursive, topdown and bottom-up approach
     4.4. Count the Subset Sum with a given sum  
     5.5. Minimum Subset Sum difference  
     6.6. Count the no of Subset with given Sum  
-            - https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x-using-recursion/
+            - https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x-using-recursion/  
+            - 
     8.7. Target Sum  
 2. Unbounded Knapsack (5 problems)  
     2.1. Rod Cutting Problem  
