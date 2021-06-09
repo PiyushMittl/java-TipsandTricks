@@ -152,6 +152,67 @@ Round 3: DB,core-java,Collection hierarchies,join
   35. Monster
   36. PayU .
   37. TowerResearch 
+  
+  1. Intuit
+  2 Microsoft
+  3. Jp Morgan & Co
+  4. Hackerrank
+  5. Goldman Sachs
+  6. Arcesium
+  7. D.E. Shaw
+  8. McAfee
+  9. Atlassian
+  10. Codenation
+  11. Uber
+  12. Flipkart
+  13. Gitlab
+  14. InMobi
+  15. LinkedIn
+  16. Morgan Stanley
+  17. Paytm
+  18. PayPal
+  19. Tower Research Capital
+  20. Gojek
+  21. Nasdaq
+  22. MindTickle
+  23. Informatica
+  24. Zeta Suite
+  25. Razor Pay
+  26. Udaan
+  27. Myntra
+  28. Adobe
+  29. CureFit
+  30. ShareChat
+  31. Ola
+  32. Expedia
+  33. Sprinklr
+  34. Nutanix
+  35. Zomato
+  36. Yelp
+  37. ByteDance
+  38. Dunzo
+  39. MakeMyTrip
+  40. Toppr
+  41. VMWare
+  42. Intel Corporation
+  43. Postman
+  44. Walmart
+  45. Oracle
+  46. ThoughtWorks
+  47. Directi
+  48. Swiggy
+  49. Innovacer
+  50. Mastercard
+  51. Visa
+  52. Samsung
+  53. Media Dot Net
+  54. Cisco
+  55. Cred
+  56. Urban Company
+  57. Sumologic
+  58. Coinbase
+  59. Stripe
+  60. Twilio
 
 https://docs.google.com/spreadsheets/d/1-o4HQjk9YoTECT4xxO_39MIR7CiK2X6-TaBmFngt8dQ/edit
 
