@@ -1,9 +1,6 @@
-package main.java.poc;
+package main.java.poc.tree;
 
 public class InOrderTraversal {
-
-
-
     
     public static void main(String[] args) {
     

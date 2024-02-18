@@ -1,4 +1,4 @@
-package main.java.poc.3.tree;
+package main.java.poc.tree;
 
 public class PreOrderTraversal {
     
