@@ -1,4 +1,13 @@
 Start with basic Array Question 
+
+start problem in below order  
+1. Array
+2. Heap
+3. Tree
+
+
+
+
 1. Find nth element
 2. Search nth element 
 3. Look at Map add, get, getKeys, values, entrySet and Map.Entry.

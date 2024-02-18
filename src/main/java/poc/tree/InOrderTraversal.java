@@ -1,5 +1,3 @@
-package main.java.poc.tree;
-
 public class InOrderTraversal {
     
     public static void main(String[] args) {
@@ -30,16 +28,4 @@ public class InOrderTraversal {
         return 0;
     }
 
-}
-
-class Node{
-    int data;
-    Node left;
-    Node right;
-
-    Node(int data){
-        this.data=data;
-        left=null;
-        right=null;
-    }
 }
