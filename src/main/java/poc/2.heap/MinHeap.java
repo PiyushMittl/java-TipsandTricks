@@ -11,5 +11,15 @@ public class MinHeap {
             System.out.println("peek= "+q.peek());
             System.out.println("poll= "+q.poll());
         }
+
+        /*
+         * output:
+            peek= 2
+            poll= 2
+            peek= 10
+            poll= 10
+            peek= 30
+            poll= 30
+         */
     }
 }
