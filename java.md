@@ -1909,4 +1909,22 @@ T10.function();
 The value of i would be unpredictable.  
 </details>
 
+**Question:**  
+What is returned when a get key in map does not exists.  
+<details>
+  <summary>Answer</summary>
+map returns null in that case. 
+</details>
 
+**Question:**  
+What is returned when a get key in map does not exists.  
+<details>
+  <summary>Answer</summary>
+tarting from Java 8, you can also use the getOrDefault method to provide a default value if the key is not present: 
+
+```
+Integer value = myMap.getOrDefault(key, defaultValue);
+System.out.println("Value: " + value);
+```
+
+</details>
