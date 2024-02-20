@@ -1928,3 +1928,84 @@ System.out.println("Value: " + value);
 ```
 
 </details>
+
+
+
+
+## Reading File and Taking user input
+**Question:**
+How to read a file
+<details>
+  <summary>Answer</summary>
+
+```
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class ReadFileLineByLineExample4 {
+    public static void main(String[] args) {
+        // Replace "yourfile.txt" with the actual path to your file
+        String filePath = "yourfile.txt";
+
+        // Reading file line by line using Scanner with EOF check
+        try (Scanner scanner = new Scanner(new File(filePath))) {
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading the file: " + e.getMessage());
+        }
+    }
+}
+```
+
+</details>
+
+
+**Question:**
+How to take user input.
+<details>
+  <summary>Answer</summary>
+
+```
+import java.util.Scanner;
+
+public class UserInputExample {
+    public static void main(String[] args) {
+        // Creating a Scanner object to read from the console
+        Scanner scanner = new Scanner(System.in);
+
+        // Reading a string
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine(); 
+        // Cursor will stop at above line until user provides input and press enter.
+
+        // Reading an integer
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+        // Reading a floating-point number
+        System.out.print("Enter your height (in meters): ");
+        double height = scanner.nextDouble();
+
+        // Reading a boolean
+        System.out.print("Are you a student? (true/false): ");
+        boolean isStudent = scanner.nextBoolean();
+
+        // Displaying the input data
+        System.out.println("\nUser Information:");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Height: " + height + " meters");
+        System.out.println("Is a student: " + isStudent);
+
+        // Closing the scanner to free up resources
+        scanner.close();
+    }
+}
+
+```
+
+</details>
