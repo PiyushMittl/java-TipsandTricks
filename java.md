@@ -1969,7 +1969,7 @@ How to take user input.
 <details>
   <summary>Answer</summary>
 
-```
+``` java
 import java.util.Scanner;
 
 public class UserInputExample {
