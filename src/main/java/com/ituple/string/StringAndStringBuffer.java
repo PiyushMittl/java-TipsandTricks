@@ -2,6 +2,7 @@ package com.ituple.string;
 
 public class StringAndStringBuffer {
 
+	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String a[])
 	{
 		String str=new String("piyush");

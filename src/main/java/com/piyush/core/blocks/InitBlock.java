@@ -2,6 +2,7 @@ package com.piyush.core.blocks;
 import java.util.*;
 
 
+@SuppressWarnings("rawtypes")
 public class InitBlock {
 
 	String s=new String();
