@@ -1922,7 +1922,7 @@ What is returned when a get key in map does not exists.
   <summary>Answer</summary>
 tarting from Java 8, you can also use the getOrDefault method to provide a default value if the key is not present: 
 
-```
+``` java
 Integer value = myMap.getOrDefault(key, defaultValue);
 System.out.println("Value: " + value);
 ```
@@ -1938,7 +1938,7 @@ How to read a file
 <details>
   <summary>Answer</summary>
 
-```
+``` java
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
