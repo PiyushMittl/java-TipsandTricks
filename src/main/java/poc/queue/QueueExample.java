@@ -1,4 +1,4 @@
-package main.java.poc.queue;
+package poc.queue;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
