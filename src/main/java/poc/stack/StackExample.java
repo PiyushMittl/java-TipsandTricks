@@ -1,4 +1,4 @@
-package main.java.poc.stack;
+package poc.stack;
 
 import java.util.Stack;
 
