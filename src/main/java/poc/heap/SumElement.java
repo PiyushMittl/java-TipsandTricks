@@ -1,6 +1,9 @@
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+
+//sum between k1 and k2 smallest number
+
 public class SumElement{
     public static void main(String[] args) {
         int arr[] = new int[]{1,3,12,5,15,11};
@@ -20,7 +23,7 @@ public class SumElement{
     static int getKth(int k, int[] arr){
         PriorityQueue<Integer> q=new PriorityQueue<>(new NumberComparator());       
         for(int i: arr){
-            
+
                 q.add(i);
             if(q.size()>k){
                 System.out.println(q.peek());
