@@ -156,4 +156,58 @@ https://docs.google.com/spreadsheets/d/1S8ukVXMAArl1_nTQRKSSuBvhzlq2MdQjrw0U_tdp
 
 
 
+# Classic Dynamic Programming Interview Questions
+
+Below is a curated list of dynamic programming problems, organized by theme:
+
+## 1D Sequence & Subsequence
+- **Longest Increasing Subsequence**
+- **Longest Common Subsequence**
+- **Longest Palindromic Subsequence**
+- **Longest Palindromic Substring**
+- **Maximum Product Subarray**
+- **Maximum Sum Circular Subarray**
+
+## String DP
+- **Edit Distance** (Levenshtein)
+- **Regular Expression Matching** (`.` & `*`)
+- **Wildcard Matching** (`?` & `*`)
+- **Word Break / Word Break II**
+- **Distinct Subsequences** (count how many ways `t` appears in `s`)
+- **Minimum Palindrome Partitioning** (min cuts to split into palindromes)
+
+## Knapsack & Partition
+- **0/1 Knapsack**
+- **Unbounded Knapsack** (rod cutting, coin change variants)
+- **Coin Change I** (count ways)
+- **Coin Change II** (min coins)
+- **Partition Equal Subset Sum**
+- **Target Sum** (count subsets that sum to S)
+
+## Grid / Matrix Paths
+- **Minimum Path Sum** in a grid
+- **Unique Paths / Unique Paths II** (with obstacles)
+- **Maximal Square**
+- **Number of Ways to Paint Fence / Paint House**
+- **Triangle** (min path sum from top to bottom)
+
+## Interval & Range DP
+- **Burst Balloons**
+- **Matrix Chain Multiplication**
+- **Palindrome Partitioning**
+- **Optimal BST / Optimal Matrix Chain**
+
+## Game & Stock Markets
+- **House Robber I / II / III**
+- **Best Time to Buy/Sell Stock I–IV** (unlimited, cooldown, fee, at most 2 trades)
+
+## Other
+- **Egg Dropping Puzzle**
+- **Word Wrap (Text Justification)**
+- **Dice Roll Sum Combinations**
+- **Jump Game II** (min jumps to reach end)
+- **Decode Ways** (count how many decodings of a digit string)
+
+
+
 
