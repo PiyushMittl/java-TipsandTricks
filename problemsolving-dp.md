@@ -209,5 +209,156 @@ Below is a curated list of dynamic programming problems, organized by theme:
 - **Decode Ways** (count how many decodings of a digit string)
 
 
+# Taxonomy of Dynamic Programming Problem Families
+
+Below is a (non-exhaustive) list of the major “families” of DP problems and the patterns they follow.
+
+---
+
+## 1. Linear / 1D DP  
+Problems where the state depends only on a single index (or one index + a small parameter).
+
+**Examples**:  
+- Fibonacci  
+- Climbing Stairs  
+- House Robber  
+- Maximum Subarray  
+- Maximum Product Subarray  
+
+---
+
+## 2. Subsequence / Subset DP  
+Pick a subsequence (not necessarily contiguous) or a subset from an array or string.
+
+**Examples**:  
+- Longest Increasing Subsequence  
+- Longest Common Subsequence  
+- Longest Palindromic Subsequence  
+- Subset Sum  
+- Target Sum  
+
+---
+
+## 3. Subarray / Contiguous DP  
+Optimize over contiguous segments of an array.
+
+**Examples**:  
+- Maximum Subarray (Kadane’s)  
+- Minimum Size Subarray Sum  
+- Number of Subarrays With Sum K  
+
+---
+
+## 4. Knapsack-Style DP  
+Count or optimize selection under weight/volume constraints.
+
+- **0/1 Knapsack** (each item at most once)  
+- **Unbounded/Complete Knapsack** (items unlimited)  
+- **Bounded Knapsack** (limited counts)  
+- **Group Knapsack** (choose one from each group)  
+
+**Examples**:  
+- Coin Change I & II  
+- Partition Equal Subset Sum  
+- Ones and Zeroes  
+
+---
+
+## 5. Grid / Matrix DP  
+States indexed by two coordinates in a grid.
+
+**Examples**:  
+- Unique Paths I & II  
+- Minimum Path Sum  
+- Dungeon Game  
+- Cherry Pickup  
+- Number of Islands / Max Area of Island  
+
+---
+
+## 6. Interval / Segment DP  
+Solve subproblems on every sub-interval \[i..j\] and combine via a “last choice” or split point.
+
+**Examples**:  
+- Burst Balloons  
+- Matrix Chain Multiplication  
+- Palindrome Partitioning II  
+- Strange Printer  
+- Optimal Polygon Triangulation  
+- Minimum Cost to Merge Stones  
+
+---
+
+## 7. Tree DP  
+DP on rooted trees (DFS + combine children).
+
+**Examples**:  
+- House Robber III (tree version)  
+- Maximum Path Sum in Binary Tree  
+- Tree DP on graphs: Vertex Cover, Independent Set  
+
+---
+
+## 8. Graph / DAG DP  
+Longest/shortest paths on Directed Acyclic Graphs or other state graphs.
+
+**Examples**:  
+- Number of Ways in a DAG  
+- Predict the Winner (game state graph)  
+
+---
+
+## 9. Bitmask DP  
+States include a bitmask (e.g. which items/columns are used). Typical for small _n_ ≤ 20.
+
+**Examples**:  
+- Traveling Salesman  
+- Assignment Problems  
+- Hamiltonian Path Count  
+
+---
+
+## 10. Game-Theory DP  
+Minimax or Sprague-Grundy based DP on turn-taking games.
+
+**Examples**:  
+- Stone Game  
+- Coin Row Game  
+- Predict the Winner  
+- Kayles Nim  
+
+---
+
+## 11. String DP  
+DP on prefixes/suffixes of strings, often 2D on indices (i, j).
+
+**Examples**:  
+- Edit Distance  
+- Word Break  
+- Wildcard / Regex Matching  
+- Distinct Subsequences  
+
+---
+
+## 12. Digit DP  
+Count numbers ≤ N satisfying digit-based constraints, via DP over digit positions + tight flags.
+
+**Examples**:  
+- Count of Integers Without Consecutive Ones  
+- Sum-of-Digits DP  
+- Digit-DP Templates  
+
+---
+
+## 13. DP with Advanced Optimizations  
+When naïve O(n²) DP is too slow, apply:  
+- Monotonic Queue / Sliding Window Optimization  
+- Divide-and-Conquer DP Optimization  
+- Knuth / Quadrangle Inequality Optimization  
+- Convex Hull Trick / Li Chao Tree  
+
+---  
+
+
 
 
