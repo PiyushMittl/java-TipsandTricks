@@ -106,12 +106,11 @@ Questions/reference Links for recursive, topdown and bottom-up approach
 1. 0/1 Knapsack (6 problems)  
     1.1. 0/1 Knapsack  
     1.2. Subset Sum  
-    1.3. Subset Sum  
-    1.4. Equal Sum Partition  
-    1.5. Count the Subset Sum with a given sum  
-    1.6. Minimum Subset Sum difference  
-    1.7. Count the no of Subset with given Sum  
-    1.8. Target Sum  
+    1.3. Equal Sum Partition  
+    1.4. Count the Subset Sum with a given sum  
+    1.5. Minimum Subset Sum difference  
+    1.6. Count the no of Subset with given Sum  
+    1.7. Target Sum  
 2. Unbounded Knapsack (5 problems)  
     2.1. Rod Cutting Problem  
     2.2. Coin Change-1 (max ways)  
@@ -126,7 +125,7 @@ Questions/reference Links for recursive, topdown and bottom-up approach
     4.1. Longest Common Substring  
     4.2. Longest Common Subsequence  
     4.3. Longest Super Subsequence  
-    4.4. Longest Palindropmic Subsequence
+    4.4. Longest Palindropmic Subsequence  
     4.5. Minimum no of insertion and deletion required to convert String A to Atring B  
     4.6. Print Shortest Common Supersequence  
     4.7. Longest Repeating Subsequence  
