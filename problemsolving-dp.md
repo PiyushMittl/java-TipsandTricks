@@ -117,10 +117,10 @@ Questions/reference Links for recursive, topdown and bottom-up approach
     2.2. Coin Change-1 (max ways)  
     4.3. Coin Change-2 (min no of coins required)   
     ``note: fractional knapsack is not included here since it uses Greedy approach to solve the problems``  
-3. Fibonacci (7 problems)
-    3.1. Fibonacci
-    3.2. Climbing Stairs
-    3.3. House Robber
+3. Fibonacci (7 problems)  
+    3.1. Fibonacci  
+    3.2. Climbing Stairs  
+    3.3. House Robber  
     3.5. Tiling Problem   
 5. LCS (Longest Common Substring) (15 problems)  
     4.1. Longest Common Substring  
