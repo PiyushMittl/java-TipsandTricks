@@ -117,8 +117,12 @@ Questions/reference Links for recursive, topdown and bottom-up approach
     2.2. Coin Change-1 (max ways)  
     4.3. Coin Change-2 (min no of coins required)   
     ``note: fractional knapsack is not included here since it uses Greedy approach to solve the problems``  
-3. Fibonacci (7 problems)  
-4. LCS (Longest Common Substring) (15 problems)  
+3. Fibonacci (7 problems)
+    3.1. Fibonacci
+    3.2. Climbing Stairs
+    3.3. House Robber
+    3.5. Tiling Problem   
+5. LCS (Longest Common Substring) (15 problems)  
     4.1. Longest Common Substring  
     4.2. Longest Common Subsequence  
     4.3. Longest Super Subsequence  
@@ -128,18 +132,18 @@ Questions/reference Links for recursive, topdown and bottom-up approach
     4.7. Longest Repeating Subsequence  
     4.8. Sequence Pattern Matching    
     4.9. Minimum no of insertion in a String to make it a palindrom  
-5. LIS (Longest Increasing Subsequence) (10 problems)  
-6. Kadane's Algorithm (6 problems)  
-7. MCM (Matrix Chain Multiplication) (7 problems)  
+6. LIS (Longest Increasing Subsequence) (10 problems)  
+7. Kadane's Algorithm (6 problems)  
+8. MCM (Matrix Chain Multiplication) (7 problems)  
     7.1. Matrix Chain Multiplication  
     7.2. Evaluate Expression to true boolean prenthesization  
     7.3. Scrambled String  
-8. DP on Trees (4 problems)  
+9. DP on Trees (4 problems)  
     8.1. Diameter on Trees  
     8.2. Maximum path sum | from any node to any node  
     8.3. Maximum path sum | from leaf node to leaf node    
-9. DP on Grid (14 problems)  
-10. Catalan Numbers (10 problems)  
+10. DP on Grid (14 problems)  
+11. Catalan Numbers (10 problems)  
     10.1. Number of BST  
     11.2. Unbalanced Trees  
     11.3. N. Parantheses (with and without letter)  
@@ -149,7 +153,7 @@ Questions/reference Links for recursive, topdown and bottom-up approach
     11.7. Convex Polygon  
     11.8. Connect Disjoint Chords  
     11.9. Ways of Triangulation  
-11. Others  
+12. Others  
 
 referece:  
 https://docs.google.com/spreadsheets/d/1S8ukVXMAArl1_nTQRKSSuBvhzlq2MdQjrw0U_tdpK_Q/edit#gid=0
