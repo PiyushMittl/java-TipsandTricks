@@ -88,7 +88,7 @@
   3. Stacks
   4. Queues
   5. [Trees](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-trees.md)
-  6. [BST](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-trees.md)
+  6. BST
   7. [Heaps](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-heaps.md)
   8. String
   9. Divide and Conquer
