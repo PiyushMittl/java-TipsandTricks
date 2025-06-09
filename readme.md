@@ -88,16 +88,17 @@
   3. Stacks
   4. Queues
   5. [Trees](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-trees.md)
-  6. [Heaps](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-heaps.md)
-  7. String
-  8. Divide and Conquer
-  9. [Backtracking](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-backtracking.md)   
+  6. [BST](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-trees.md)
+  7. [Heaps](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-heaps.md)
+  8. String
+  9. Divide and Conquer
+  10. [Backtracking](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-backtracking.md)   
 [sudoku](https://youtu.be/P9_F7kuHU90)  
-  10. Greedy
-  11. [Pattern Searching and Mactching](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-patternmatching.md)
-  12. [Dynamic Programming](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-dp.md)
-  13. Bit Manipulation
-  14. Mathematical Algorithms
+  11. Greedy
+  12. [Pattern Searching and Mactching](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-patternmatching.md)
+  13. [Dynamic Programming](https://github.com/PiyushMittl/java-TipsandTricks/blob/master/problemsolving-dp.md)
+  14. Bit Manipulation
+  15. Mathematical Algorithms
   
 </details>
 
